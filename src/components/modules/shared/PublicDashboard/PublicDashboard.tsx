@@ -1,8 +1,9 @@
 "use client";
 // import logoImage from "../../../../assets/HeaderImage/Logo.png";
 import logoImage from "@/app/assets/HeaderImage/Logo.png";
-import { navItems } from "@/components/Array/navItems";
-import goLink from "@/components/functions/goLink";
+import { navItems } from "@/components/utils/Array/navItems";
+import goLink from "@/components/utils/functions/goLink";
+
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

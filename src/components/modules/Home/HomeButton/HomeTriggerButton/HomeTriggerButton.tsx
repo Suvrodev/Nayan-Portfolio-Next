@@ -1,12 +1,13 @@
 "use client";
 
-import goLink from "@/components/functions/goLink";
+import goLink from "@/components/utils/functions/goLink";
 
 interface IProps {
   resume: string;
+  fromAbout?: boolean;
 }
 
-const HomeTriggerButton = ({ resume }: IProps) => {
+const HomeTriggerButton = ({ resume, fromAbout }: IProps) => {
   // console.log("Resume: ", resume);
 
   const handleDownload = (base64Data: string) => {
@@ -35,25 +36,29 @@ const HomeTriggerButton = ({ resume }: IProps) => {
   };
 
   return (
-    <div className="flex gap-4 justify-center">
+    <div className="flex gap-4 justify-center ">
       <button className="primaryButton" onClick={() => handleDownload(resume)}>
         Resume
       </button>
-      <button
-        className="primaryButton"
-        onClick={() => goLink("https://www.fiverr.com/sarkar_nayan")}
-      >
-        Fiver
-      </button>
+      {!fromAbout && (
+        <div className="flex gap-x-4">
+          <button
+            className={`primaryButton`}
+            onClick={() => goLink("https://www.fiverr.com/sarkar_nayan")}
+          >
+            Fiver
+          </button>
 
-      <button
-        className="primaryButton"
-        onClick={() =>
-          goLink("https://www.upwork.com/freelancers/~01f71c2421f00e1d48")
-        }
-      >
-        Upwork
-      </button>
+          <button
+            className="primaryButton"
+            onClick={() =>
+              goLink("https://www.upwork.com/freelancers/~01f71c2421f00e1d48")
+            }
+          >
+            Upwork
+          </button>
+        </div>
+      )}
     </div>
   );
 };

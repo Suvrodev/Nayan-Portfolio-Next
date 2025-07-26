@@ -1,6 +1,10 @@
 import HomeTriggerButton from "./HomeTriggerButton/HomeTriggerButton";
 
-const HomeButton = async () => {
+interface IProps {
+  fromAbout?: boolean;
+}
+
+const HomeButton = async ({ fromAbout }: IProps) => {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_API}/resume/687a5ad4ff7cd1d52b4db123`,
     {
@@ -15,7 +19,7 @@ const HomeButton = async () => {
 
   return (
     <div>
-      <HomeTriggerButton resume={resume?.resume} />
+      <HomeTriggerButton resume={resume?.resume} fromAbout={fromAbout} />
     </div>
   );
 };

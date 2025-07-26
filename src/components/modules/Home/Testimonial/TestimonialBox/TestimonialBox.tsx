@@ -1,14 +1,14 @@
 import "@smastrom/react-rating/style.css";
 import { Rating } from "@smastrom/react-rating";
 import { TTestimonial } from "@/types/globalTypes";
+import Image from "next/image";
 
 interface IProps {
   testimonial: TTestimonial;
 }
 
 const TestimonialBox = ({ testimonial }: IProps) => {
-  // const { image, desc, rating, name, position } = testimonial;
-  const { desc, rating, name, position } = testimonial;
+  const { image, desc, rating, name, position } = testimonial;
 
   return (
     <div className="primaryBox rounded-[7px] relative ">
@@ -28,6 +28,13 @@ const TestimonialBox = ({ testimonial }: IProps) => {
         alt=""
         className="w-[110px] h-[110px] rounded-full absolute -top-[50px]  left-1/2 transform -translate-x-1/2"
       /> */}
+      <Image
+        src={image}
+        alt="Testimonial"
+        width={110}
+        height={110}
+        className="rounded-full absolute -top-[50px]  left-1/2 transform -translate-x-1/2"
+      />
     </div>
   );
 };
