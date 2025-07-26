@@ -2,6 +2,7 @@ import Image from "next/image";
 import "./Home.css";
 import homeImage from "@/app/assets/homeImage/sarkar_nayan_home.jpg";
 import HomeService from "@/components/modules/Home/HomeService/HomeService";
+import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
 
 const HomePage = () => {
   //   const divStyle = {
@@ -45,7 +46,7 @@ const HomePage = () => {
             </p>
 
             <div className="flex gap-4 items-center">
-              {/* <HomeButton /> */}
+              <HomeButton />
             </div>
           </div>
         </div>
