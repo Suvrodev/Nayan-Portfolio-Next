@@ -3,6 +3,7 @@ import "./Home.css";
 import homeImage from "@/app/assets/homeImage/sarkar_nayan_home.jpg";
 import HomeService from "@/components/modules/Home/HomeService/HomeService";
 import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
+import Testimonial from "@/components/modules/Home/Testimonial/Testimonial";
 
 const HomePage = () => {
   //   const divStyle = {
@@ -57,7 +58,7 @@ const HomePage = () => {
           <HomeService />
         </div>
         <div className="p-4 md:px-10 md:py-20 bg-[#141414] ">
-          {/* <Testimonial showBox={false} /> */}
+          <Testimonial showBox={false} />
         </div>
         <div className="p-4 md:px-10 md:py-20  ">{/* <Certificate /> */}</div>
         <div className="p-4 md:px-[220px] md:py-20 bg-[#141414] ">
