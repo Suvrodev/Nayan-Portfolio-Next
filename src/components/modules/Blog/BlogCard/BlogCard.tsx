@@ -32,7 +32,7 @@ const BlogCard = ({ blog }: IBlogCardProps) => {
 
       {/* Clickable Image */}
       <Link
-        href={`/blog-detail/${_id}`}
+        href={`/blog/${_id}`}
         className="relative h-60 overflow-hidden block"
       >
         {/* <SmartImage

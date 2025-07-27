@@ -1,10 +1,13 @@
 import LinkBox from "@/components/LinkBox/LinkBox";
 import BlogCard from "@/components/modules/Blog/BlogCard/BlogCard";
+import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { TBlog } from "@/types/globalTypes";
 import React from "react";
 
 const BlogPage = async () => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/blog`, {
+  //   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/blog`, {
+
+  const res = await fetch(`${baseApiFromEnv()}/blog`, {
     next: {
       revalidate: 5,
     },
