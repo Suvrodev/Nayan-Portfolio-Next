@@ -1,3 +1,4 @@
+import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { formatDate } from "@/components/utils/functions/convertDate";
 import { TBlog } from "@/types/globalTypes";
@@ -17,6 +18,9 @@ const BlogDetailPage = async ({ params }: IProps) => {
   const blogData = await res.json();
   const blog: TBlog = blogData.data;
   //   console.log("Blog: ", blog);
+  if (!blog) {
+    return <NotFoundData speed={1}>Blog Not Found</NotFoundData>;
+  }
   return (
     <div className="max-w-4xl mx-auto px-4 py-10 text-white">
       {/* Blog Title */}
