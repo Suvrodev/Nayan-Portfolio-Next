@@ -9,11 +9,12 @@ import type {
 import type { RootState } from "../store";
 import { toast } from "sonner";
 import { sonarId } from "@/components/utils/functions/sonarId";
+import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 
 const baseQuery = fetchBaseQuery({
   // baseUrl: "http://localhost:7000/api",
   // baseUrl: "https://nayan-portfolio-server.vercel.app/api",
-  baseUrl: "https://nayan-portfolio-server-henna.vercel.app/api",
+  baseUrl: `${baseApiFromEnv()}`,
   credentials: "include",
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token;
