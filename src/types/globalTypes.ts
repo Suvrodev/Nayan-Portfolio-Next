@@ -30,7 +30,7 @@ export type TBlog = {
   description: string;
   category: string;
   author: string;
-  date: Date;
+  date: Date | string;
 };
 
 export type TTestimonial = {
