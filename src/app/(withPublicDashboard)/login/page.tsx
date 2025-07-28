@@ -11,6 +11,7 @@ import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import { toast } from "sonner";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
+import { setTokenAction } from "@/components/utils/hook/AuthService/SetUser";
 
 type LoginFormInputs = {
   email: string;
@@ -33,13 +34,18 @@ const LoginPage = () => {
     console.log("Login Data:", data);
     toast.loading("Loginging", { id: sonarId });
     const res = await login(data).unwrap();
-    // console.log("Res: ", res);
+    console.log("Res: ", res);
     if (res?.success) {
-      const admin = verifyToken(res?.data?.token);
-      //   console.log("Admin: ", admin);
-      dispatch(setAdmin({ user: admin, token: res?.data?.token }));
+      const adminToken = res?.data?.token;
+      console.log("Admin Token: ", adminToken);
+      await setTokenAction(adminToken);
       toast.success("Login Successfully", { id: sonarId });
-      router.push(`/${admin?.role}-dashboard`);
+      //   const admin = verifyToken(res?.data?.token);
+      //   //   console.log("Admin: ", admin);
+      //   dispatch(setAdmin({ user: admin, token: res?.data?.token }));
+      //   toast.success("Login Successfully", { id: sonarId });
+      // router.push(`/${admin?.role}-dashboard`);
+      router.push(`/admin-dashboard`);
     }
   };
   return (
