@@ -3,12 +3,10 @@
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { verifyToken } from "@/components/utils/functions/verifyToken";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
-import { setAdmin } from "@/redux/features/auth/authSlics";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useDispatch } from "react-redux";
 import { toast } from "sonner";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 import { setTokenAction } from "@/components/utils/hook/AuthService/SetUser";
@@ -19,7 +17,6 @@ type LoginFormInputs = {
 };
 
 const LoginPage = () => {
-  const dispatch = useDispatch();
   const [login] = useLoginMutation();
   const router = useRouter();
 
