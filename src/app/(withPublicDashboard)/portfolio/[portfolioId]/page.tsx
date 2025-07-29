@@ -40,7 +40,7 @@ const PortfolioPage = async ({ params }: IProps) => {
           alt={portfolio?.title || "Portfolio Image"}
           width={800}
           height={800}
-          className="w-full h-72 md:h-96 object-con rounded-lg mb-6 border border-gray-700"
+          className="w-full h-72 md:h-96 object-cover rounded-lg mb-6 border border-gray-700"
           style={{ objectFit: "cover" }}
         />
 

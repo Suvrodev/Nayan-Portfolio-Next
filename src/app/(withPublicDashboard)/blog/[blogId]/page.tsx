@@ -22,7 +22,7 @@ const BlogDetailPage = async ({ params }: IProps) => {
     return <NotFoundData speed={1}>Blog Not Found</NotFoundData>;
   }
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10 text-white">
+    <div className="max-w-4xl mx-auto px-4 py-10 text-white ">
       {/* Blog Title */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4">{blog.title}</h1>
 
@@ -45,11 +45,13 @@ const BlogDetailPage = async ({ params }: IProps) => {
         <Image
           src={blog.image}
           alt={blog.title}
-          height={450}
+          // height={450}
+          // width={750}
+          height={900}
           width={750}
-          className="object-cover"
+          // className="object-cover"
           //   fill
-          //   className="object-cover transform hover:scale-105 transition-transform duration-500"
+          className="max-w-full mx-auto h-72  md:h-96 object-contain transform hover:scale-105 transition-transform duration-500 rounded-md"
         />
       </div>
 

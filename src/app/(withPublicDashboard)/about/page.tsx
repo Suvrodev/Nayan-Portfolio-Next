@@ -36,7 +36,7 @@ const AboutPage = () => {
         <Image
           src={aboutImage}
           alt="Sarkae Nayan"
-          height={650}
+          // height={650}
           className="object-cover"
         />
 
