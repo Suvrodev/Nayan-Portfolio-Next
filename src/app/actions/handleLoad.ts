@@ -1,8 +1,8 @@
 import { startTransition } from "react";
-import { revalidateProjects } from "./revalidateProject";
+import { revalidateAll } from "./revalidateProject";
 
 export const handleLoad = async () => {
   startTransition(async () => {
-    await revalidateProjects();
+    await revalidateAll();
   });
 };

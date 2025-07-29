@@ -26,8 +26,11 @@ export const adminNavItems = [
   {
     label: "Service Manager",
     children: [
-      { path: "/admin-dashboard/service/add-servcie", label: "Add Service" },
-      { path: "/admin-dashboard/service", label: "Service" },
+      {
+        path: "/admin-dashboard/admin-service/add-servcie",
+        label: "Add Service",
+      },
+      { path: "/admin-dashboard/admin-service", label: "Service" },
     ],
   },
   {
@@ -37,23 +40,23 @@ export const adminNavItems = [
         path: "/admin-dashboard/portfolio/add-portfolio",
         label: "Add Portfolio",
       },
-      { path: "/admin-dashboard/portfolio", label: "Portfolio" },
+      { path: "/admin-dashboard/admin-portfolio", label: "Portfolio" },
     ],
   },
   {
     label: "Gigs Manager",
     children: [
       { path: "/admin-dashboard/gigs/add-gigs", label: "Add Gig" },
-      { path: "/admin-dashboard/gigs", label: "Gigs" },
+      { path: "/admin-dashboard/admin-gigs", label: "Gigs" },
     ],
   },
   {
     label: "Blog Manager",
     children: [
       { path: "/admin-dashboard/blog/add-blog", label: "Add Blog" },
-      { path: "/admin-dashboard/blog", label: "Blog" },
+      { path: "/admin-dashboard/admin-blog", label: "Blog" },
     ],
   },
   { path: "/about", label: "About" },
-  { path: "/admin-dashboard/contact", label: "Contact" },
+  { path: "/admin-dashboard/admin-contact", label: "Contact" },
 ];
