@@ -1,8 +1,11 @@
 import LinkBox from "@/components/LinkBox/LinkBox";
 import BlogCard from "@/components/modules/Blog/BlogCard/BlogCard";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
+import { createTitle } from "@/components/utils/functions/metadata";
 import { TBlog } from "@/types/globalTypes";
 import React from "react";
+
+export const metadata = createTitle("Blog");
 
 const BlogPage = async () => {
   //   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/blog`, {

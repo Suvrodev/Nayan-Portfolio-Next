@@ -1,6 +1,9 @@
 import LinkBox from "@/components/LinkBox/LinkBox";
 import PortfolioContent from "@/components/modules/Portfolio/PortfolioContent/PortfolioContent";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
+import { createTitle } from "@/components/utils/functions/metadata";
+
+export const metadata = createTitle("Portfolio");
 
 const PortfolioPage = async () => {
   const res = await fetch(`${baseApiFromEnv()}/portfolioo`, {

@@ -8,11 +8,11 @@ import BioData from "@/components/modules/About/BioData/BioData";
 import SkillLoading from "@/components/modules/About/SkillLoading/SkillLoading";
 import EducationExperience from "@/components/modules/About/EducationExperience/EducationExperience";
 import Testimonial from "@/components/modules/Home/Testimonial/Testimonial";
-import { metadata } from "@/app/layout";
 import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
 import KnowladgeInterest from "@/components/modules/About/KnowladgeInterest/KnowladgeInterest";
+import { createTitle } from "@/components/utils/functions/metadata";
 
-metadata.title = "About";
+export const metadata = createTitle("About");
 
 const AboutPage = () => {
   return (

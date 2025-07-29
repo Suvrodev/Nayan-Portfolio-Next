@@ -4,6 +4,9 @@ import homeImage from "@/app/assets/homeImage/sarkar_nayan_home.jpg";
 import HomeService from "@/components/modules/Home/HomeService/HomeService";
 import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
 import Testimonial from "@/components/modules/Home/Testimonial/Testimonial";
+import { createTitle } from "@/components/utils/functions/metadata";
+
+export const metadata = createTitle("Home");
 
 const HomePage = () => {
   //   const divStyle = {

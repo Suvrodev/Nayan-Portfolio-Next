@@ -8,6 +8,10 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import ContactForm from "@/components/modules/Contact/ContactForm/ContactForm";
+import { createTitle } from "@/components/utils/functions/metadata";
+
+export const metadata = createTitle("Contact");
+
 const ContactPage = () => {
   return (
     <div className="overflow-hidden ">

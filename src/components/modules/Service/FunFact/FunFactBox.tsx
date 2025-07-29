@@ -1,4 +1,4 @@
-import type { TFun } from "@/utils/types/globalTypes";
+import { TFun } from "@/types/globalTypes";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 

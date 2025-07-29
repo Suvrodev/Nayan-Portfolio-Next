@@ -2,6 +2,9 @@ import LinkBox from "@/components/LinkBox/LinkBox";
 import Consult from "@/components/modules/Service/Consult/Consult";
 import PricingList from "@/components/modules/Service/PricingList/PricingList";
 import WhatIDo from "@/components/modules/Service/WhatIDo/WhatIDo";
+import { createTitle } from "@/components/utils/functions/metadata";
+
+export const metadata = createTitle("Service");
 
 const ServicePage = () => {
   return (
