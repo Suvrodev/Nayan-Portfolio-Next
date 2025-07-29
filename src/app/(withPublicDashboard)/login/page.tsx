@@ -1,7 +1,6 @@
 "use client";
 
 import { sonarId } from "@/components/utils/functions/sonarId";
-import { verifyToken } from "@/components/utils/functions/verifyToken";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
