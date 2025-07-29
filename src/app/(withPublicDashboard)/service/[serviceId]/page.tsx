@@ -1,3 +1,4 @@
+import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import "./serviceDetail.css";
 import TechIcon from "@/components/TechIcon/TechIcon";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
@@ -16,6 +17,10 @@ const ServiceDetailPage = async ({ params }: IProps) => {
   const data = await res.json();
   const service: TService = data?.data;
   //   console.log("Service:  ", service);
+
+  if (!service) {
+    return <NotFoundData speed={1}>Service Not Found</NotFoundData>;
+  }
   return (
     <div className="min-h-screen flex justify-center items-center my-4">
       <div className="max-w-4xl mx-auto primaryBox p-6 rounded-2xl shadow-xl">

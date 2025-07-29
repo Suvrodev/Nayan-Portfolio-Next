@@ -11,7 +11,7 @@ const WhatIDo = async ({ isAdmin }: { isAdmin: boolean }) => {
   });
   const data = await res.json();
   const services = data?.data;
-  console.log("services: ", services);
+  // console.log("services: ", services);
   return (
     <div>
       <h1 className="text-4xl text-white font-bold">What I do</h1>

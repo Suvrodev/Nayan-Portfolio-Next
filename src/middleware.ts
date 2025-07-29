@@ -1,6 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import { verifyToken } from "./components/utils/functions/verifyToken";
 // import { getCurrentUserToken } from "./components/utils/hook/AuthService/getCurrentUser";
+// import { getCurrentUserToken } from "./components/utils/hook/AuthService/getCurrentUser";
 
 // const authRoutes = ["/login", "register"];
 

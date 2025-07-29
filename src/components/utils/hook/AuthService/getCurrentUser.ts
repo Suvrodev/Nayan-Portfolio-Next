@@ -2,6 +2,7 @@
 "use server";
 
 import { cookies } from "next/headers";
+import { verifyToken } from "../../functions/verifyToken";
 
 export const getCurrentUserToken = async () => {
   const token = (await cookies()).get("token")?.value;
@@ -12,6 +13,19 @@ export const getCurrentUserToken = async () => {
   // const user = verifyToken(token); // implement this logic based on your app
 
   return token;
+};
+
+export const getCurrentUserRole = async () => {
+  const token = (await cookies()).get("token")?.value;
+
+  if (!token) return false;
+  console.log("Token-----", token);
+  const user = verifyToken(token);
+  if (user?.role !== "admin") {
+    return false;
+  }
+
+  return true;
 };
 
 export const clearTokenAction = async () => {

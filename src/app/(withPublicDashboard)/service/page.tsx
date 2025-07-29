@@ -6,14 +6,20 @@ import { createTitle } from "@/components/utils/functions/metadata";
 
 export const metadata = createTitle("Service");
 
-const ServicePage = () => {
+interface IProps {
+  isAdmin: boolean;
+}
+
+const ServicePage = async ({ isAdmin }: IProps) => {
+  // const isAdmin = await getCurrentUserRole();
+  // console.log("Is Admin: ", isAdmin);
   return (
     <div className="overflow-hidden">
       <div className="pageMargin">
         <LinkBox text1={"Service"} />
       </div>
       <div className="pageMargin">
-        <WhatIDo isAdmin={true} />
+        <WhatIDo isAdmin={isAdmin} />
       </div>
       {/* <div className="p-5 md:p-28 bg-[#222222]">
         <TrustedClients />
