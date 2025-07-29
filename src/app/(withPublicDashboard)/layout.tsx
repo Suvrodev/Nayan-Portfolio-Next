@@ -1,4 +1,5 @@
 import WeAccept from "@/components/modules/shared/Footer/WeAccept";
+import MobileHeader from "@/components/modules/shared/PublicDashboard/MobileHeader/MobileHeader";
 import PublicDashboard from "@/components/modules/shared/PublicDashboard/PublicDashboard";
 import React from "react";
 
@@ -9,23 +10,17 @@ interface IProps {
 const PublicLayout = ({ children }: IProps) => {
   return (
     <div>
-      {/* {children}
-      <div className="bg-[#222222] p-20">
-        <WeAccept />
-      </div> */}
-
       <div className="flex">
         <div className="w-[20%] hidden md:block ">
           <PublicDashboard />
         </div>
-        {/* <div className="w-full md:w-[80%] bg-[#333333]"> */}
         <div className="w-full md:w-[80%] ">
           {/* <div className="hidden md:block">
           <Cursor />
-        </div>
-        <div className="md:hidden sticky top-0">
-          <MobileHeader />
-        </div> */}
+        </div>*/}
+          <div className="md:hidden sticky top-0">
+            <MobileHeader />
+          </div>
           {children}
 
           <div className="bg-[#222222] p-20">
