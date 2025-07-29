@@ -126,7 +126,7 @@ const PortfolioTabEZ = () => {
 
           {/* Animated underline background */}
           <span
-            className="absolute z-0 h-8 bg-blue-600 rounded-full transition-all duration-300"
+            className="absolute z-0 h-9  bg-blue-600 flex items-center justify-center rounded-full transition-all duration-300"
             style={{
               left: underlineStyle.left,
               width: underlineStyle.width,

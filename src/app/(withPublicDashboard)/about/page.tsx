@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "../Home.css";
+// import "../Home.css";
 import LinkBox from "@/components/LinkBox/LinkBox";
 
 // import aboutImage from "../../../assets/aboutImage/sarkar_nayan_about.jpg";
