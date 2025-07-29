@@ -40,7 +40,7 @@ const Login = () => {
       //   dispatch(setAdmin({ user: admin, token: res?.data?.token }));
       //   toast.success("Login Successfully", { id: sonarId });
       // router.push(`/${admin?.role}-dashboard`);
-      router.push(`/admin-dashboard`);
+      router.push(`/admin-dashboard/home`);
     }
   };
 

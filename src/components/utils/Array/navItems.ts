@@ -22,7 +22,7 @@ export const navItems = [
 export const adminNavItems = [
   { path: "/admin-dashboard/home", label: "Home" },
   { path: "/admin-dashboard/all-admin", label: "Admin" },
-  { path: "/admin-dashboard/resume", label: "Resume" },
+  { path: "/admin-dashboard/admin-resume", label: "Resume" },
   {
     label: "Service Manager",
     children: [

@@ -10,6 +10,7 @@ const HomeButton = async ({ fromAbout }: IProps) => {
     {
       next: {
         revalidate: 5,
+        tags: ["resume"],
       },
     }
   );

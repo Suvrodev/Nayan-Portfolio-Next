@@ -3,7 +3,7 @@
 import { revalidateTag } from "next/cache";
 
 export async function revalidateAll() {
-  const tags = ["service", "portfolio", "blog", "gig", "admin"];
+  const tags = ["service", "portfolio", "blog", "gig", "admin", "resume"];
   tags.forEach((tag) => revalidateTag(tag));
 
   /**
