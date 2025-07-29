@@ -57,6 +57,6 @@ export const adminNavItems = [
       { path: "/admin-dashboard/admin-blog", label: "Blog" },
     ],
   },
-  { path: "/about", label: "About" },
+  { path: "/admin-dashboard/admin-about", label: "About" },
   { path: "/admin-dashboard/admin-contact", label: "Contact" },
 ];
