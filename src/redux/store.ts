@@ -31,6 +31,7 @@ import {
 import storage from "redux-persist/lib/storage";
 import authReducer from "./features/auth/authSlics";
 import portfolioCategoryReducer from "./features/PortfolioApi/portfolioSlice";
+import drawerReducer from "./features/drawer/drawerSlice";
 import { baseApi } from "./apis/baseApi";
 const persistConfig = {
   key: "auth",
@@ -45,6 +46,7 @@ export const store = configureStore({
     // auth: authReducer,
     auth: persistedReducer,
     portfolioCategories: portfolioCategoryReducer,
+    drawer: drawerReducer,
   },
   middleware: (getDefaultMiddlewares) =>
     getDefaultMiddlewares({

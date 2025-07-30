@@ -20,6 +20,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { adminNavItems } from "@/components/utils/Array/navItems";
+import { useDispatch } from "react-redux";
+import { setDrawer } from "@/redux/features/drawer/drawerSlice";
 // import goLink from "@/components/utils/functions/goLink";
 
 // const socialLinks = [
@@ -35,6 +37,7 @@ import { adminNavItems } from "@/components/utils/Array/navItems";
 // ];
 
 const AdminDashboard = () => {
+  const dispatch = useDispatch();
   const location = usePathname();
   // console.log("Location: ", location);
 
@@ -77,7 +80,7 @@ const AdminDashboard = () => {
               >
                 <span>{item.label}</span>
                 <FaChevronDown
-                  className={`transition-transform duration-300 ${
+                  className={`transition-transform duration-300 relative right-[20px] md:right-[100px] ${
                     openMenus.includes(item.label) ? "rotate-180" : ""
                   }`}
                 />
@@ -96,6 +99,7 @@ const AdminDashboard = () => {
                         ? "text-green-500"
                         : "text-gray-300"
                     } hover:text-green-400`}
+                    onClick={() => dispatch(setDrawer(false))}
                   >
                     {child.label}
                   </Link>
@@ -109,6 +113,7 @@ const AdminDashboard = () => {
               className={`${
                 location === item.path ? "text-green-500" : "text-white"
               } hover:text-green-400`}
+              onClick={() => dispatch(setDrawer(false))}
             >
               {item.label}
             </Link>

@@ -10,6 +10,7 @@ const PortfolioPage = async () => {
   const res = await fetch(`${baseApiFromEnv()}/portfolioo`, {
     next: {
       revalidate: 30,
+      tags: ["portfolio"],
     },
   });
   const portfolioData = await res.json();

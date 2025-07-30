@@ -21,7 +21,7 @@ export const portfolioCategorySlice = createSlice({
       state.portfolioCategory = action.payload;
     },
     setPortfolios: (state, action) => {
-      // console.log("Payload: ", action.payload);
+      console.log("Payload: ", action.payload);
       state.portfolios = action.payload;
     },
   },
