@@ -27,7 +27,7 @@ export const adminNavItems = [
     label: "Service Manager",
     children: [
       {
-        path: "/admin-dashboard/admin-service/add-servcie",
+        path: "/admin-dashboard/add-service",
         label: "Add Service",
       },
       { path: "/admin-dashboard/admin-service", label: "Service" },

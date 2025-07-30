@@ -16,7 +16,7 @@ const ServiceDetailPage = async ({ params }: IProps) => {
   const res = await fetch(`${baseApiFromEnv()}/service/${serviceId}`);
   const data = await res.json();
   const service: TService = data?.data;
-  //   console.log("Service:  ", service);
+  console.log("Service:  ", service);
 
   if (!service) {
     return <NotFoundData speed={1}>Service Not Found</NotFoundData>;
@@ -51,7 +51,7 @@ const ServiceDetailPage = async ({ params }: IProps) => {
         ></div>
 
         {/* Skills Section */}
-        {service?.skillAndTools?.length > 0 && (
+        {service?.skillAndTools[0]?.percent != 0 && (
           <div className="mt-10">
             <h2 className="text-2xl font-semibold mb-6">My Skills & Tools</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6">
