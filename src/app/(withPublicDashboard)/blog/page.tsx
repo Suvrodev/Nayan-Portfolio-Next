@@ -6,13 +6,16 @@ import { TBlog } from "@/types/globalTypes";
 import React from "react";
 
 export const metadata = createTitle("Blog");
-
-const BlogPage = async () => {
+interface IProps {
+  isAdmin: boolean;
+}
+const BlogPage = async ({ isAdmin }: IProps) => {
   //   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/blog`, {
 
   const res = await fetch(`${baseApiFromEnv()}/blog`, {
     next: {
       revalidate: 5,
+      tags: ["blog"],
     },
   });
   const blogsData = await res.json();
@@ -29,7 +32,7 @@ const BlogPage = async () => {
 
         <div className="my-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs?.map((blog: TBlog, idx: number) => (
-            <BlogCard key={idx} blog={blog} />
+            <BlogCard key={idx} blog={blog} isAdmin={isAdmin} />
           ))}
         </div>
       </div>

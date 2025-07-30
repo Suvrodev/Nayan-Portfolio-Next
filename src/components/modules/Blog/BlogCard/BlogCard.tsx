@@ -1,24 +1,41 @@
 "use client";
 
 import { formatDate } from "@/components/utils/functions/convertDate";
+import { useDeleteBlogMutation } from "@/redux/features/BlogApi/blogApi";
 import { TBlog } from "@/types/globalTypes";
 import Image from "next/image";
 import Link from "next/link";
+import UpdateButton from "../../shared/Buttons/UpdateButton/UpdateButton";
+import DeleteButton from "../../shared/Buttons/DeleteButton/DeleteButton";
+import { toast } from "sonner";
+import { sonarId } from "@/components/utils/functions/sonarId";
+import { handleLoad } from "@/app/actions/handleLoad";
 
 interface IBlogCardProps {
   blog: TBlog;
   isAdmin?: boolean;
 }
-const BlogCard = ({ blog }: IBlogCardProps) => {
+const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
   //   console.log("Blog: ", blog);
+  const [deleteBlog] = useDeleteBlogMutation();
   const { _id, image, title, date, category } = blog;
 
+  const handleDelete = async (id: string) => {
+    console.log("Delete Clicked ID:", id);
+    toast.loading("Deleting", { id: sonarId });
+    const res = await deleteBlog(id).unwrap();
+    console.log("Res: ", res);
+    if (res?.success) {
+      toast.success(res?.message, { id: sonarId });
+      await handleLoad();
+    }
+  };
   return (
     <div className="relative primaryBox rounded-[12px] overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col h-[370px] md:h-[370px] lg:h-[380px]">
       {/* Admin Buttons */}
-      {/* {isAdmin && (
+      {isAdmin && (
         <div className="absolute top-2 right-2 z-10 flex gap-2">
-          <Link to={`update-blog/${_id}`}>
+          <Link href={`update-blog/${_id}`}>
             {" "}
             <UpdateButton />
           </Link>
@@ -28,7 +45,7 @@ const BlogCard = ({ blog }: IBlogCardProps) => {
             }}
           />
         </div>
-      )} */}
+      )}
 
       {/* Clickable Image */}
       <Link
