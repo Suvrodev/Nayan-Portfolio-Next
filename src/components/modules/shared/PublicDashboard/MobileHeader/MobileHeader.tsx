@@ -14,8 +14,9 @@ const MobileHeader = () => {
   };
 
   return (
-    <div className="relative bg-[#141414]">
-      <div className="  w-full  flex justify-between items-center py-2 px-5 bgColor relative z-20">
+    // <div className="relative bg-[#141414] zMobileHeader">
+    <div className="fixed top-0 left-0 w-full  bg-[#141414]">
+      <div className="  w-full  flex justify-between items-center py-2 px-5 bgColor relative ">
         <div className="flex items-center justify-start gap-x-2  h-[50px]">
           {/* <img src={logo} alt="" className=" w-[50px] h-[50px] rounded-full" />
           <h1 className="font-bold">Boundless Reads</h1> */}
@@ -41,7 +42,7 @@ const MobileHeader = () => {
         </div>
       </div>
       <div
-        className={`absolute  w-full transition-all duration-700 ${
+        className={`absolute z-50  w-full transition-all duration-700 ${
           //   isOpen ? "top-[66px] left-0" : "-top-[400px] "
           isOpen ? "top-[66px] right-0" : "top-[66px]  right-[800px]"
         }`}

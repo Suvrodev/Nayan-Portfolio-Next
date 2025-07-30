@@ -14,14 +14,14 @@ const PublicLayout = ({ children }: IProps) => {
         <div className="w-[20%] hidden md:block ">
           <PublicDashboard />
         </div>
-        <div className="w-full md:w-[80%] ">
+        <div className="w-full md:w-[80%]  ">
           {/* <div className="hidden md:block">
           <Cursor />
         </div>*/}
-          <div className="md:hidden sticky top-0">
+          <div className="md:hidden sticky top-0 z-50">
             <MobileHeader />
           </div>
-          {children}
+          <div className="mt-20 md:mt-0">{children}</div>
 
           <div className="bg-[#222222] p-20">
             <WeAccept />

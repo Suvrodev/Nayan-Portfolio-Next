@@ -11,7 +11,7 @@ const HomeServiceDesign = ({ service, idx }: IProps) => {
   const { title, shortDescription } = service;
 
   return (
-    <div className="relative">
+    <div className="md:relative">
       <div className={`flex gap-10 ${cId % 2 == 0 ? "" : "flex-row-reverse"} `}>
         {/* <div className="grid grid-cols-[48%_auto_48%] gap-10 items-center "> */}
         <div className={`perSide   relative  p-4 rounded-[10px] `}>

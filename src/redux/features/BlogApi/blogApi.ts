@@ -1,21 +1,59 @@
-// import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+import { baseApi } from "@/redux/apis/baseApi";
 
-// export const baseApi = createApi({
-//   reducerPath: "baseApi",
-//   baseQuery: fetchBaseQuery({
-//     baseUrl: "https://nayan-portfolio-server-henna.vercel.app/api",
-//   }),
-//   endpoints: (build) => ({
-//     getSingleBlog: build.query({
-//       query: (id) => {
-//         return {
-//           url: `/blog/${id}`,
-//         };
-//       },
-//     }),
-//   }),
-// });
+const blogApi = baseApi.injectEndpoints({
+  endpoints: (builder) => ({
+    addBlog: builder.mutation({
+      query: (data) => {
+        return {
+          url: "/blog",
+          method: "POST",
+          body: data,
+        };
+      },
+      invalidatesTags: ["blog"],
+    }),
+    getAllBlogs: builder.query({
+      query: () => {
+        return {
+          url: "/blog",
+        };
+      },
+      providesTags: ["blog"],
+    }),
+    getSingleBlog: builder.query({
+      query: (_id) => {
+        return {
+          url: `/blog/${_id}`,
+        };
+      },
+    }),
+    deleteBlog: builder.mutation({
+      query: (_id) => {
+        return {
+          url: `/blog/${_id}`,
+          method: "DELETE",
+        };
+      },
+      invalidatesTags: ["blog"],
+    }),
+    updateBlog: builder.mutation({
+      query: ({ _id, updatedData }) => {
+        console.log("Update portfolio data: ", updatedData);
+        return {
+          url: `/blog/update/${_id}`,
+          method: "PATCH",
+          body: updatedData,
+        };
+      },
+      invalidatesTags: ["blog"],
+    }),
+  }),
+});
 
-// // Export hooks for usage in functional components, which are
-// // auto-generated based on the defined endpoints
-// export const { useGetSingleBlogQuery } = baseApi;
+export const {
+  useAddBlogMutation,
+  useGetAllBlogsQuery,
+  useGetSingleBlogQuery,
+  useDeleteBlogMutation,
+  useUpdateBlogMutation,
+} = blogApi;
