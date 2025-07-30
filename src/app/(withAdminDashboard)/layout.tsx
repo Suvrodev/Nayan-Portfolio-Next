@@ -17,46 +17,14 @@ const AdminLayout = ({ children }: IProps) => {
   // console.log("isOpen: ", isOpen);
   return (
     // Main Code STart
-    // <div className="flex">
-    //   <div className="w-[20%] hidden md:block ">
-    //     <AdminDashboard />
-    //   </div>
-    //   {/* <div className="w-full md:w-[80%] bg-[#333333]"> */}
-    //   <div className="w-full md:w-[80%] ">
-    //     <div className="md:hidden sticky top-0">{/* <MobileHeader /> */}</div>
-    //     {children}
-
-    //     <div className="bg-[#222222] p-20">
-    //       <WeAccept />
-    //     </div>
-
-    //     {/* For Store Data */}
-    //     {/* <StoreService /> */}
-    //   </div>
-    // </div>
-    // Main Code End
-
     <div>
-      {/* Mobile Header */}
-      <div className="sticky top-0 z-50">
-        <LayoutMobileHeader />
-      </div>
-      <div className="relative md:flex">
-        <div
-          className={`w-full md:w-[20%] z-10  ${
-            isOpen ? "left-0" : "-left-[400px]"
-          } fixed  md:static bg-transparent  top-10 h-screen  transition-all duration-300 ease-in-out`}
-          onClick={() => dispatch(setDrawer(false))}
-        >
-          <div
-            className="w-[75%] md:w-full md:static"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <AdminDashboard />
-          </div>
+      <div className="hidden md:flex">
+        <div className="w-[20%] hidden md:block ">
+          <AdminDashboard />
         </div>
         {/* <div className="w-full md:w-[80%] bg-[#333333]"> */}
         <div className="w-full md:w-[80%] ">
+          <div className="md:hidden sticky top-0">{/* <MobileHeader /> */}</div>
           {children}
 
           <div className="bg-[#222222] p-20">
@@ -67,7 +35,38 @@ const AdminLayout = ({ children }: IProps) => {
           {/* <StoreService /> */}
         </div>
       </div>
+
+      {/* For Mobile Start */}
+
+      <div className="md:hidden">
+        <div className="sticky top-0 z-50">
+          <LayoutMobileHeader />
+        </div>
+        <div className="relative  md:flex">
+          <div
+            className={`w-full md:w-[20%] fixed  md:sticky top-[70px]  md:-top-[0px] h-screen  z-50  bg-transparent     transition-all duration-300 ease-in-out ${
+              isOpen ? "left-0" : "-left-[400px]"
+            }    `}
+            onClick={() => dispatch(setDrawer(false))}
+          >
+            <div
+              className="w-[75%] md:w-full md:static"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <AdminDashboard />
+            </div>
+          </div>
+          <div className="w-full md:w-[80%] ">
+            {children}
+
+            <div className="bg-[#222222] p-20">
+              <WeAccept />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    // Main Code End
   );
 };
 
