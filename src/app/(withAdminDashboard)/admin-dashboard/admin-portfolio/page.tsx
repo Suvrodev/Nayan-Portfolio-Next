@@ -4,7 +4,7 @@ import React from "react";
 const AdminPortfolio = () => {
   return (
     <div>
-      <PortfolioPage isAdmin={true} />
+      <PortfolioPage />
     </div>
   );
 };

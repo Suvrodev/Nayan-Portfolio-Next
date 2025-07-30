@@ -1,3 +1,4 @@
+import { getIsAdminFromHeaders } from "@/app/actions/getIsAdminFromHeaders";
 import LinkBox from "@/components/LinkBox/LinkBox";
 import Consult from "@/components/modules/Service/Consult/Consult";
 import PricingList from "@/components/modules/Service/PricingList/PricingList";
@@ -6,13 +7,12 @@ import { createTitle } from "@/components/utils/functions/metadata";
 
 export const metadata = createTitle("Service");
 
-interface IProps {
-  isAdmin: boolean;
-}
-
-const ServicePage = async ({ isAdmin }: IProps) => {
+const ServicePage = async () => {
   // const isAdmin = await getCurrentUserRole();
   // console.log("Is Admin: ", isAdmin);
+
+  const isAdmin = await getIsAdminFromHeaders();
+
   return (
     <div className="overflow-hidden">
       <div className="pageMargin">

@@ -1,3 +1,4 @@
+import { getIsAdminFromHeaders } from "@/app/actions/getIsAdminFromHeaders";
 import LinkBox from "@/components/LinkBox/LinkBox";
 import BlogCard from "@/components/modules/Blog/BlogCard/BlogCard";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
@@ -14,13 +15,16 @@ const BlogPage = async () => {
 
   const res = await fetch(`${baseApiFromEnv()}/blog`, {
     next: {
-      revalidate: 5,
+      revalidate: 30,
       tags: ["blog"],
     },
   });
   const blogsData = await res.json();
   const blogs = await blogsData?.data;
   //   console.log("object", blogs);
+
+  const isAdmin = await getIsAdminFromHeaders();
+
   return (
     <div>
       <div className="m-5 md:m-16">
@@ -32,7 +36,7 @@ const BlogPage = async () => {
 
         <div className="my-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {blogs?.map((blog: TBlog, idx: number) => (
-            <BlogCard key={idx} blog={blog} isAdmin={true} />
+            <BlogCard key={idx} blog={blog} isAdmin={isAdmin} />
           ))}
         </div>
       </div>
