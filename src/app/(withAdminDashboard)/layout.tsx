@@ -38,16 +38,18 @@ const AdminLayout = ({ children }: IProps) => {
 
     <div>
       {/* Mobile Header */}
-      <LayoutMobileHeader />
+      <div className="sticky top-0 z-50">
+        <LayoutMobileHeader />
+      </div>
       <div className="relative md:flex">
         <div
-          className={`w-full md:w-[20%] z-10 absolute ${
+          className={`w-full md:w-[20%] z-10  ${
             isOpen ? "left-0" : "-left-[400px]"
-          }  md:static bg-green-400  transition-all duration-300 ease-in-out`}
+          } fixed  md:static bg-transparent  top-10 h-screen  transition-all duration-300 ease-in-out`}
           onClick={() => dispatch(setDrawer(false))}
         >
           <div
-            className="w-[75%] md:w-full"
+            className="w-[75%] md:w-full md:static"
             onClick={(e) => e.stopPropagation()}
           >
             <AdminDashboard />
@@ -55,7 +57,6 @@ const AdminLayout = ({ children }: IProps) => {
         </div>
         {/* <div className="w-full md:w-[80%] bg-[#333333]"> */}
         <div className="w-full md:w-[80%] ">
-          <div className="md:hidden sticky top-0">{/* <MobileHeader /> */}</div>
           {children}
 
           <div className="bg-[#222222] p-20">
