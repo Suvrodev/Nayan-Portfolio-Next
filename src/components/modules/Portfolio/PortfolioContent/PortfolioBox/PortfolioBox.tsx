@@ -1,7 +1,13 @@
 "use client";
+import { handleLoad } from "@/app/actions/handleLoad";
+import DeleteButton from "@/components/modules/shared/Buttons/DeleteButton/DeleteButton";
+import UpdateButton from "@/components/modules/shared/Buttons/UpdateButton/UpdateButton";
+import { sonarId } from "@/components/utils/functions/sonarId";
+import { useDeletePortfolioMutation } from "@/redux/features/PortfolioApi/portfolioApi";
 import { TPortfolio } from "@/types/globalTypes";
 import Image from "next/image";
 import Link from "next/link";
+import { toast } from "sonner";
 // import { toast } from "sonner";
 
 interface IPortfolioBoxProps {
@@ -9,31 +15,32 @@ interface IPortfolioBoxProps {
   isAdmin?: boolean;
 }
 
-const PortfolioBox = ({ portfolio }: IPortfolioBoxProps) => {
-  // const [deletePortfolio] = useDeletePortfolioMutation();
+const PortfolioBox = ({ portfolio, isAdmin }: IPortfolioBoxProps) => {
+  const [deletePortfolio] = useDeletePortfolioMutation();
 
-  // const handleDelete = async (id: string) => {
-  //   console.log("Delete Clicked ID:", id);
-  //   toast.loading("Deleting", { id: sonarId });
-  //   const res = await deletePortfolio(id).unwrap();
-  //   console.log("Res: ", res);
-  //   if (res?.success) {
-  //     toast.success(res?.message, { id: sonarId });
-  //   }
-  // };
+  const handleDelete = async (id: string) => {
+    console.log("Delete Clicked ID:", id);
+    toast.loading("Deleting", { id: sonarId });
+    const res = await deletePortfolio(id).unwrap();
+    console.log("Res: ", res);
+    if (res?.success) {
+      toast.success(res?.message, { id: sonarId });
+      await handleLoad();
+    }
+  };
 
   return (
     <div className="relative group rounded-[12px] shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transition duration-300 flex flex-col primaryBox">
       {/* Admin Buttons */}
-      {/* {isAdmin && (
+      {isAdmin && (
         <div className="absolute top-2 right-2 z-10 flex items-center gap-x-2">
-          <Link to={`update-portfolio/${portfolio?._id}`}>
+          <Link href={`update-portfolio/${portfolio?._id}`}>
             {" "}
             <UpdateButton />
           </Link>
           <DeleteButton onClick={() => handleDelete(portfolio?._id)} />
         </div>
-      )} */}
+      )}
 
       {/* Image Box */}
       <div className="relative overflow-hidden h-60">

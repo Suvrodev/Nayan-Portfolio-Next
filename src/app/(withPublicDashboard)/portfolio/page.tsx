@@ -5,7 +5,10 @@ import { createTitle } from "@/components/utils/functions/metadata";
 
 export const metadata = createTitle("Portfolio");
 
-const PortfolioPage = async () => {
+interface IProps {
+  isAdmin: boolean;
+}
+const PortfolioPage = async ({ isAdmin }: IProps) => {
   const res = await fetch(`${baseApiFromEnv()}/portfolioo`, {
     next: {
       revalidate: 30,
@@ -25,7 +28,7 @@ const PortfolioPage = async () => {
         <h1 className="text-4xl font-bold text-white">Creative Portfolio</h1>
 
         <div className="my-20">
-          <PortfolioContent portfolios={portfolios} />
+          <PortfolioContent portfolios={portfolios} isAdmin={isAdmin} />
         </div>
       </div>
     </div>

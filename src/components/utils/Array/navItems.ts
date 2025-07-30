@@ -46,14 +46,14 @@ export const adminNavItems = [
   {
     label: "Gigs Manager",
     children: [
-      { path: "/admin-dashboard/gigs/add-gigs", label: "Add Gig" },
+      { path: "/admin-dashboard/add-gigs", label: "Add Gig" },
       { path: "/admin-dashboard/admin-gigs", label: "Gigs" },
     ],
   },
   {
     label: "Blog Manager",
     children: [
-      { path: "/admin-dashboard/blog/add-blog", label: "Add Blog" },
+      { path: "/admin-dashboard/add-blog", label: "Add Blog" },
       { path: "/admin-dashboard/admin-blog", label: "Blog" },
     ],
   },

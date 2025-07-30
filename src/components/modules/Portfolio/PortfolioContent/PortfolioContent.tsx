@@ -6,9 +6,10 @@ import { TPortfolio } from "@/types/globalTypes";
 
 interface IProps {
   portfolios: TPortfolio[];
+  isAdmin: boolean;
 }
 
-const PortfolioContent = ({ portfolios }: IProps) => {
+const PortfolioContent = ({ portfolios, isAdmin }: IProps) => {
   const { portfolioCategory } = useAppSelector(
     (state) => state?.portfolioCategories
   );
@@ -28,7 +29,7 @@ const PortfolioContent = ({ portfolios }: IProps) => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {filteredPortfolios?.map((item: TPortfolio, idx: number) => (
-          <PortfolioBox key={idx} portfolio={item} />
+          <PortfolioBox key={idx} portfolio={item} isAdmin={isAdmin} />
         ))}
       </div>
     </div>
