@@ -7,6 +7,7 @@ import { sonarId } from "@/components/utils/functions/sonarId";
 import Link from "next/link";
 import UpdateButton from "@/components/modules/shared/Buttons/UpdateButton/UpdateButton";
 import DeleteButton from "@/components/modules/shared/Buttons/DeleteButton/DeleteButton";
+import { handleLoad } from "@/app/actions/handleLoad";
 
 interface IProps {
   service: TService;
@@ -27,6 +28,7 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
     console.log("Res: ", res);
     if (res?.success) {
       toast.success(res?.message, { id: sonarId });
+      await handleLoad();
     }
   };
 
