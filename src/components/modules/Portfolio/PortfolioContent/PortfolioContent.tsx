@@ -14,7 +14,7 @@ const PortfolioContent = ({ portfolios, isAdmin }: IProps) => {
     (state) => state?.portfolioCategories
   );
 
-  console.log("Portfolios: ", portfolios);
+  // console.log("Portfolios: ", portfolios);
   const filteredPortfolios =
     portfolioCategory === "All"
       ? portfolios

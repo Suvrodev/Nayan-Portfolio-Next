@@ -1,14 +1,13 @@
+import { getIsAdminFromHeaders } from "@/app/actions/getIsAdminFromHeaders";
 import LinkBox from "@/components/LinkBox/LinkBox";
 import PortfolioContent from "@/components/modules/Portfolio/PortfolioContent/PortfolioContent";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { createTitle } from "@/components/utils/functions/metadata";
+import { headers } from "next/headers";
 
 export const metadata = createTitle("Portfolio");
 
-interface IProps {
-  isAdmin: boolean;
-}
-const PortfolioPage = async ({ isAdmin }: IProps) => {
+const PortfolioPage = async () => {
   const res = await fetch(`${baseApiFromEnv()}/portfolioo`, {
     next: {
       revalidate: 30,
@@ -17,6 +16,9 @@ const PortfolioPage = async ({ isAdmin }: IProps) => {
   const portfolioData = await res.json();
   const portfolios = portfolioData.data;
   //   console.log("portfolio: ", portfolios);
+
+  const isAdmin = await getIsAdminFromHeaders();
+  console.log("is Admin: ", isAdmin);
 
   return (
     <div>
@@ -28,7 +30,7 @@ const PortfolioPage = async ({ isAdmin }: IProps) => {
         <h1 className="text-4xl font-bold text-white">Creative Portfolio</h1>
 
         <div className="my-20">
-          <PortfolioContent portfolios={portfolios} isAdmin={isAdmin} />
+          <PortfolioContent portfolios={portfolios} isAdmin={true} />
         </div>
       </div>
     </div>
