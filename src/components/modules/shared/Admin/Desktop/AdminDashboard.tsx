@@ -2,15 +2,15 @@
 // import logoImage from "../../../../assets/HeaderImage/Logo.png";
 import logoImage from "@/app/assets/HeaderImage/Logo.png";
 import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaWhatsapp,
-  FaDribbble,
-  FaBehance,
-  FaGithub,
-  FaLinkedin,
-  FaPinterest,
+  // FaFacebookF,
+  // FaInstagram,
+  // FaTwitter,
+  // FaWhatsapp,
+  // FaDribbble,
+  // FaBehance,
+  // FaGithub,
+  // FaLinkedin,
+  // FaPinterest,
   FaChevronDown,
 } from "react-icons/fa";
 
@@ -20,19 +20,19 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { adminNavItems } from "@/components/utils/Array/navItems";
-import goLink from "@/components/utils/functions/goLink";
+// import goLink from "@/components/utils/functions/goLink";
 
-const socialLinks = [
-  { icon: <FaFacebookF />, url: "https://www.facebook.com/sarkarnayans" },
-  { icon: <FaTwitter />, url: "https://twitter.com/sarkarnayans" },
-  { icon: <FaInstagram />, url: "https://www.instagram.com/sarkarnayans/" },
-  { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/sarkarnayans/" },
-  { icon: <FaGithub />, url: "https://github.com/nayansarkars" },
-  { icon: <FaBehance />, url: "https://www.behance.net/sarkarnayans" },
-  { icon: <FaDribbble />, url: "https://dribbble.com/sarkarnayans" },
-  { icon: <FaPinterest />, url: "https://www.pinterest.com/sarkarnayans" },
-  { icon: <FaWhatsapp />, url: "https://wa.me/message/V3FSQYVKY6HQL1" },
-];
+// const socialLinks = [
+//   { icon: <FaFacebookF />, url: "https://www.facebook.com/sarkarnayans" },
+//   { icon: <FaTwitter />, url: "https://twitter.com/sarkarnayans" },
+//   { icon: <FaInstagram />, url: "https://www.instagram.com/sarkarnayans/" },
+//   { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/sarkarnayans/" },
+//   { icon: <FaGithub />, url: "https://github.com/nayansarkars" },
+//   { icon: <FaBehance />, url: "https://www.behance.net/sarkarnayans" },
+//   { icon: <FaDribbble />, url: "https://dribbble.com/sarkarnayans" },
+//   { icon: <FaPinterest />, url: "https://www.pinterest.com/sarkarnayans" },
+//   { icon: <FaWhatsapp />, url: "https://wa.me/message/V3FSQYVKY6HQL1" },
+// ];
 
 const AdminDashboard = () => {
   const location = usePathname();
@@ -120,7 +120,7 @@ const AdminDashboard = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex gap-4 items-center mt-8">
+      {/* <div className="flex gap-4 items-center mt-8">
         {socialLinks.map((item, index) => (
           <Link
             key={index}
@@ -131,24 +131,24 @@ const AdminDashboard = () => {
             {item.icon}
           </Link>
         ))}
-      </div>
+      </div> */}
 
       {/* Contact Info */}
-      <div className="pt-10 text-[rgb(204,204,204)] text-[15px]">
+      {/* <div className="pt-10 text-[rgb(204,204,204)] text-[15px]">
         <p>
           <span className="font-bold">Email:</span> me@sarkarnayan.com
         </p>
         <p>
           <span className="font-bold">Phone:</span> +88 01710847819
         </p>
-      </div>
+      </div> */}
 
       {/* Footer */}
-      <div className="mt-5 text-[#cccccc] text-[15px]">
+      {/* <div className="mt-5 text-[#cccccc] text-[15px]">
         <p>
           Copyright ©2024 Sarkar Nayan <br /> All Rights Reserved.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
