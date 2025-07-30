@@ -37,7 +37,7 @@ export const adminNavItems = [
     label: "Portfolio Manager",
     children: [
       {
-        path: "/admin-dashboard/portfolio/add-portfolio",
+        path: "/admin-dashboard/add-portfolio",
         label: "Add Portfolio",
       },
       { path: "/admin-dashboard/admin-portfolio", label: "Portfolio" },

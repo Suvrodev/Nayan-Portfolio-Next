@@ -2,15 +2,59 @@ import { baseApi } from "@/redux/apis/baseApi";
 
 const portfolioApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
+    addPortfolio: builder.mutation({
+      query: (data) => {
+        return {
+          url: "/portfolioo",
+          method: "POST",
+          body: data,
+        };
+      },
+      invalidatesTags: ["service"],
+    }),
     getAllPortfolio: builder.query({
       query: () => {
-        console.log("Get All Portfolio");
         return {
           url: "/portfolioo",
         };
       },
+      providesTags: ["portfolio"],
+    }),
+    getSinglePortfolio: builder.query({
+      query: (id) => {
+        return {
+          url: `/portfolioo/${id}`,
+        };
+      },
+      providesTags: ["portfolio"],
+    }),
+    deletePortfolio: builder.mutation({
+      query: (_id) => {
+        return {
+          url: `/portfolioo/${_id}`,
+          method: "DELETE",
+        };
+      },
+      invalidatesTags: ["portfolio"],
+    }),
+    updatePortfolio: builder.mutation({
+      query: ({ _id, updatedData }) => {
+        console.log("Update portfolio data: ", updatedData);
+        return {
+          url: `/portfolioo/${_id}`,
+          method: "PATCH",
+          body: updatedData,
+        };
+      },
+      invalidatesTags: ["portfolio"],
     }),
   }),
 });
 
-export const { useGetAllPortfolioQuery } = portfolioApi;
+export const {
+  useAddPortfolioMutation,
+  useGetAllPortfolioQuery,
+  useGetSinglePortfolioQuery,
+  useDeletePortfolioMutation,
+  useUpdatePortfolioMutation,
+} = portfolioApi;
