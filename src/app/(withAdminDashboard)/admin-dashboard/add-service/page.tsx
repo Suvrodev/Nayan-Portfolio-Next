@@ -1,5 +1,6 @@
 "use client";
 
+import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/convertToBase64/compressAndConvertToBase64";
 import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
@@ -50,6 +51,7 @@ const AdminAddService = () => {
     console.log("Res: ", res);
     if (res?.success) {
       toast.success("Service Added Successfully", { id: sonarId });
+      await handleLoad();
     }
   };
 
