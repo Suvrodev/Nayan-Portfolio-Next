@@ -63,7 +63,7 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
         {/* Update and Delete */}
         {isAdmin && (
           <div className="absolute top-2 right-2 z-10 flex items-center gap-x-2">
-            <Link href={`Update-Service/${_id}`}>
+            <Link href={`update-service/${_id}`}>
               <UpdateButton />
             </Link>
             <DeleteButton onClick={() => handleDelete(_id)} />
