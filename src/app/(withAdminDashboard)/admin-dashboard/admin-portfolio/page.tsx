@@ -1,10 +1,10 @@
-import PortfolioPage from "@/app/(withPublicDashboard)/portfolio/page";
+import Portfolio from "@/components/modules/Portfolio/Portfolio";
 import React from "react";
 
 const AdminPortfolio = () => {
   return (
     <div>
-      <PortfolioPage />
+      <Portfolio isAdmin={true} />
     </div>
   );
 };

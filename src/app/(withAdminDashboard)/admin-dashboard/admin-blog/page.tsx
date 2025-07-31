@@ -1,9 +1,9 @@
-import BlogPage from "@/app/(withPublicDashboard)/blog/page";
+import Blog from "@/components/modules/Blog/Blog";
 
 const AdminBlog = () => {
   return (
     <div>
-      <BlogPage />
+      <Blog isAdmin={true} />
     </div>
   );
 };

@@ -1,9 +1,9 @@
-import ServicePage from "@/app/(withPublicDashboard)/service/page";
+import Service from "@/components/modules/Service/Service";
 
 const AdminServicePage = () => {
   return (
     <div>
-      <ServicePage />
+      <Service isAdmin={true} />
     </div>
   );
 };
