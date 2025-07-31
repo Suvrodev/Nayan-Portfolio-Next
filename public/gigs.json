@@ -1,56 +1,65 @@
-[
-  {
-    "id": 1,
-    "title": "Professional Business Card",
-    "image": "https://i.ibb.co/3fvpct7/business-card-9.jpg",
-    "basic": 20,
-    "standard": 40,
-    "premium": 60,
-    "link": "https://www.fiverr.com/s/38e5yKm"
+{
+  "_id": "gig-001",
+  "title": "I will professional modern minimalist business card design",
+  "seller": {
+    "name": "Sarkar Nayan",
+    "rating": 4.9,
+    "reviews": 60
   },
-  {
-    "id": 2,
-    "title": "Glitter Business Card",
-    "image": "https://i.ibb.co/rkj95DP/business-card.png",
-    "basic": 20,
-    "standard": 40,
-    "premium": 60,
-    "link": "https://www.fiverr.com/s/38e5yKm"
-  },
-  {
-    "id": 3,
-    "title": "Logo Design",
-    "image": "https://i.ibb.co/G0HHPFj/logo.jpg",
-    "basic": 35,
-    "standard": 70,
-    "premium": 140,
-    "link": "https://www.fiverr.com/s/kL8jb0A"
-  },
-  {
-    "id": 4,
-    "title": "Business Flyer Design",
-    "image": "https://i.ibb.co/0K7966x/Flyer-Design.jpg",
-    "basic": 25,
-    "standard": 50,
-    "premium": 85,
-    "link": "https://www.fiverr.com/s/0bEV55L"
-  },
-  {
-    "id": 5,
-    "title": "Social Media Post Design",
-    "image": "https://i.ibb.co/NK5hYLF/SMM-Post-Design.jpg",
-    "basic": 20,
-    "standard": 40,
-    "premium": 80,
-    "link": "https://www.fiverr.com/s/0bEV55L"
-  },
-  {
-    "id": 6,
-    "title": "T-Shirt Design",
-    "image": "https://i.ibb.co/q5y50Dw/T-shirt-Design.jpg",
-    "basic": 30,
-    "standard": 60,
-    "premium": 120,
-    "link": "https://www.fiverr.com/sarkar_nayan"
-  }
-]
+  "about": "This is Sarkar. Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!",
+  "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
+  "images": [
+    "https://res.cloudinary.com/dixfkupof/image/upload/v1739288306/ijmsqfcti9idvvcmupxs.jpg",
+    "https://res.cloudinary.com/dixfkupof/image/upload/v1739556522/xjjs90iky239kico1rvb.png",
+    "https://res.cloudinary.com/dixfkupof/image/upload/v1739556606/fm7z3wvsvwnld3nt2t5i.jpg",
+    "https://res.cloudinary.com/dixfkupof/image/upload/v1739288250/gyb1dui7myym0h1kuhwr.jpg",
+    "https://res.cloudinary.com/dixfkupof/image/upload/v1739288210/ojmmsdozlu4y5jaba83b.jpg",
+    "https://res.cloudinary.com/dixfkupof/image/upload/v1739231362/n08mikbdb1jta0m3vszs.jpg"
+  ],
+  "packages": [
+    {
+      "name": "Basic",
+      "price": 20,
+      "concepts": 2,
+      "revisions": 3,
+      "delivery": "2 days",
+      "printReady": true,
+      "sourceFile": false,
+      "doubleSided": true,
+      "extraDelivery": { "1 day": 10 },
+      "features": ["Files Ready for Print", "Front & back design"]
+    },
+    {
+      "name": "Standard",
+      "price": 40,
+      "concepts": 3,
+      "revisions": 5,
+      "delivery": "2 days",
+      "printReady": true,
+      "sourceFile": true,
+      "doubleSided": true,
+      "extraDelivery": { "1 day": 15 },
+      "features": [
+        "Files Ready for Print",
+        "Include Source File",
+        "Front & back design"
+      ]
+    },
+    {
+      "name": "Premium",
+      "price": 60,
+      "concepts": 4,
+      "revisions": 7,
+      "delivery": "4 days",
+      "printReady": true,
+      "sourceFile": true,
+      "doubleSided": true,
+      "extraDelivery": { "2 days": 20 },
+      "features": [
+        "Files Ready for Print",
+        "Include Source File",
+        "Front & back design"
+      ]
+    }
+  ]
+}

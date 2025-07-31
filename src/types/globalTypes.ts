@@ -63,3 +63,52 @@ export type TAdmin = {
   phone: string;
   image: string;
 };
+
+export interface TGig {
+  name: string;
+  price: number;
+  concepts: number;
+  revisions: number;
+  delivery: string;
+  features: string[];
+  sourceFile: boolean;
+  extraDelivery: Record<string, number>;
+}
+
+interface GigPackage {
+  name: string;
+  price: number;
+  concepts: number;
+  revisions: number;
+  delivery: string;
+  features: string[];
+  sourceFile: boolean;
+  extraDelivery: Record<string, number>;
+}
+
+export interface TGig {
+  title: string;
+  seller: {
+    name: string;
+    rating: number;
+    reviews: number;
+  };
+  about: string;
+  experience: string;
+  services: string[];
+  packages: GigPackage[];
+}
+
+export interface GigData {
+  _id: string;
+  title: string;
+  seller: {
+    name: string;
+    rating: number;
+    reviews: number;
+  };
+  about: string;
+  images: string[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  packages: any[];
+}
