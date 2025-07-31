@@ -34,7 +34,7 @@ const ServiceDetailPage = async ({ params }: IProps) => {
           alt={service.title}
           width={650}
           height={450}
-          className="max-w-full mx-auto"
+          className="max-w-full mx-auto grayScale"
         />
         <h1 className="text-3xl font-bold text-white mb-4">{service?.title}</h1>
         {/* <p className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">

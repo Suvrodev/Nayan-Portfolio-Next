@@ -63,7 +63,7 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
           //   width={640}
           //   height={640}
           fill
-          className="object-cover transform hover:scale-105 transition-transform duration-500"
+          className="object-cover transform hover:scale-105 transition-transform duration-500 grayScale"
         />
       </Link>
 

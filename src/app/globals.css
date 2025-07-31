@@ -140,6 +140,23 @@
 }
 
 /**********************************************/
+/*************************************************************************************/
+/*****************************************My Css**************************************/
+/**********************************************/
+img {
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+img:hover {
+  filter: grayscale(0);
+}
+.grayScale {
+  filter: grayscale(1);
+  transition: 0.3s;
+}
+.grayScale:hover {
+  filter: grayscale(0);
+}
 .primaryBox {
   background-color: #292929;
   border: 1px solid #525252;
