@@ -38,7 +38,7 @@ const GigDetail = ({ id }: IProps) => {
               alt="Sarkar Nayan"
               width={30}
               height={30}
-              className="rounded-full"
+              className="rounded-full object-contain"
             />
             <p className="text-sm  ">
               By <strong>{gig.seller.name}</strong> | ⭐ {gig.seller.rating} (
