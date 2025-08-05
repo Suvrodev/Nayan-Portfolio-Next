@@ -45,8 +45,7 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
                 </p>
 
                 <p className="text-[14px] mt-1 text-gray-500">
-                  {pkg.revisions} Revisions <br />
-                  {pkg.formate}
+                  {pkg.revisions} Revisions +{pkg.formate}
                   {pkg.features
                     ?.filter((f: any) => typeof f !== "string" && f.isEnable)
                     .map((f: any) => `+ ${f.feature}`)

@@ -22,7 +22,7 @@
       "price": 20,
       "concepts": 2,
       "revisions": 3,
-      "delivery": "2 days",
+      "delivery": 2,
       "printReady": true,
       "sourceFile": false,
       "doubleSided": true,
