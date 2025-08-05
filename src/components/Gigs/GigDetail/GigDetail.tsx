@@ -3,9 +3,9 @@ import nayanImage from "@/app/assets/Nayan.webp";
 import { GigData } from "@/types/globalTypes";
 import { useEffect, useState } from "react";
 import ImageCarousel from "./ImageCarousel";
-import PackageTabs from "./PackageTabs";
 import Image from "next/image";
-import PackageTableFx from "./PackageTableFx";
+import PackageTabs from "./GigTab/PackageTabs";
+import PackageTableFx from "./GigTable/PackageTableFx";
 
 const GigDetail = () => {
   const [gig, setGig] = useState<GigData | null>(null);
@@ -45,7 +45,7 @@ const GigDetail = () => {
             ></div>
           </div>
         </div>
-        <div className="w-full md:w-2/5">
+        <div className="w-full md:w-2/5  sticky top-0 self-start">
           <PackageTabs packages={gig.packages} />
         </div>
       </div>
