@@ -13,25 +13,26 @@ const PackageTabs = ({ packages }: { packages: any[] }) => {
     }`;
 
   return (
-    <div className="mt-4 border rounded-md shadow-sm">
-      <div className="flex justify-between px-4 pt-4">
-        {packages.map((pkg) => (
-          <button
-            key={pkg.name}
-            className={tabStyle(pkg.name)}
-            onClick={() => setSelected(pkg.name)}
-          >
-            {pkg.name}
-          </button>
-        ))}
-      </div>
-      <div className="p-4">
-        {packages.map(
-          (pkg) =>
-            pkg.name === selected && <PackageCard key={pkg.name} data={pkg} />
-        )}
-      </div>
-    </div>
+    // <div className="mt-4 border rounded-md shadow-sm">
+    //   <div className="flex justify-between px-4 pt-4">
+    //     {packages.map((pkg) => (
+    //       <button
+    //         key={pkg.name}
+    //         className={tabStyle(pkg.name)}
+    //         onClick={() => setSelected(pkg.name)}
+    //       >
+    //         {pkg.name}
+    //       </button>
+    //     ))}
+    //   </div>
+    //   <div className="p-4">
+    //     {packages.map(
+    //       (pkg) =>
+    //         pkg.name === selected && <PackageCard key={pkg.name} data={pkg} />
+    //     )}
+    //   </div>
+    // </div>
+    <div></div>
   );
 };
 
