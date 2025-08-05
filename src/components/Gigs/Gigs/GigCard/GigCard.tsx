@@ -1,0 +1,28 @@
+import { TGig } from "@/types/globalTypes";
+import Image from "next/image";
+import StarIcon from "@mui/icons-material/Star";
+import Link from "next/link";
+interface IProps {
+  gig: TGig;
+}
+
+const GigCard = ({ gig }: IProps) => {
+  return (
+    <Link href={`gigs/${gig._id}`}>
+      <div>
+        <Image src={gig.images[0]} alt={gig.title} width={450} height={350} />
+        <h1 className="hover:underline">{gig.title}</h1>
+        <div className="flex items-center gap-x-2 my-4">
+          <StarIcon />
+          <span>{gig.seller.rating}</span>
+        </div>
+        <div className="flex items-center gap-x-2 font-bold">
+          <span>From</span>
+          <span> ${gig.packages[0]?.price}</span>
+        </div>
+      </div>
+    </Link>
+  );
+};
+
+export default GigCard;

@@ -1,4 +1,4 @@
-import GigDetail from "@/components/Gigs/GigDetail/GigDetail";
+import Gigs from "@/components/Gigs/Gigs/Gigs";
 import React from "react";
 
 const GigsPage = () => {
@@ -12,7 +12,8 @@ const GigsPage = () => {
           </p>
         </div>
       </div> */}
-      <GigDetail />
+      <Gigs />
+      {/* <GigDetail /> */}
     </div>
   );
 };

@@ -64,42 +64,7 @@ export type TAdmin = {
   image: string;
 };
 
-export interface TGig {
-  name: string;
-  price: number;
-  concepts: number;
-  revisions: number;
-  delivery: string;
-  features: string[];
-  sourceFile: boolean;
-  extraDelivery: Record<string, number>;
-}
-
-interface GigPackage {
-  name: string;
-  price: number;
-  concepts: number;
-  revisions: number;
-  delivery: string;
-  features: string[];
-  sourceFile: boolean;
-  extraDelivery: Record<string, number>;
-}
-
-export interface TGig {
-  title: string;
-  seller: {
-    name: string;
-    rating: number;
-    reviews: number;
-  };
-  about: string;
-  experience: string;
-  services: string[];
-  packages: GigPackage[];
-}
-
-export interface GigData {
+export type TGig = {
   _id: string;
   title: string;
   seller: {
@@ -108,7 +73,28 @@ export interface GigData {
     reviews: number;
   };
   about: string;
+  experience: string;
   images: string[];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  packages: any[];
-}
+  packages: TGigPackage[];
+};
+
+export type TGigPackage = {
+  name: "Basic" | "Standard" | "Premium";
+  price: number;
+  concepts: number;
+  revisions: number;
+  delivery: number | string;
+  printReady: boolean;
+  sourceFile: boolean;
+  doubleSided: boolean;
+  extraDelivery: Record<string, number>; // e.g., { "1 day": 10 }
+  concept: string;
+  formate: string;
+  features: TGigFeature[];
+};
+
+export type TGigFeature = {
+  feature: string;
+  name: string;
+  isEnable: boolean;
+};

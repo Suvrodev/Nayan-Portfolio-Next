@@ -1,20 +1,30 @@
 "use client";
 import nayanImage from "@/app/assets/Nayan.webp";
-import { GigData } from "@/types/globalTypes";
 import { useEffect, useState } from "react";
 import ImageCarousel from "./ImageCarousel";
 import Image from "next/image";
 import PackageTabs from "./GigTab/PackageTabs";
 import PackageTableFx from "./GigTable/PackageTableFx";
+import { TGig } from "@/types/globalTypes";
+import First from "./AboutGig/First";
 
-const GigDetail = () => {
-  const [gig, setGig] = useState<GigData | null>(null);
+interface IProps {
+  id: string;
+}
+
+const GigDetail = ({ id }: IProps) => {
+  const [gig, setGig] = useState<TGig | null>(null);
 
   useEffect(() => {
     fetch("/gigs.json")
       .then((res) => res.json())
-      .then((data) => setGig(data));
-  }, []);
+      .then((data) => {
+        console.log("Data: ", data);
+        setGig((data as TGig[]).find((d) => d._id === id) || null);
+      });
+  }, [id]);
+
+  console.log("Gig: ", gig);
 
   if (!gig) return <div className="text-center py-10">Loading...</div>;
   return (
@@ -39,10 +49,11 @@ const GigDetail = () => {
           <div>
             <h1 className="font-bold text-2xl mt-8 mb-4">About This Gig</h1>
             {/* <p className="mb-4">{gig.about}</p> */}
-            <div
+            {/* <div
               className="prose prose-invert max-w-none text-gray-300 leading-relaxed text-lg"
               dangerouslySetInnerHTML={{ __html: gig.about }}
-            ></div>
+            ></div> */}
+            <First />
           </div>
         </div>
         <div className="w-full md:w-2/5  sticky top-0 self-start">

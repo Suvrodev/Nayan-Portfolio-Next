@@ -128,7 +128,7 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
             ))}
           </tr> */}
           <tr className="">
-            <td className="p-3 border font-semibold">Total</td>
+            <td className="p-3 border font-semibold  align-top">Total</td>
             {packages.map((pkg) => (
               <td key={pkg.name} className="p-3 border text-center font-medium">
                 <div className="flex flex-col justify-center items-center gap-y-4">

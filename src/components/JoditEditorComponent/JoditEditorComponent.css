@@ -1,5 +1,4 @@
-/* Force black background and white text */
-.editorBg .jodit-wysiwyg {
+Force black background and white text .editorBg .jodit-wysiwyg {
   background-color: blue !important;
   color: #fff !important;
 }
