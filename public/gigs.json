@@ -32,14 +32,17 @@
       "features": [
         {
           "feature": "Print-Ready",
+          "name": "Files Ready for Print",
           "isEnable": true
         },
         {
           "feature": "Source File",
+          "name": "Include Source File",
           "isEnable": false
         },
         {
           "feature": "Double-sided",
+          "name": "Front & back design",
           "isEnable": true
         }
       ]
@@ -59,14 +62,17 @@
       "features": [
         {
           "feature": "Print-Ready",
+          "name": "Files Ready for Print",
           "isEnable": true
         },
         {
           "feature": "Source File",
+          "name": "Include Source File",
           "isEnable": false
         },
         {
           "feature": "Double-sided",
+          "name": "Front & back design",
           "isEnable": true
         }
       ]
@@ -86,14 +92,17 @@
       "features": [
         {
           "feature": "Print-Ready",
+          "name": "Files Ready for Print",
           "isEnable": true
         },
         {
           "feature": "Source File",
+          "name": "Include Source File",
           "isEnable": true
         },
         {
           "feature": "Double-sided",
+          "name": "Front & back design",
           "isEnable": true
         }
       ]

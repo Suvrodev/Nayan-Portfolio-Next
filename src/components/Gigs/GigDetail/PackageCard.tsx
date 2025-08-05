@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Clock3 } from "lucide-react";
+import { Clock3, Check } from "lucide-react";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
 const PackageCard = ({ data }: { data: any }) => {
   return (
@@ -33,12 +33,32 @@ const PackageCard = ({ data }: { data: any }) => {
       </div>
 
       {/* Enabled Features */}
-      <ul className="list-disc ml-6 mt-2 text-sm text-white/90">
+      {/* <ul className="list-disc ml-6 mt-2 text-sm text-white/90">
         {data.features
           ?.filter((f: any) => f.isEnable)
           .map((f: any, i: number) => (
             <li key={i}>{f.feature}</li>
           ))}
+      </ul> */}
+      {/* All Features with check icon */}
+      <ul className="mt-3 space-y-2 text-sm">
+        <li className="flex items-center gap-x-2 ">
+          <Check size={18} />
+          <p className="flex gap-x-2">
+            <span> {data.concepts}</span> <span>concepts</span>
+          </p>
+        </li>
+        {data.features?.map((f: any, i: number) => (
+          <li
+            key={i}
+            className={`flex items-center gap-2 ${
+              f.isEnable ? "text-white" : "text-white opacity-50"
+            }`}
+          >
+            <Check size={18} />
+            {f.name}
+          </li>
+        ))}
       </ul>
 
       {/* CTA button */}
