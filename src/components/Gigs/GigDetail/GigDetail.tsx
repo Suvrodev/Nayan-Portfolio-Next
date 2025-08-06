@@ -7,6 +7,7 @@ import PackageTabs from "./GigTab/PackageTabs";
 import PackageTableFx from "./GigTable/PackageTableFx";
 import { TGig } from "@/types/globalTypes";
 import First from "./AboutGig/First";
+import GetToKnow from "../GetToKnow/GetToKnow";
 
 interface IProps {
   id: string;
@@ -48,12 +49,10 @@ const GigDetail = ({ id }: IProps) => {
           <ImageCarousel images={gig.images} />
           <div>
             <h1 className="font-bold text-2xl mt-8 mb-4">About This Gig</h1>
-            {/* <p className="mb-4">{gig.about}</p> */}
-            {/* <div
-              className="prose prose-invert max-w-none text-gray-300 leading-relaxed text-lg"
-              dangerouslySetInnerHTML={{ __html: gig.about }}
-            ></div> */}
             <First />
+          </div>
+          <div>
+            <GetToKnow />
           </div>
         </div>
         <div className="w-full md:w-2/5  sticky top-0 self-start">
