@@ -7,9 +7,9 @@ const PackageTabs = ({ packages }: { packages: any[] }) => {
   const [selected, setSelected] = useState("Basic");
 
   const tabStyle = (name: string) =>
-    `px-4 py-2 text-sm font-medium border-b-2 ${
+    ` text-sm font-medium  border-green-500 ${
       selected === name
-        ? "border-white text-white"
+        ? "border-b-2 border-white text-white"
         : "text-gray-400 border-transparent"
     }`;
 
@@ -20,7 +20,7 @@ const PackageTabs = ({ packages }: { packages: any[] }) => {
         {packages.map((pkg) => (
           <button
             key={pkg.name}
-            className={tabStyle(pkg.name)}
+            className={` px-4 py-2  border-white ${tabStyle(pkg.name)}`}
             onClick={() => setSelected(pkg.name)}
           >
             {pkg.name}
@@ -33,42 +33,9 @@ const PackageTabs = ({ packages }: { packages: any[] }) => {
         {packages.map(
           (pkg, idx: number) =>
             pkg.name === selected && (
-              // <div key={pkg.name}>
-              //   {/* Title & Price */}
-              //   <div className="mb-4">
-              //     <h3 className="text-xl font-bold text-white">
-              //       {pkg.name} Package
-              //     </h3>
-              //     <p className="text-gray-400">${pkg.price}</p>
-              //   </div>
-
-              //   {/* Concepts */}
-              //   <p className="font-medium text-[13px] text-white/90 mb-2">
-              //     {pkg.concept}
-              //   </p>
-
-              //   {/* Format & Enabled Features */}
-              //   <p className="text-[13px] text-gray-400 leading-relaxed">
-              //     {pkg.formate}
-              //     {pkg.features
-              //       ?.filter((f: any) => typeof f !== "string" && f.isEnable)
-              //       .map((f: any) => ` + ${f.feature}`)
-              //       .join(" ")}
-              //   </p>
-
-              //   {/* Revisions, Delivery */}
-              //   <p className="text-[13px] text-gray-400 mt-2">
-              //     {pkg.revisions} Revisions • {pkg.delivery} Delivery
-              //   </p>
-
-              //   {/* Button */}
-              //   <div className="mt-4">
-              //     <button className="primaryButton w-full">
-              //       Select This Package
-              //     </button>
-              //   </div>
-              // </div>
-              <PackageCard key={idx} data={pkg} />
+              <div key={idx}>
+                <PackageCard key={idx} data={pkg} />
+              </div>
             )
         )}
       </div>

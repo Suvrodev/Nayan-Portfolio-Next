@@ -53,7 +53,7 @@
         "price": 40,
         "concepts": 3,
         "revisions": 5,
-        "delivery": "2 days",
+        "delivery": 2,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -84,7 +84,7 @@
         "price": 60,
         "concepts": 4,
         "revisions": 7,
-        "delivery": "4 days",
+        "delivery": 4,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -118,7 +118,7 @@
     "seller": {
       "name": "Sarkar Nayan",
       "rating": 4.7,
-      "reviews": 60
+      "reviews": 41
     },
     "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
     "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
@@ -167,7 +167,7 @@
         "price": 40,
         "concepts": 3,
         "revisions": 5,
-        "delivery": "2 days",
+        "delivery": 2,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -198,7 +198,7 @@
         "price": 60,
         "concepts": 4,
         "revisions": 7,
-        "delivery": "4 days",
+        "delivery": 4,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -357,7 +357,7 @@
     "packages": [
       {
         "name": "Basic",
-        "price": 20,
+        "price": 10,
         "concepts": 2,
         "revisions": "Unlimited Revisions",
         "delivery": 2,
@@ -388,10 +388,10 @@
       },
       {
         "name": "Standard",
-        "price": 40,
+        "price": 25,
         "concepts": 3,
         "revisions": "Unlimited Revisions",
-        "delivery": "2 days",
+        "delivery": 2,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -408,7 +408,7 @@
           {
             "feature": "Source File",
             "name": "Include Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Double-sided",
@@ -419,10 +419,10 @@
       },
       {
         "name": "Premium",
-        "price": 60,
+        "price": 50,
         "concepts": 4,
         "revisions": "Unlimited Revisions",
-        "delivery": "4 days",
+        "delivery": 4,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -468,7 +468,7 @@
     "packages": [
       {
         "name": "Basic",
-        "price": 20,
+        "price": 35,
         "concepts": 2,
         "revisions": "Unlimited Revisions",
         "delivery": 2,
@@ -482,25 +482,40 @@
 
         "features": [
           {
-            "feature": "Print-Ready",
-            "name": "Files Ready for Print",
+            "feature": "Logo transparency",
+            "name": "Logo transparency",
             "isEnable": true
           },
           {
-            "feature": "Source File",
-            "name": "Include Source File",
+            "feature": "Vector file",
+            "name": "Vector file",
             "isEnable": false
           },
           {
-            "feature": "Double-sided",
-            "name": "Front & back design",
+            "feature": "Printable file",
+            "name": "Printable file",
             "isEnable": true
+          },
+          {
+            "feature": "3D mockup",
+            "name": "Include 3D mockup",
+            "isEnable": true
+          },
+          {
+            "feature": "Source file",
+            "name": "Include source file",
+            "isEnable": false
+          },
+          {
+            "feature": "Social media kit",
+            "name": "Include social media kit",
+            "isEnable": false
           }
         ]
       },
       {
         "name": "Standard",
-        "price": 40,
+        "price": 70,
         "concepts": 3,
         "revisions": "Unlimited Revisions",
         "delivery": "2 days",
@@ -513,25 +528,40 @@
         "tabBody": "3 Business Logos, High-Quality JPG, Transparent PNG, 3D Mockup JPG, Source File, Vector File",
         "features": [
           {
-            "feature": "Print-Ready",
-            "name": "Files Ready for Print",
+            "feature": "Logo transparency",
+            "name": "Logo transparency",
             "isEnable": true
           },
           {
-            "feature": "Source File",
-            "name": "Include Source File",
+            "feature": "Vector file",
+            "name": "Vector file",
+            "isEnable": true
+          },
+          {
+            "feature": "Printable file",
+            "name": "Printable file",
+            "isEnable": true
+          },
+          {
+            "feature": "3D mockup",
+            "name": "Include 3D mockup",
+            "isEnable": true
+          },
+          {
+            "feature": "Source file",
+            "name": "Include source file",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media kit",
+            "name": "Include social media kit",
             "isEnable": false
-          },
-          {
-            "feature": "Double-sided",
-            "name": "Front & back design",
-            "isEnable": true
           }
         ]
       },
       {
         "name": "Premium",
-        "price": 60,
+        "price": 140,
         "concepts": 4,
         "revisions": "Unlimited Revisions",
         "delivery": "4 days",
@@ -544,18 +574,33 @@
         "tabBody": "4 Business Logos, High-Quality, PDF, JPG, PNG, Source File Ai, Vector EPS Editable",
         "features": [
           {
-            "feature": "Print-Ready",
-            "name": "Files Ready for Print",
+            "feature": "Logo transparency",
+            "name": "Logo transparency",
             "isEnable": true
           },
           {
-            "feature": "Source File",
-            "name": "Include Source File",
+            "feature": "Vector file",
+            "name": "Vector file",
             "isEnable": true
           },
           {
-            "feature": "Double-sided",
-            "name": "Front & back design",
+            "feature": "Printable file",
+            "name": "Printable file",
+            "isEnable": true
+          },
+          {
+            "feature": "3D mockup",
+            "name": "Include 3D mockup",
+            "isEnable": true
+          },
+          {
+            "feature": "Source file",
+            "name": "Include source file",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media kit",
+            "name": "Include social media kit",
             "isEnable": true
           }
         ]
@@ -579,7 +624,7 @@
     "packages": [
       {
         "name": "Basic",
-        "price": 20,
+        "price": 25,
         "concepts": 2,
         "revisions": 3,
         "delivery": 2,
@@ -593,7 +638,7 @@
 
         "features": [
           {
-            "feature": "Print-Ready",
+            "feature": "Files Ready for Print",
             "name": "Files Ready for Print",
             "isEnable": true
           },
@@ -605,16 +650,16 @@
           {
             "feature": "Double-sided",
             "name": "Front & back design",
-            "isEnable": true
+            "isEnable": false
           }
         ]
       },
       {
         "name": "Standard",
-        "price": 40,
+        "price": 50,
         "concepts": 3,
         "revisions": 5,
-        "delivery": "2 days",
+        "delivery": 2,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -624,14 +669,14 @@
         "tabBody": "Double side: Print-ready (JPEG & PDF).",
         "features": [
           {
-            "feature": "Print-Ready",
+            "feature": "Files Ready for Print",
             "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
             "name": "Include Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Double-sided",
@@ -642,10 +687,10 @@
       },
       {
         "name": "Premium",
-        "price": 60,
+        "price": 85,
         "concepts": 4,
         "revisions": 7,
-        "delivery": "4 days",
+        "delivery": 4,
         "printReady": true,
         "sourceFile": true,
         "doubleSided": true,
@@ -655,7 +700,7 @@
         "tabBody": "Double side: Print ready (JPEG & PDF) + Editable source files (AI/PSD)",
         "features": [
           {
-            "feature": "Print-Ready",
+            "feature": "Files Ready for Print",
             "name": "Files Ready for Print",
             "isEnable": true
           },

@@ -44,13 +44,14 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
                   {pkg.concept}{" "}
                 </p>
 
-                <p className="text-[14px] mt-1 text-gray-500">
+                {/* <p className="text-[14px] mt-1 text-gray-500">
                   {pkg.revisions} Revisions +{pkg.formate}
                   {pkg.features
                     ?.filter((f: any) => typeof f !== "string" && f.isEnable)
                     .map((f: any) => `+ ${f.feature}`)
                     .join(" ")}
-                </p>
+                </p> */}
+                <p className="text-[14px] mt-1 text-gray-500">{pkg.tabBody}</p>
               </th>
             ))}
           </tr>
@@ -108,7 +109,7 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
             <td className="p-3 border">Delivery Time</td>
             {packages.map((pkg) => (
               <td key={pkg.name} className="p-3 border text-center">
-                {pkg.delivery}
+                {pkg.delivery} days
               </td>
             ))}
           </tr>

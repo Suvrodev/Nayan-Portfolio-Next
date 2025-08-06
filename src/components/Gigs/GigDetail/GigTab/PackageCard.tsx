@@ -30,7 +30,11 @@ const PackageCard = ({ data }: { data: any }) => {
         </p>
         <p className="text-sm mt-3 text-white/70 flex items-center gap-x-2">
           <AutorenewIcon className="size-4" />
-          <strong>{data.revisions} Revisions</strong>
+          {typeof data.revisions === "string" ? (
+            <strong>{data.revisions}</strong>
+          ) : (
+            <strong>{data.revisions} Revisions</strong>
+          )}
         </p>
       </div>
       {/* Review And Delivery End */}
