@@ -29,6 +29,7 @@
         "extraDelivery": { "1 day": 10 },
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Print Ready",
         "features": [
           {
             "feature": "Print-Ready",
@@ -59,6 +60,7 @@
         "extraDelivery": { "1 day": 15 },
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "5 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
         "features": [
           {
             "feature": "Print-Ready",
@@ -89,6 +91,7 @@
         "extraDelivery": { "2 days": 20 },
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "7 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
         "features": [
           {
             "feature": "Print-Ready",
@@ -111,21 +114,21 @@
   },
   {
     "_id": "gig-002",
-    "title": "I will professional modern minimalist business card design",
+    "title": "I will do a professional uv gloss modern business card design",
     "seller": {
       "name": "Sarkar Nayan",
-      "rating": 4.9,
+      "rating": 4.7,
       "reviews": 60
     },
     "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
     "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
     "images": [
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288306/ijmsqfcti9idvvcmupxs.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556522/xjjs90iky239kico1rvb.png",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556606/fm7z3wvsvwnld3nt2t5i.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288250/gyb1dui7myym0h1kuhwr.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288210/ojmmsdozlu4y5jaba83b.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739231362/n08mikbdb1jta0m3vszs.jpg"
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432238/b-1_n7lzxj.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432238/b-1_n7lzxj.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432238/b-3_mzzwee.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432238/b-4_alutsq.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432238/b-5_weqleg.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432238/b-6_o3znhs.webp"
     ],
     "packages": [
       {
@@ -140,6 +143,7 @@
         "extraDelivery": { "1 day": 10 },
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready)",
         "features": [
           {
             "feature": "Print-Ready",
@@ -170,6 +174,7 @@
         "extraDelivery": { "1 day": 15 },
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "5 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready & Source Fi",
         "features": [
           {
             "feature": "Print-Ready",
@@ -179,7 +184,7 @@
           {
             "feature": "Source File",
             "name": "Include Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Double-sided",
@@ -200,6 +205,7 @@
         "extraDelivery": { "2 days": 20 },
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "7 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
         "features": [
           {
             "feature": "Print-Ready",
@@ -222,21 +228,20 @@
   },
   {
     "_id": "gig-003",
-    "title": "I will professional modern minimalist business card design",
+    "title": "I will do luxury business card and logo design in 24 hours",
     "seller": {
       "name": "Sarkar Nayan",
-      "rating": 4.9,
-      "reviews": 60
+      "rating": 4.4,
+      "reviews": 5
     },
     "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
     "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
     "images": [
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288306/ijmsqfcti9idvvcmupxs.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556522/xjjs90iky239kico1rvb.png",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556606/fm7z3wvsvwnld3nt2t5i.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288250/gyb1dui7myym0h1kuhwr.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288210/ojmmsdozlu4y5jaba83b.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739231362/n08mikbdb1jta0m3vszs.jpg"
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-1_mafqwl.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432394/c-2_gdri31.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-3_duwk37.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-4_vyvgs4.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-5_ii2n7t.webp"
     ],
     "packages": [
       {
@@ -251,6 +256,7 @@
         "extraDelivery": { "1 day": 10 },
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "Professional Two-Sided Business Card with 300/450 DPI CMYK (Print Ready Files (JPEG & PDF)",
         "features": [
           {
             "feature": "Print-Ready",
@@ -281,6 +287,7 @@
         "extraDelivery": { "1 day": 15 },
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Two-Sided business Card with 300/450 DPI CMYK (Print Ready & Source Files PSD or AI, JPEG, PDF)",
         "features": [
           {
             "feature": "Print-Ready",
@@ -311,6 +318,7 @@
         "extraDelivery": { "2 days": 20 },
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "2-Sided Business Card + Logo Design (Print Ready & Source Files) + Premium Support",
         "features": [
           {
             "feature": "Print-Ready",
@@ -333,28 +341,25 @@
   },
   {
     "_id": "gig-004",
-    "title": "I will professional modern minimalist business card design",
+    "title": "I will do luxury, modern, minimalist business cards and logo design",
     "seller": {
       "name": "Sarkar Nayan",
-      "rating": 4.9,
-      "reviews": 60
+      "rating": 5,
+      "reviews": 1
     },
     "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
     "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
     "images": [
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288306/ijmsqfcti9idvvcmupxs.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556522/xjjs90iky239kico1rvb.png",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556606/fm7z3wvsvwnld3nt2t5i.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288250/gyb1dui7myym0h1kuhwr.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288210/ojmmsdozlu4y5jaba83b.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739231362/n08mikbdb1jta0m3vszs.jpg"
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432471/d-1_tvn7ed.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432471/d-3_juyujg.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432471/d-2_zesi4v.jpg"
     ],
     "packages": [
       {
         "name": "Basic",
         "price": 20,
         "concepts": 2,
-        "revisions": 3,
+        "revisions": "Unlimited Revisions",
         "delivery": 2,
         "printReady": true,
         "sourceFile": false,
@@ -362,6 +367,7 @@
         "extraDelivery": { "1 day": 10 },
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "Only business card (Print-ready files, JPG & PDF).",
         "features": [
           {
             "feature": "Print-Ready",
@@ -384,7 +390,7 @@
         "name": "Standard",
         "price": 40,
         "concepts": 3,
-        "revisions": 5,
+        "revisions": "Unlimited Revisions",
         "delivery": "2 days",
         "printReady": true,
         "sourceFile": true,
@@ -392,6 +398,7 @@
         "extraDelivery": { "1 day": 15 },
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Business card OR Logo Design (Print-ready files, JPG, PDF & Source Files)",
         "features": [
           {
             "feature": "Print-Ready",
@@ -414,7 +421,7 @@
         "name": "Premium",
         "price": 60,
         "concepts": 4,
-        "revisions": 7,
+        "revisions": "Unlimited Revisions",
         "delivery": "4 days",
         "printReady": true,
         "sourceFile": true,
@@ -422,6 +429,7 @@
         "extraDelivery": { "2 days": 20 },
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Business card & Logo design (Print-ready files, JPG, PDF & Source Files).",
         "features": [
           {
             "feature": "Print-Ready",
@@ -444,7 +452,7 @@
   },
   {
     "_id": "gig-005",
-    "title": "I will professional modern minimalist business card design",
+    "title": "I will do professional modern business logo design",
     "seller": {
       "name": "Sarkar Nayan",
       "rating": 4.9,
@@ -453,19 +461,16 @@
     "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
     "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
     "images": [
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288306/ijmsqfcti9idvvcmupxs.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556522/xjjs90iky239kico1rvb.png",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556606/fm7z3wvsvwnld3nt2t5i.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288250/gyb1dui7myym0h1kuhwr.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288210/ojmmsdozlu4y5jaba83b.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739231362/n08mikbdb1jta0m3vszs.jpg"
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432516/e-1_o4kkdy.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432516/e-3_ipf89x.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432517/e-2_loipci.webp"
     ],
     "packages": [
       {
         "name": "Basic",
         "price": 20,
         "concepts": 2,
-        "revisions": 3,
+        "revisions": "Unlimited Revisions",
         "delivery": 2,
         "printReady": true,
         "sourceFile": false,
@@ -473,6 +478,8 @@
         "extraDelivery": { "1 day": 10 },
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "2 Business Logos, High-Quality in a 3D Mockup, JPG, PNG, Transparent Format",
+
         "features": [
           {
             "feature": "Print-Ready",
@@ -495,7 +502,7 @@
         "name": "Standard",
         "price": 40,
         "concepts": 3,
-        "revisions": 5,
+        "revisions": "Unlimited Revisions",
         "delivery": "2 days",
         "printReady": true,
         "sourceFile": true,
@@ -503,6 +510,7 @@
         "extraDelivery": { "1 day": 15 },
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "3 Business Logos, High-Quality JPG, Transparent PNG, 3D Mockup JPG, Source File, Vector File",
         "features": [
           {
             "feature": "Print-Ready",
@@ -525,7 +533,7 @@
         "name": "Premium",
         "price": 60,
         "concepts": 4,
-        "revisions": 7,
+        "revisions": "Unlimited Revisions",
         "delivery": "4 days",
         "printReady": true,
         "sourceFile": true,
@@ -533,6 +541,7 @@
         "extraDelivery": { "2 days": 20 },
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "4 Business Logos, High-Quality, PDF, JPG, PNG, Source File Ai, Vector EPS Editable",
         "features": [
           {
             "feature": "Print-Ready",
@@ -555,7 +564,7 @@
   },
   {
     "_id": "gig-006",
-    "title": "I will professional modern minimalist business card design",
+    "title": "I will do high quality flyer for your business",
     "seller": {
       "name": "Sarkar Nayan",
       "rating": 4.9,
@@ -564,12 +573,8 @@
     "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
     "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
     "images": [
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288306/ijmsqfcti9idvvcmupxs.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556522/xjjs90iky239kico1rvb.png",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739556606/fm7z3wvsvwnld3nt2t5i.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288250/gyb1dui7myym0h1kuhwr.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739288210/ojmmsdozlu4y5jaba83b.jpg",
-      "https://res.cloudinary.com/dixfkupof/image/upload/v1739231362/n08mikbdb1jta0m3vszs.jpg"
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432554/f-1_bhoogz.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432554/f-2_ak7bx1.jpg"
     ],
     "packages": [
       {
@@ -584,6 +589,8 @@
         "extraDelivery": { "1 day": 10 },
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "One side: Print-ready (JPEG & PDF).",
+
         "features": [
           {
             "feature": "Print-Ready",
@@ -614,6 +621,7 @@
         "extraDelivery": { "1 day": 15 },
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Double side: Print-ready (JPEG & PDF).",
         "features": [
           {
             "feature": "Print-Ready",
@@ -644,6 +652,7 @@
         "extraDelivery": { "2 days": 20 },
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Double side: Print ready (JPEG & PDF) + Editable source files (AI/PSD)",
         "features": [
           {
             "feature": "Print-Ready",

@@ -13,14 +13,16 @@ const PackageCard = ({ data }: { data: any }) => {
 
       {/*1 line Feature Start */}
       <div className="text-sm text-gray-400 mt-2">
-        {data.revisions} Revisions +{data.formate}
+        {/* {data.revisions} Revisions +{data.formate}
         {data.features
           ?.filter((f: any) => typeof f !== "string" && f.isEnable)
           .map((f: any) => `+ ${f.feature}`)
-          .join(" ")}
+          .join(" ")} */}
+        {data.tabBody}
       </div>
       {/*1 line Feature Start */}
 
+      {/* Review And Delivery start */}
       <div className="flex  items-center gap-x-4">
         <p className="text-sm mt-3 text-white/70 flex items-center gap-x-2">
           <Clock3 className="size-4" />
@@ -31,6 +33,7 @@ const PackageCard = ({ data }: { data: any }) => {
           <strong>{data.revisions} Revisions</strong>
         </p>
       </div>
+      {/* Review And Delivery End */}
 
       {/* Enabled Features */}
       {/* <ul className="list-disc ml-6 mt-2 text-sm text-white/90">

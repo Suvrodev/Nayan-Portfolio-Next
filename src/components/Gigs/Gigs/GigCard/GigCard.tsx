@@ -12,9 +12,12 @@ const GigCard = ({ gig }: IProps) => {
       <div>
         <Image src={gig.images[0]} alt={gig.title} width={450} height={350} />
         <h1 className="hover:underline">{gig.title}</h1>
-        <div className="flex items-center gap-x-2 my-4">
-          <StarIcon />
-          <span>{gig.seller.rating}</span>
+        <div className="flex items-center gap-x-2">
+          <div className="flex items-center gap-x-2 my-2">
+            <StarIcon />
+            <span>{gig.seller.rating}</span>
+          </div>
+          <p className="text-gray-500">({gig.seller.reviews})</p>
         </div>
         <div className="flex items-center gap-x-2 font-bold">
           <span>From</span>

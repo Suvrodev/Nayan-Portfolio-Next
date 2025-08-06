@@ -4,7 +4,7 @@ import PackageCard from "./PackageCard";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const PackageTabs = ({ packages }: { packages: any[] }) => {
-  const [selected, setSelected] = useState("Standard");
+  const [selected, setSelected] = useState("Basic");
 
   const tabStyle = (name: string) =>
     `px-4 py-2 text-sm font-medium border-b-2 ${
