@@ -60,10 +60,16 @@ import { selectPortfolioCategory } from "@/redux/features/PortfolioApi/portfolio
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useAppSelector } from "@/redux/hook";
 
 const PortfolioTabEZ = () => {
+  const { portfolioCategory } = useAppSelector(
+    (state) => state?.portfolioCategories
+  );
+  console.log("Stable Category: ", portfolioCategory);
+
   const dispatch = useDispatch();
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState(portfolioCategory);
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
