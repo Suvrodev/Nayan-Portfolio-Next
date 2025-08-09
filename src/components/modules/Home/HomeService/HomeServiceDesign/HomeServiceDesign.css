@@ -2,8 +2,8 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  align-items: flex-end;
+
+  align-items: flex-start;
   margin: 0;
   background-color: #292929;
   border: 1px solid #525252;
@@ -21,6 +21,5 @@
 @media only screen and (max-width: 576px) {
   .perSide {
     width: 100%;
-    align-items: center;
   }
 }

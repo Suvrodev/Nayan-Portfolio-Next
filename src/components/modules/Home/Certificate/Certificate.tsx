@@ -1,8 +1,8 @@
 "use client";
 import ux1 from "../../../../app/assets/certificate/UX Design-1.jpg";
-import ux2 from "../../../../app/assets/certificate/UX Design-2.jpg";
+// import ux2 from "../../../../app/assets/certificate/UX Design-2.jpg";
+// import web2 from "../../../../app/assets/certificate/UX Design-2.jpg";
 import web1 from "../../../../app/assets/certificate/UX Design-1.jpg";
-import web2 from "../../../../app/assets/certificate/UX Design-2.jpg";
 import responsive from "../../../../app/assets/certificate/Responsive Web Design.jpg";
 import Image from "next/image";
 // import { useEffect, useRef, useState } from "react";
@@ -14,18 +14,18 @@ const Certificate = () => {
       image: ux1,
       title: "UX Design",
     },
-    {
-      image: ux2,
-      title: "UX Design",
-    },
+    // {
+    //   image: ux2,
+    //   title: "UX Design",
+    // },
     {
       image: web1,
       title: "Web Development with PHP & Laravel",
     },
-    {
-      image: web2,
-      title: "Web Development with PHP & Laravel",
-    },
+    // {
+    //   image: web2,
+    //   title: "Web Development with PHP & Laravel",
+    // },
     {
       image: responsive,
       title: "Responsive Web Design",
@@ -45,8 +45,8 @@ const Certificate = () => {
               <Image
                 src={item.image}
                 alt={item.title}
-                width={250}
-                height={450}
+                width={450}
+                height={550}
                 className="rounded object-contain"
               />
               <p className="mt-2 text-white font-medium">{item.title}</p>

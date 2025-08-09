@@ -66,7 +66,7 @@ const PortfolioTabEZ = () => {
   const { portfolioCategory } = useAppSelector(
     (state) => state?.portfolioCategories
   );
-  console.log("Stable Category: ", portfolioCategory);
+  // console.log("Stable Category: ", portfolioCategory);
 
   const dispatch = useDispatch();
   const [activeTab, setActiveTab] = useState(portfolioCategory);

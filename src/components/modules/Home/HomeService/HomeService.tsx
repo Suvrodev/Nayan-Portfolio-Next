@@ -15,6 +15,7 @@ const HomeService = () => {
 
   return (
     <div>
+      <h1 className="text-2xl font-bold mb-10">Service</h1>
       <div className="flex flex-col  justify-center gap-y-4 md:gap-y-0 ">
         {services?.map((service: TService, idx: number) => (
           <HomeServiceDesign key={idx} idx={idx} service={service} />

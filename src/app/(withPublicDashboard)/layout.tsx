@@ -23,7 +23,7 @@ const PublicLayout = ({ children }: IProps) => {
           </div>
           <div className="mt-20 md:mt-0">{children}</div>
 
-          <div className="bg-[#222222] p-20">
+          <div className="bg-[#222222] p-20 md:py-16 ">
             <WeAccept />
           </div>
 

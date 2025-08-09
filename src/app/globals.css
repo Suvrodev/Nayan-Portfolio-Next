@@ -143,6 +143,12 @@
 /*************************************************************************************/
 /*****************************************My Css**************************************/
 /**********************************************/
+.xxx {
+  background-color: yellow !important;
+}
+.yyy {
+  background-color: green !important;
+}
 img {
   filter: grayscale(1);
   transition: 0.3s;
@@ -208,6 +214,50 @@ img:hover {
     margin: 20px;
   }
   .pagePadding {
+    padding: 20px;
+  }
+}
+
+/* Font Style Start */
+.pTitle {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.pDesc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #9ca3af;
+}
+
+/* For Laptop */
+@media screen and (max-width: 1536px) {
+  .pTitle {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .pTitle {
+    font-size: 24px;
+  }
+}
+/* Font Style End */
+
+/*************************Width***************************/
+/* Desktop */
+.pPadding {
+  padding: 80px 120px;
+}
+/*Laptop */
+@media screen and (max-width: 1536px) {
+  .pPadding {
+    padding: 80px 80px;
+  }
+}
+/*Mobile */
+@media screen and (max-width: 576px) {
+  .pPadding {
     padding: 20px;
   }
 }

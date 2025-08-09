@@ -11,7 +11,7 @@ const TestimonialCard = ({ testimonial }: IProps) => {
   const { image, desc, rating, name, position } = testimonial;
 
   return (
-    <div className="flex flex-col md:flex-row w-full md:w-[80%] mx-auto">
+    <div className="flex flex-col md:flex-row w-full  mx-auto ">
       {/* Left Div */}
       <div className="w-full md:w-[20%] flex justify-center md:justify-between">
         <div className="flex items-center justify-center ">
@@ -32,7 +32,7 @@ const TestimonialCard = ({ testimonial }: IProps) => {
 
       {/* Right Div */}
       <div className="w-full md:w-[80%]  flex flex-col gap-5 px-5 mt-10 md:mt-0">
-        <div className="text-center text-[18px] text-white">{desc}</div>
+        <div className="text-center pDesc text-white">{desc}</div>
         <div className="flex justify-center md:justify-between">
           <div>
             <Rating style={{ maxWidth: 120 }} value={rating} />

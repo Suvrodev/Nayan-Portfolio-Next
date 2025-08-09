@@ -8,7 +8,9 @@ const WeAccept = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-white mb-10">We Accept</h1>
+      <h1 className="text-2xl font-bold text-white mb-10 text-center md:text-left">
+        We Accept
+      </h1>
       <div className="flex justify-center md:block ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-y-10 gap-x-4 ">
           <div>

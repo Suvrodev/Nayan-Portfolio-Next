@@ -1,0 +1,26 @@
+.testimonial-container {
+  width: 100%;
+  overflow: hidden;
+  /* no scrollbars */
+}
+
+.testimonial-wrapper {
+  display: inline-flex; /* horizontal row */
+  /* width will be automatically doubled by content */
+  animation: marquee-left-to-right 20s linear infinite;
+}
+
+.testimonial-slide {
+  width: 300px; /* or whatever width your card has */
+  flex-shrink: 0;
+  margin-right: 20px; /* spacing */
+}
+
+@keyframes marquee-left-to-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
