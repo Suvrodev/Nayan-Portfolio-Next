@@ -78,11 +78,16 @@ const ContactForm = () => {
           </div>
           <div>
             <input
-              {...register("phone")}
+              {...register("phone", { required: "Phone Number is required" })}
               type="text"
               placeholder="Your Phone (optional)"
               className="w-full bg-black/20 text-white placeholder:text-gray-400 px-4 py-3 rounded-[10px] border border-white/10 focus:outline-none focus:ring-2 focus:ring-white"
             />
+            {errors.phone && (
+              <p className="text-red-400 text-sm mt-1">
+                {errors.phone.message}
+              </p>
+            )}
           </div>
           <div>
             <input
