@@ -12,7 +12,7 @@ const PricingList = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-white mb-20">Pricing List</h1>
+      <h1 className="pTitle mb-20">Pricing List</h1>
       <div className="">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 gap-y-16 md:gap-y-0">
           {pricingLists.map((p, idx) => (

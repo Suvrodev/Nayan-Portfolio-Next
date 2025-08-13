@@ -43,9 +43,9 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
             <span></span>
           </div>
           <h1 className="text-2xl font-bold mt-4">{title}</h1>
-          <p className="leading-[1.6]">{shortDescription}</p>
+          <p className=" pDesc">{shortDescription}</p>
         </div>
-        <div className="py-4 absolute bottom-[20px]">
+        <div className="py-4 absolute bottom-[10px]">
           {/* <ServiceModal image={image} popupDesc={popupDesc} /> */}
           <Link href={`/service/${_id}`}>
             {/* <div className="group font-bold flex items-center gap-2 cursor-pointer w-fit overflow-hidden"> */}
