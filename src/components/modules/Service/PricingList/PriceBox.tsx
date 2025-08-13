@@ -118,7 +118,7 @@ const PriceBox = ({ p }: { p: any }) => {
   return (
     <div className="primaryBox rounded-[4px] p-5  relative">
       <div>
-        <h1 className="text-center text-2xl font-bold mt-16">{title}</h1>
+        <h1 className="text-center text-2xl font-bold mt-18">{title}</h1>
 
         <div className="flex flex-col gap-4 font-bold mt-10">
           {allItems.map((all, idx) => (

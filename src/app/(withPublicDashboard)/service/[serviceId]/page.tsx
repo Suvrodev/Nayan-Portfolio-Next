@@ -24,11 +24,6 @@ const ServiceDetailPage = async ({ params }: IProps) => {
   return (
     <div className="min-h-screen flex justify-center items-center my-4">
       <div className="max-w-4xl mx-auto primaryBox p-6 rounded-2xl shadow-xl">
-        {/* <SmartImage
-          src={service?.image}
-          alt={service?.title}
-          className="w-full  object-cover rounded-lg mb-6 border border-gray-700"
-        /> */}
         <Image
           src={service?.image}
           alt={service.title}
@@ -36,7 +31,7 @@ const ServiceDetailPage = async ({ params }: IProps) => {
           height={450}
           className="max-w-full mx-auto grayScale"
         />
-        <h1 className="text-3xl font-bold text-white mb-4">{service?.title}</h1>
+        <h1 className="pTitle my-4">{service?.title}</h1>
         {/* <p className="text-gray-300 leading-relaxed text-lg whitespace-pre-line">
           {service?.description}
         </p> */}

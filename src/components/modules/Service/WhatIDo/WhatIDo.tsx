@@ -14,9 +14,9 @@ const WhatIDo = async ({ isAdmin }: { isAdmin: boolean }) => {
   // console.log("services: ", services);
   return (
     <div>
-      <h1 className="text-4xl text-white font-bold">What I do</h1>
+      <h1 className="pTitle">What I do</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
         {services?.map((servcie: TService, idx: number) => (
           <ServiceBox key={idx} service={servcie} isAdmin={isAdmin} idx={idx} />
         ))}

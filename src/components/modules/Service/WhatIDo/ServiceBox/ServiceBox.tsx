@@ -43,19 +43,20 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
             <span></span>
           </div>
           <h1 className="text-2xl font-bold mt-4">{title}</h1>
-          <p className="c">{shortDescription}</p>
+          <p className="leading-[1.6]">{shortDescription}</p>
         </div>
         <div className="py-4 absolute bottom-[20px]">
           {/* <ServiceModal image={image} popupDesc={popupDesc} /> */}
           <Link href={`/service/${_id}`}>
-            <div className="group font-bold flex items-center gap-2 cursor-pointer w-fit overflow-hidden">
+            {/* <div className="group font-bold flex items-center gap-2 cursor-pointer w-fit overflow-hidden"> */}
+            <div className="relative w-[130px]  ">
               {/* Read More text - animate in */}
-              <p className="transform -translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-700">
-                Read More
-              </p>
+              {/* <p className="transform -translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-700"> */}
+              <p className="">Read More</p>
 
               {/* HR line - animate out */}
-              <hr className="w-[40px] bg-white h-[2px] transform group-hover:translate-x-6 transition-all duration-700" />
+              {/* <hr className="w-[40px] bg-white h-[2px] transform group-hover:translate-x-6 transition-all duration-700" /> */}
+              <hr className="w-[40px] bg-white h-[2px] absolute top-[14px]  right-0" />
             </div>
           </Link>
         </div>

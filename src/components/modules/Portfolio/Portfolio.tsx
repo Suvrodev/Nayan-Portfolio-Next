@@ -17,7 +17,7 @@ const Portfolio = async ({ isAdmin }: IProps) => {
   const portfolioData = await res.json();
   const portfolios = portfolioData.data;
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="m-5 md:m-16">
         <LinkBox text1={"Home"} text2={"Creative portfolio"} />
       </div>

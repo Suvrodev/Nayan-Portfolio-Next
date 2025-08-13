@@ -9,11 +9,11 @@ interface IProps {
 
 const Service = ({ isAdmin }: IProps) => {
   return (
-    <div className="overflow-hidden">
-      <div className="pageMargin">
+    <div className="overflow-hidden ">
+      <div className="pPadding ">
         <LinkBox text1={"Service"} />
       </div>
-      <div className="pageMargin">
+      <div className="pPadding">
         <WhatIDo isAdmin={isAdmin || false} />
       </div>
       {/* <div className="p-5 md:p-28 bg-[#222222]">
@@ -23,7 +23,7 @@ const Service = ({ isAdmin }: IProps) => {
         <Consult />
       </div>
       {/* <div className="p-5 md:p-28"> */}
-      <div className="pageMargin">
+      <div className="pPadding">
         <PricingList />
       </div>
       {/* <div className="pageMargin">
