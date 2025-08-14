@@ -48,7 +48,7 @@ const AboutPage = () => {
         </div>
 
         <div className="dag"></div>
-        <div className="text-[18px] my-10 ">
+        <div className="pDesc my-10 ">
           <p>
             Highly motivated and detail-oriented Web Developer with a
             Bachelor&#39;s degree in Computer Science and Engineering for 4
@@ -72,19 +72,19 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="pagePadding bg-[#222222]">
+      <div className="pPadding bg-[#222222]">
         <SkillLoading />
       </div>
 
-      <div className="pagePadding">
+      <div className="pPadding">
         <KnowladgeInterest />
       </div>
 
-      <div className="bg-[#222222] px-5 py-20 ">
+      <div className="bg-[#222222] pPadding">
         <EducationExperience />
       </div>
 
-      <div className="p-4 md:px-10 md:py-20 ">
+      <div className="pPadding ">
         <Testimonial showBox={true} />
       </div>
     </div>

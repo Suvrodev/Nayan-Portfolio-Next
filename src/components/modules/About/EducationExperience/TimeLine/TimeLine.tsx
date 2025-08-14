@@ -8,7 +8,7 @@ const TimeLine = ({ education }: IProps) => {
   return (
     <div className="flex items-start md:items-center gap-4 ">
       <div className="flex items-center gap-4">
-        <p className="w-[20px] h-[20px] rounded-full bg-green-400 relative right-[10px] top-3 md:top-0"></p>
+        <p className="w-[20px] h-[20px] rounded-full bg-white relative right-[10px] top-3 md:top-0"></p>
         <p className="primaryBox py-2 px-4 rounded-2xl w-[130px] text-center hidden md:block">
           {education?.year}
         </p>
