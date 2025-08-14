@@ -1,15 +1,19 @@
 export const portfolioCategories = [
   "All",
-  "Web Design & Development",
-  "Ui/UX",
-  "Business Card",
-  "Logo Design",
+  "WordPress",
+  "Web Design",
+  "Web Development",
+  "Business card",
+  "Logo",
   "Flyer",
+  "UI/UX",
 ];
 export const portfolioCategoriesDropDown = [
-  "Web Design & Development",
-  "Ui/UX",
-  "Business Card",
-  "Logo Design",
+  "WordPress",
+  "Web Design",
+  "Web Development",
+  "Business card",
+  "Logo",
   "Flyer",
+  "UI/UX",
 ];

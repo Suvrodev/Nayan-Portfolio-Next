@@ -97,7 +97,7 @@ const PortfolioTabEZ = () => {
   }, [activeTab]);
 
   return (
-    <div className="w-10/12 md:w-8/12 mx-auto flex justify-center px-4 relative">
+    <div className="w-10/12 md:w-9/12 mx-auto flex justify-center px-4 relative">
       {/* Desktop and Mobile Container */}
       <div className="relative w-full max-w-4xl">
         {/* Scroll Buttons (Mobile only) */}
@@ -132,7 +132,7 @@ const PortfolioTabEZ = () => {
 
           {/* Animated underline background */}
           <span
-            className="absolute z-0 h-9  bg-blue-600 flex items-center justify-center rounded-full transition-all duration-300"
+            className="absolute z-0 h-9  bg-[#292929] flex items-center justify-center rounded-full transition-all duration-300"
             style={{
               left: underlineStyle.left,
               width: underlineStyle.width,
