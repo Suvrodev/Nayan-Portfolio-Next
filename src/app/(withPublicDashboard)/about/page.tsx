@@ -11,6 +11,7 @@ import Testimonial from "@/components/modules/Home/Testimonial/Testimonial";
 import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
 import KnowladgeInterest from "@/components/modules/About/KnowladgeInterest/KnowladgeInterest";
 import { createTitle } from "@/components/utils/functions/metadata";
+import TestimonialMx from "@/components/modules/Home/Testimonial/TestimonialMx";
 
 export const metadata = createTitle("About");
 
@@ -48,8 +49,8 @@ const AboutPage = () => {
         </div>
 
         <div className="dag"></div>
-        <div className="pDesc my-10 ">
-          <p>
+        <div className=" my-10 ">
+          <p className="text-[16px] leading-[1.8] text-gray-400">
             Highly motivated and detail-oriented Web Developer with a
             Bachelor&#39;s degree in Computer Science and Engineering for 4
             years. Proficient in PHP, with a deep understanding of the Laravel
@@ -84,8 +85,11 @@ const AboutPage = () => {
         <EducationExperience />
       </div>
 
-      <div className="pPadding ">
+      {/* <div className="pPadding ">
         <Testimonial showBox={true} />
+      </div> */}
+      <div className="pPadding ">
+        <TestimonialMx />
       </div>
     </div>
   );
