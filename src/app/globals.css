@@ -249,6 +249,10 @@ img:hover {
 .pPadding {
   padding: 80px 120px;
 }
+.qPadding {
+  padding: 0px 120px;
+}
+
 /*Laptop */
 @media screen and (max-width: 1536px) {
   .pPadding {

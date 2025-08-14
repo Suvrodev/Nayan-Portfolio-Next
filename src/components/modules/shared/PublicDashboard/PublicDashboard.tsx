@@ -56,7 +56,7 @@ const PublicDashboard = () => {
           <Link
             key={item.path}
             href={item.path}
-            className={` ${location == item?.path ? "text-green-500" : ""}`}
+            className={` ${location == item?.path ? "text-[#d1d5dc]" : ""}`}
           >
             {item.label}
           </Link>

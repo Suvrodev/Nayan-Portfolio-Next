@@ -188,8 +188,8 @@ const Registration = () => {
           <p className="text-sm mt-4 text-center">
             Already have an account?{" "}
             <Link
-              href="/login"
-              className="text-blue-400 hover:underline font-semibold"
+              href="/admin-login"
+              className="text-blue-400 hover:underline font-semibold relative left-1"
             >
               Login here
             </Link>
