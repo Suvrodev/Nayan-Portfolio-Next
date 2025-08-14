@@ -17,7 +17,7 @@ export const metadata = createTitle("About");
 const AboutPage = () => {
   return (
     <div className="overflow-hidden">
-      <div className="pageMargin">
+      <div className="pPadding">
         <LinkBox text1={"About"} />
         {/* <h1 className="my-10 text-3xl text-white font-bold">About Me</h1> */}
         <h1 className="my-10 pageTitle">About Me</h1>
@@ -62,12 +62,12 @@ const AboutPage = () => {
 
         {/* Dag */}
         <div className="dag"></div>
-        <div className="my-10">
+        <div className="my-10 ">
           <BioData />
         </div>
         <div className="dag"></div>
 
-        <div className="my-10 inline-block">
+        <div className="my-10  inline-block ">
           <HomeButton fromAbout={true} />
         </div>
       </div>
