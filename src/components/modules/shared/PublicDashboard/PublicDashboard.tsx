@@ -3,7 +3,9 @@
 import logoImage from "@/app/assets/HeaderImage/Logo.png";
 import Booking from "@/components/Booking/Booking";
 import { navItems } from "@/components/utils/Array/navItems";
+import goCall from "@/components/utils/functions/goCall";
 import goLink from "@/components/utils/functions/goLink";
+import sendEmail from "@/components/utils/functions/sendEmail";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +39,7 @@ const PublicDashboard = () => {
   return (
     <div className="bg-[#141414] h-[100vh] text-white pl-8 overflow-hidden sticky top-0 shadow-blue-400 shadow-md">
       {/* Logo */}
-      <div className="mt-20 mb-28">
+      <div className="mt-20 mb-20">
         <Link href="/">
           {/* <image src={logoImage} className="w-[70%]" /> */}
           {/* <img src={logoImage} alt="Sarkar Nayan" className="w-[70%]" /> */}
@@ -85,10 +87,23 @@ const PublicDashboard = () => {
       {/* Contact Info */}
       <div className="pt-10 text-[rgb(204,204,204)] text-[15px]">
         <p>
-          <span className="font-bold">Email:</span> me@sarkarnayan.com
+          <span className="font-bold">Email:</span>{" "}
+          <span
+            className="cursor-pointer"
+            onClick={() => sendEmail("me@sarkarnayan.com")}
+          >
+            {" "}
+            me@sarkarnayan.com
+          </span>
         </p>
         <p>
-          <span className="font-bold">Phone:</span> +88 01710847819
+          <span className="font-bold">Phone:</span>{" "}
+          <span
+            className="cursor-pointer"
+            onClick={() => goCall("8801710847819")}
+          >
+            +88 01710847819
+          </span>
         </p>
       </div>
 
