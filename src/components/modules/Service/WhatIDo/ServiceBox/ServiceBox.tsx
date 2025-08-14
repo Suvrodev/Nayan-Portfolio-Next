@@ -45,21 +45,14 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
           <h1 className="text-2xl font-bold mt-4">{title}</h1>
           <p className=" pDesc">{shortDescription}</p>
         </div>
-        <div className="py-1 absolute bottom-[2px]">
+        <div className="py-1 absolute bottom-[20px]">
           {/* <ServiceModal image={image} popupDesc={popupDesc} /> */}
           <Link href={`/service/${_id}`}>
             {/* <div className="group font-bold flex items-center gap-2 cursor-pointer w-fit overflow-hidden"> */}
-            <div className="relative w-[130px]  ">
+            <div className="relative w-[130px] scale-100 transition-all hover:scale-110 ">
               {/* Read More text - animate in */}
-              {/* <p className="transform -translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-700"> */}
-              {/* <p className="">Read More</p> */}
-              <button className="bg-[#141414] border border-[#525252] transition-all duration-300 ease-in-out text-white py-1 px-2 rounded-[7px] flex items-center justify-center cursor-pointer hover:bg-[#1d1b1b] hover:border-white pDesc">
-                Read More
-              </button>
-
-              {/* HR line - animate out */}
-              {/* <hr className="w-[40px] bg-white h-[2px] transform group-hover:translate-x-6 transition-all duration-700" /> */}
-              {/* <hr className="w-[40px] bg-white h-[2px] absolute top-[14px]  right-0" /> */}
+              <p className=" ">Read More</p>
+              <hr className="w-[40px] bg-white h-[2px] absolute top-[14px]  right-0" />
             </div>
           </Link>
         </div>
