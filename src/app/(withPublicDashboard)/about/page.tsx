@@ -21,24 +21,23 @@ const AboutPage = () => {
         <LinkBox text1={"About"} />
         {/* <h1 className="my-10 text-3xl text-white font-bold">About Me</h1> */}
         <h1 className="my-10 pageTitle">About Me</h1>
-
-        {/* <img
-          className="h-[200px] md:h-[650px] w-full object-cover "
-          src={aboutImage}
-          alt=""
-        /> */}
-
-        {/* <SmartImage
-          src={aboutImage} // or base64 string
-          alt="My Image"
-          className="h-[200px] md:h-[650px] w-full object-cover"
-        /> */}
+        {/* 
         <Image
           src={aboutImage}
-          alt="Sarkae Nayan"
+          alt="Sarkar Nayan"
           // height={650}
           className="object-cover"
-        />
+        /> */}
+
+        <div className="w-full  ">
+          <Image
+            src={aboutImage}
+            alt="Sarkar Nayan"
+            width={350}
+            height={350}
+            className="abs_img border-8 border-[#cccccc] mx-auto w-[250px] h-[250px] md:w-[350px] md:h-[350px] object-cover"
+          />
+        </div>
 
         <div className="my-10">
           <h1 className=" topicTitle">Sarkar Nayan</h1>

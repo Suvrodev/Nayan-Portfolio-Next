@@ -1,7 +1,8 @@
 .imageBox {
   /* background-image: url('../../../assets/bgImage/Bg-1.jpg'); */
   /* background-image: url('../../../assets/bgImage/Bg-4.jpg'); */
-  background-image: url("../../../../app/assets/bgImage/Bg-4.jpg");
+  /* background-image: url("../../../../app/assets/bgImage/Bg-4.jpg"); */
+  background-image: url("../../../../app/assets/aboutImage/layer-sarkar.jpg");
   width: 100%;
   height: 450px;
   background-position: center;
