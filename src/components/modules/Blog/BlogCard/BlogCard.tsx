@@ -68,12 +68,11 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
       </Link>
 
       {/* Content */}
-      <div className="p-4 flex flex-col justify-between space-y-2">
+      <div className="px-4 py-0 flex flex-col justify-between space-y-2">
+        <h3 className="text-xl font-semibold line-clamp-2 mt-6 ">{title}</h3>
         <p className="text-sm">
           {formatDate(date)} / <span className="text-teal-400">{category}</span>
         </p>
-
-        <h3 className="text-xl font-bold line-clamp-2 mt-6 ">{title}</h3>
       </div>
     </div>
   );

@@ -40,8 +40,12 @@ const ServiceDetailPage = async ({ params }: IProps) => {
           dangerouslySetInnerHTML={{ __html: service?.description }}
         ></div> */}
 
-        <div
+        {/* <div
           className="prose max-w-none py-2 rounded-md text-black dark:prose-invert dark:text-white "
+          dangerouslySetInnerHTML={{ __html: service?.description }}
+        ></div> */}
+        <div
+          className="prose prose-invert max-w-none text-gray-300 leading-relaxed text-lg"
           dangerouslySetInnerHTML={{ __html: service?.description }}
         ></div>
 

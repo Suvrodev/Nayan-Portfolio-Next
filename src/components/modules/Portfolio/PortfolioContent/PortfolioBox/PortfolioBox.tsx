@@ -50,20 +50,21 @@ const PortfolioBox = ({ portfolio, isAdmin }: IPortfolioBoxProps) => {
           className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
         /> */}
 
-        <Image
-          src={portfolio.image}
-          alt={portfolio.title}
-          fill
-          className="object-cover transform hover:scale-105 transition-transform duration-500"
-        />
+        <Link href={`/portfolio/${portfolio?._id}`}>
+          <Image
+            src={portfolio.image}
+            alt={portfolio.title}
+            fill
+            className="object-cover transform hover:scale-105 transition-transform duration-500"
+          />
+        </Link>
 
         {/* Overlay with button */}
-        <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+        {/* <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
           <Link href={`/portfolio/${portfolio?._id}`}>
-            {/* <PrimaryButton text="Read More" /> */}
             <button className="primaryButton">Read More</button>
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* Title */}

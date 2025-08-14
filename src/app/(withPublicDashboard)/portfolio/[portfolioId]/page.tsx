@@ -63,7 +63,7 @@ const PortfolioPage = async ({ params }: IProps) => {
 
         {/* Price and Link */}
         <div className="mt-8 flex flex-wrap justify-between items-center gap-4">
-          <p className="text-lg font-semibold text-green-400">
+          <p className="text-lg font-semibold pDesc">
             Price: ${portfolio.price}
           </p>
           <a href={portfolio.link} target="_blank" rel="noopener noreferrer">
