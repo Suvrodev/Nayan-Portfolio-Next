@@ -80,7 +80,7 @@ const ContactForm = () => {
             <input
               {...register("phone", { required: "Phone Number is required" })}
               type="text"
-              placeholder="Your Phone (optional)"
+              placeholder="Your Phone"
               className="w-full bg-black/20 text-white placeholder:text-gray-400 px-4 py-3 rounded-[10px] border border-white/10 focus:outline-none focus:ring-2 focus:ring-white"
             />
             {errors.phone && (

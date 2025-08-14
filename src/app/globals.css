@@ -167,7 +167,13 @@ img:hover {
   background-color: #292929;
   border: 1px solid #525252;
   backdrop-filter: blur(200px);
+  transition: all 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transform: translateY(0);
 }
+.primaryBox:hover {
+  transform: translateY(-5px);
+}
+
 .primaryButton {
   background-color: #141414;
   border: 1px solid #525252;
@@ -186,8 +192,11 @@ img:hover {
 }
 .pageTitle {
   font-size: 32px;
-  color: white;
+  color: #e5e5e5;
   font-weight: 700;
+}
+.pageTitle {
+  color: white;
 }
 
 .topicTitle {
@@ -223,6 +232,12 @@ img:hover {
   font-size: 30px;
   line-height: 1.2;
   font-weight: 700;
+  color: #e5e5e5;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.pTitle:hover {
+  color: white;
 }
 .pDesc {
   font-size: 16px;

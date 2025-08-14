@@ -1,13 +1,8 @@
 import { Phone, Mail, MapPinHouse } from "lucide-react";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaDribbble,
-  FaBehance,
-} from "react-icons/fa";
+
 import ContactForm from "@/components/modules/Contact/ContactForm/ContactForm";
 import { createTitle } from "@/components/utils/functions/metadata";
+import ContactLink from "@/components/modules/Contact/ContactLink/ContactLink";
 
 export const metadata = createTitle("Contact");
 
@@ -70,23 +65,8 @@ const ContactPage = () => {
         </div>
 
         {/* Social Media */}
-        <div className="mt-20 flex justify-center">
-          <div className="grid grid-cols-2 md:grid-cols-5  gap-6 ">
-            {[
-              { icon: <FaFacebook />, label: "Facebook" },
-              { icon: <FaTwitter />, label: "Twitter" },
-              { icon: <FaDribbble />, label: "Dribbble" },
-              { icon: <FaInstagram />, label: "Instagram" },
-              { icon: <FaBehance />, label: "Behance" },
-            ].map((item, idx) => (
-              <div
-                key={idx}
-                className="primaryBox rounded-[50px] px-6 py-3 flex items-center gap-2 "
-              >
-                {item.icon} {item.label}
-              </div>
-            ))}
-          </div>
+        <div className="mt-20">
+          <ContactLink />
         </div>
 
         {/* Footer */}

@@ -1,0 +1,19 @@
+.animationCard {
+  background-color: #141414;
+  border: 1px solid #525252;
+  transition: all 0.3s ease; /* You can adjust the duration and timing */
+  color: white;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  transform: translateY(0);
+}
+.animationCard:hover {
+  background-color: #1d1b1b;
+  border-color: #ffffff;
+  transform: translateY(-5px);
+}
