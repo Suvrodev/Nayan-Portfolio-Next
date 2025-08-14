@@ -7,7 +7,6 @@ import aboutImage from "@/app/assets/aboutImage/sarkar_nayan_about.jpg";
 import BioData from "@/components/modules/About/BioData/BioData";
 import SkillLoading from "@/components/modules/About/SkillLoading/SkillLoading";
 import EducationExperience from "@/components/modules/About/EducationExperience/EducationExperience";
-import Testimonial from "@/components/modules/Home/Testimonial/Testimonial";
 import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
 import KnowladgeInterest from "@/components/modules/About/KnowladgeInterest/KnowladgeInterest";
 import { createTitle } from "@/components/utils/functions/metadata";

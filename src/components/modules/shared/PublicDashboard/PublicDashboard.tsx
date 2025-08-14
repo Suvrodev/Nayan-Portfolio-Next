@@ -1,6 +1,7 @@
 "use client";
 // import logoImage from "../../../../assets/HeaderImage/Logo.png";
 import logoImage from "@/app/assets/HeaderImage/Logo.png";
+import Booking from "@/components/Booking/Booking";
 import { navItems } from "@/components/utils/Array/navItems";
 import goLink from "@/components/utils/functions/goLink";
 
@@ -96,6 +97,10 @@ const PublicDashboard = () => {
         <p>
           Copyright ©2024 Sarkar Nayan <br /> All Rights Reserved.
         </p>
+      </div>
+
+      <div className="fixed bottom-4 right-4 bg-gray-800 text-white px-4 py-2 rounded shadow-lg">
+        <Booking />
       </div>
     </div>
   );

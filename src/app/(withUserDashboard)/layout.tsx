@@ -20,9 +20,6 @@ const UserLayout = ({ children }: IProps) => {
         <div className="bg-[#222222] p-20">
           <WeAccept />
         </div>
-
-        {/* For Store Data */}
-        {/* <StoreService /> */}
       </div>
     </div>
   );
