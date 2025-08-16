@@ -22,11 +22,11 @@ const Home = () => {
             />
           </div>
 
-          <div className="w-full md:w-[80%]   flex flex-col justify-center items-center mb-[16px]  ">
+          <div className="w-full md:w-[80%]   flex flex-col justify-center items-center mb-[16px] sarkarTitle  ">
             <h1 className="font-h1 font-bold capitalize text-[2rem] md:text-[3rem] ">
               Sarkar Nayan
             </h1>
-            <p className="font-body leading-[1.6]  text-[1rem] md:text-[1.125rem] tracking-[0.025rem]  mb-[20px] ">
+            <p className="font-body leading-[1.6]  text-[1rem] md:text-[1.125rem] tracking-[0.025rem] snd text-center">
               Highly motivated and detail-oriented Web Developer with a
               Bachelor&#39;s degree in Computer Science and Engineering for 4
               years. Proficient in <span className=" highLight ">PHP</span>,
