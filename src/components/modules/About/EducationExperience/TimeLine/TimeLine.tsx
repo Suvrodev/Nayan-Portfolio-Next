@@ -18,7 +18,7 @@ const TimeLine = ({ education }: IProps) => {
           {education?.year}
         </p>
         <p className="text-[16px] font-bold ">{education?.institute}</p>
-        <p className="c">{education?.topic}</p>
+        <p className="pDesc">{education?.topic}</p>
       </div>
     </div>
   );

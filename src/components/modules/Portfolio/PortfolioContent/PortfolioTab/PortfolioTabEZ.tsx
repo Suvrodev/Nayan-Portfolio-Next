@@ -60,16 +60,16 @@ import { selectPortfolioCategory } from "@/redux/features/PortfolioApi/portfolio
 import { useEffect, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import { useAppSelector } from "@/redux/hook";
+// import { useAppSelector } from "@/redux/hook";
 
 const PortfolioTabEZ = () => {
-  const { portfolioCategory } = useAppSelector(
-    (state) => state?.portfolioCategories
-  );
+  // const { portfolioCategory } = useAppSelector(
+  //   (state) => state?.portfolioCategories
+  // );
   // console.log("Stable Category: ", portfolioCategory);
 
   const dispatch = useDispatch();
-  const [activeTab, setActiveTab] = useState(portfolioCategory);
+  const [activeTab, setActiveTab] = useState("All");
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
@@ -132,7 +132,8 @@ const PortfolioTabEZ = () => {
 
           {/* Animated underline background */}
           <span
-            className="absolute z-0 h-9  bg-[#292929] flex items-center justify-center rounded-full transition-all duration-300"
+            // className="absolute z-0 h-9  bg-[#292929] flex items-center justify-center rounded-full transition-all duration-300"
+            className="absolute z-0 h-9  bg-[#666666] flex items-center justify-center rounded-full transition-all duration-300"
             style={{
               left: underlineStyle.left,
               width: underlineStyle.width,

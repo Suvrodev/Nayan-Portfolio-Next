@@ -19,13 +19,6 @@ const Booking = () => {
   }, []);
 
   return (
-    // <>
-    //   {/* Round Booking Button - in case you want custom button */}
-    //   <div className="fixed bottom-20 right-20">
-    //     <FaCalendarAlt size={24} />
-    //   </div>
-    // </>
-
     <div
       className="fixed bottom-20 right-20 p-4 rounded-full cursor-pointer"
       onClick={async () => {

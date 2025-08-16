@@ -37,7 +37,7 @@ const EducationExperience = () => {
         {/* Experience */}
         <div className="w-full md:w-1/2 flex flex-col ">
           {/* TimeLineDag */}
-          <h1 className="text-xl font-bold text-white mb-10">Experience</h1>
+          <h1 className="text-xl font-bold text-white mb-10">Courses</h1>
           <div className="flex">
             <div className="bg-white w-[1px] h-full ">
               {/* <p className="h-auto w-[1px] bg-white"></p> */}

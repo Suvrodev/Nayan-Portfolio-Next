@@ -18,7 +18,7 @@ const AboutPage = () => {
   return (
     <div className="overflow-hidden">
       <div className="pPadding">
-        <LinkBox text1={"About"} />
+        <LinkBox text1={"Home"} text2={"About"} />
         {/* <h1 className="my-10 text-3xl text-white font-bold">About Me</h1> */}
         <h1 className="my-10 pageTitle">About Me</h1>
         {/* 
@@ -40,7 +40,9 @@ const AboutPage = () => {
         </div>
 
         <div className="my-10">
-          <h1 className=" topicTitle">Sarkar Nayan</h1>
+          <h1 className=" font-bold capitalize text-[2rem] md:text-[3rem]">
+            Sarkar Nayan
+          </h1>
           <p className="font-bold">
             Web Designer & Developer, Graphics & UI UX designer.
           </p>
@@ -48,7 +50,7 @@ const AboutPage = () => {
 
         <div className="dag"></div>
         <div className=" my-10 ">
-          <p className="text-[16px] leading-[1.8] text-gray-400">
+          <p className="text-[16px] leading-[1.8] ">
             Highly motivated and detail-oriented Web Developer with a
             Bachelor&#39;s degree in Computer Science and Engineering for 4
             years. Proficient in PHP, with a deep understanding of the Laravel

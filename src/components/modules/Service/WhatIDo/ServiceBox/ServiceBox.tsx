@@ -49,7 +49,7 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
           {/* <ServiceModal image={image} popupDesc={popupDesc} /> */}
           <Link href={`/service/${_id}`}>
             {/* <div className="group font-bold flex items-center gap-2 cursor-pointer w-fit overflow-hidden"> */}
-            <div className="relative w-[130px] scale-100 transition-all hover:scale-110 ">
+            <div className="relative w-[130px] scale-100 transition-all duration-500 hover:scale-110 ">
               {/* Read More text - animate in */}
               <p className=" ">Read More</p>
               <hr className="w-[40px] bg-white h-[2px] absolute top-[14px]  right-0" />

@@ -12,7 +12,7 @@ const Service = ({ isAdmin }: IProps) => {
   return (
     <div className="overflow-hidden ">
       <div className="m-5 md:m-16">
-        <LinkBox text1={"Service"} />
+        <LinkBox text1={"Home"} text2={"Service"} />
       </div>
       <div className="m-5 md:m-16">
         <WhatIDo isAdmin={isAdmin || false} />
