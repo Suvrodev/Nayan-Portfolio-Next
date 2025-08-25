@@ -13,9 +13,9 @@ const TestimonialBox = ({ testimonial }: IProps) => {
   return (
     <div className="primaryBox rounded-[7px] relative h-auto ">
       <div className="text-center text-white h-[450px] w-full  flex flex-col items-center justify-center px-10 ">
-        <h1 className="pDesc">{desc}</h1>
-        <h1 className=" font-bold text-2xl text-white mt-10">{name}</h1>
-        <h1 className="text-[#cccccc]">{position}</h1>
+        <h2 className="pDesc">{desc}</h2>
+        <h2 className=" font-bold text-2xl text-white mt-10">{name}</h2>
+        <h2 className="text-[#cccccc]">{position}</h2>
         <Rating
           style={{ maxWidth: 100 }}
           value={rating}

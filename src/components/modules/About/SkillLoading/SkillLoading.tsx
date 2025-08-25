@@ -3,7 +3,7 @@ import "./SkillLoading.css";
 const SkillLoading = () => {
   return (
     <div className="">
-      <h1 className="text-2xl font-bold text-white mb-10  ">Skill</h1>
+      <h2 className="text-2xl font-bold text-white mb-10  ">Skill</h2>
       <div className="flex flex-col md:flex-row gap-8 md:gap-14">
         <div className="flex flex-col gap-5">
           <Progressbar title={"Wordpress"} percentage={90} />

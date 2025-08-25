@@ -34,7 +34,7 @@ const Certificate = () => {
 
   return (
     <div className=" ">
-      <h1 className="text-2xl font-bold mb-10">Certificate</h1>
+      <h2 className="text-2xl font-bold mb-10">Certificate</h2>
       <Marquee pauseOnHover={true} autoFill={false} speed={50}>
         {certificateImages.map((item, idx) => (
           <div

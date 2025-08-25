@@ -22,7 +22,7 @@ const EducationExperience = () => {
       <div className="flex flex-col md:flex-row text-white ">
         {/* For educations */}
         <div className="w-full md:w-1/2 flex flex-col ">
-          <h1 className="text-xl font-bold text-white mb-10">Educations</h1>
+          <h2 className="text-xl font-bold text-white mb-10">Educations</h2>
           {/* TimeLineDag */}
           <div className=" flex">
             <div className="bg-white w-[2px] h-full  "></div>
@@ -37,7 +37,7 @@ const EducationExperience = () => {
         {/* Experience */}
         <div className="w-full md:w-1/2 flex flex-col ">
           {/* TimeLineDag */}
-          <h1 className="text-xl font-bold text-white mb-10">Courses</h1>
+          <h2 className="text-xl font-bold text-white mb-10">Courses</h2>
           <div className="flex">
             <div className="bg-white w-[1px] h-full ">
               {/* <p className="h-auto w-[1px] bg-white"></p> */}

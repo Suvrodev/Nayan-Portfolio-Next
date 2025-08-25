@@ -42,7 +42,7 @@ const ServiceBox = ({ service, isAdmin, idx }: IProps) => {
             </span>
             <span></span>
           </div>
-          <h1 className="text-2xl font-bold mt-4">{title}</h1>
+          <h2 className="text-2xl font-bold mt-4">{title}</h2>
           <p className=" pDesc">{shortDescription}</p>
         </div>
         <div className="py-1 absolute bottom-[20px]">

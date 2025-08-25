@@ -11,7 +11,7 @@ const GigCard = ({ gig }: IProps) => {
     <Link href={`gigs/${gig._id}`}>
       <div>
         <Image src={gig.images[0]} alt={gig.title} width={450} height={350} />
-        <h1 className="hover:underline">{gig.title}</h1>
+        <h2 className="hover:underline">{gig.title}</h2>
         <div className="flex items-center gap-x-2">
           <div className="flex items-center gap-x-2 my-2">
             <StarIcon />

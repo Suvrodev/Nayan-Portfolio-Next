@@ -40,7 +40,7 @@ const TestimonialCard = ({ testimonial }: IProps) => {
           <div></div>
         </div>
         <div className="flex flex-col items-center justify-center text-[20px]">
-          <h1 className=" font-bold text-white">{name}</h1>
+          <h2 className=" font-bold text-white">{name}</h2>
           <p className="text-[#cccccc]">{position}</p>
         </div>
       </div>

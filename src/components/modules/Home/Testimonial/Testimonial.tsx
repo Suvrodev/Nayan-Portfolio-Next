@@ -68,9 +68,9 @@ const Testimonial = ({ showBox }: { showBox: boolean }) => {
       <div className="">
         <h1 className="text-2xl font-bold ">Testimonial</h1>
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 uppercase">
             Our Satisfied Customers Feedback
-          </h1>
+          </h2>
         </div>
 
         <div

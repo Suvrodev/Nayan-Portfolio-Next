@@ -40,9 +40,9 @@ const AboutPage = () => {
         </div>
 
         <div className="my-10">
-          <h1 className=" font-bold capitalize text-[2rem] md:text-[3rem]">
+          <h2 className=" font-bold capitalize text-[2rem] md:text-[3rem]">
             Sarkar Nayan
-          </h1>
+          </h2>
           <p className="font-bold">
             Web Designer & Developer, Graphics & UI UX designer.
           </p>

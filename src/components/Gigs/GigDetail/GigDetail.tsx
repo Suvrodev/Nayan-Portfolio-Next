@@ -48,7 +48,7 @@ const GigDetail = ({ id }: IProps) => {
           </div>
           <ImageCarousel images={gig.images} />
           <div>
-            <h1 className="font-bold text-2xl mt-8 mb-4">About This Gig</h1>
+            <h2 className="font-bold text-2xl mt-8 mb-4">About This Gig</h2>
             <First />
           </div>
           <div>

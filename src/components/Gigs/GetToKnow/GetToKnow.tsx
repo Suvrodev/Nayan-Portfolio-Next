@@ -5,7 +5,7 @@ import nayanImage from "@/app/assets/Nayan.webp";
 const GetToKnow = () => {
   return (
     <div className="max-w-4xl mx-auto  p-6 rounded-md shadow-md">
-      <h1 className="text-2xl font-bold mb-4">Get to know Sarkar Nayan</h1>
+      <h2 className="text-2xl font-bold mb-4">Get to know Sarkar Nayan</h2>
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
         {/* Profile Image */}
         <div>
@@ -20,7 +20,7 @@ const GetToKnow = () => {
 
         {/* Content */}
         <div className="flex-1 space-y-2 text-center md:text-left">
-          <h1 className="text-2xl font-bold">Sarkar Nayan</h1>
+          <h2 className="text-2xl font-bold">Sarkar Nayan</h2>
           <p className=" text-lg">Processional Graphic Design Expert</p>
 
           {/* Rating */}
