@@ -28,7 +28,7 @@ const GetToKnow = () => {
             {[...Array(5)].map((_, i) => (
               <Star key={i} size={16} fill="currentColor" />
             ))}
-            <span className=" ml-2 font-medium">4.5</span>
+            <span className=" ml-2 font-medium">4.9</span>
             <span className="">(107)</span>
           </div>
         </div>

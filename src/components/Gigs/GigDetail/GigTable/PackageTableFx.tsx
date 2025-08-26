@@ -1,21 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 
 const PackageTableFx = ({ packages }: { packages: any[] }) => {
-  const renderCheck = (value: boolean) => (
-    <Check
-      className={`mx-auto ${value ? "text-white" : "text-white opacity-50"}`}
-      size={18}
-    />
-  );
-
-  // Collect all unique features from all packages (converted to object array if needed)
+  // Collect all unique features from all packages
   const allFeaturesSet = new Set<string>();
   packages.forEach((pkg) => {
-    if (Array.isArray(pkg.features)) {
-      pkg.features.forEach((feature: any) => {
+    if (Array.isArray(pkg.tableFeatures)) {
+      pkg.tableFeatures.forEach((feature: any) => {
         if (typeof feature === "string") {
           allFeaturesSet.add(feature);
         } else if (feature?.feature) {
@@ -27,53 +20,61 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
 
   const allFeatures = Array.from(allFeaturesSet);
 
+  const renderValue = (matched: any) => {
+    if (!matched) return <span>-</span>;
+
+    if ("isEnable" in matched) {
+      return matched.isEnable ? (
+        <Check className="mx-auto text-green-500" size={18} />
+      ) : (
+        <X className="mx-auto text-red-500" size={18} />
+      );
+    }
+
+    if ("text" in matched) {
+      return <span className="text-white">{matched.text}</span>;
+    }
+
+    return <span>-</span>;
+  };
+
   return (
     <div className="overflow-x-auto mt-8">
       <h2 className="text-lg font-semibold mb-4">Compare packages</h2>
       <table className="min-w-full text-sm text-left border border-gray-200">
         <thead>
           <tr>
-            <th className="p-3 border">Package</th>
+            <th className="p-3 border bg-gray-800 text-white">Package</th>
             {packages.map((pkg) => (
-              <th key={pkg.name} className="p-3 border text-left">
+              <th
+                key={pkg.name}
+                className="p-3 border text-left bg-gray-800 text-white"
+              >
                 <div className="font-semibold text-base">${pkg.price}</div>
                 <div className="font-medium text-white/80">{pkg.name}</div>
 
                 <p className="font-medium mt-4 mb-2 text-[12px] text-white/90">
-                  {" "}
-                  {pkg.concept}{" "}
+                  {pkg.concept}
                 </p>
 
-                {/* <p className="text-[14px] mt-1 text-gray-500">
-                  {pkg.revisions} Revisions +{pkg.formate}
-                  {pkg.features
-                    ?.filter((f: any) => typeof f !== "string" && f.isEnable)
-                    .map((f: any) => `+ ${f.feature}`)
-                    .join(" ")}
-                </p> */}
-                <p className="text-[14px] mt-1 text-gray-500">{pkg.tabBody}</p>
+                <p className="text-[14px] mt-1 text-gray-400">{pkg.tabBody}</p>
               </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {/* Dynamically render features */}
           {allFeatures.map((feature) => (
-            <tr key={feature}>
-              <td className="p-3 border">{feature}</td>
+            <tr key={feature} className="bg-gray-900 text-white">
+              <td className="p-3 border font-medium">{feature}</td>
               {packages.map((pkg) => {
-                let isEnabled = false;
+                let matched = null;
 
-                if (Array.isArray(pkg.features)) {
-                  const matched = pkg.features.find((f: any) =>
-                    typeof f === "string"
-                      ? f === feature
-                      : f.feature === feature
+                if (Array.isArray(pkg.tableFeatures)) {
+                  matched = pkg.tableFeatures.find(
+                    (f: any) =>
+                      (typeof f === "string" && f === feature) ||
+                      f.feature === feature
                   );
-                  if (matched) {
-                    isEnabled =
-                      typeof matched === "string" ? true : matched.isEnable;
-                  }
                 }
 
                 return (
@@ -81,55 +82,15 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
                     key={pkg.name + feature}
                     className="p-3 border text-center"
                   >
-                    {renderCheck(isEnabled)}
+                    {renderValue(matched)}
                   </td>
                 );
               })}
             </tr>
           ))}
 
-          {/* Other rows like concepts, revisions, etc. */}
-          <tr>
-            <td className="p-3 border">Design Concepts</td>
-            {packages.map((pkg) => (
-              <td key={pkg.name} className="p-3 border text-center">
-                {pkg.concepts}
-              </td>
-            ))}
-          </tr>
-          <tr>
-            <td className="p-3 border">Revisions</td>
-            {packages.map((pkg) => (
-              <td key={pkg.name} className="p-3 border text-center">
-                {pkg.revisions}
-              </td>
-            ))}
-          </tr>
-          <tr>
-            <td className="p-3 border">Delivery Time</td>
-            {packages.map((pkg) => (
-              <td key={pkg.name} className="p-3 border text-center">
-                {pkg.delivery} days
-              </td>
-            ))}
-          </tr>
-          {/* <tr>
-            <td className="p-3 border">Extra Fast</td>
-            {packages.map((pkg) => (
-              <td
-                key={pkg.name}
-                className="p-3 border text-center text-xs text-gray-500"
-              >
-                {pkg.extraDelivery
-                  ? Object.entries(pkg.extraDelivery).map(
-                      ([day, cost]) => `${day} (+$${cost})`
-                    )
-                  : "—"}
-              </td>
-            ))}
-          </tr> */}
-          <tr className="">
-            <td className="p-3 border font-semibold  align-top">Total</td>
+          <tr className="bg-gray-800 text-white">
+            <td className="p-3 border font-semibold align-top">Total</td>
             {packages.map((pkg) => (
               <td key={pkg.name} className="p-3 border text-center font-medium">
                 <div className="flex flex-col justify-center items-center gap-y-4">

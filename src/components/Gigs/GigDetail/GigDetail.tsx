@@ -20,12 +20,12 @@ const GigDetail = ({ id }: IProps) => {
     fetch("/gigs.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log("Data: ", data);
+        // console.log("Data: ", data);
         setGig((data as TGig[]).find((d) => d._id === id) || null);
       });
   }, [id]);
 
-  console.log("Gig: ", gig);
+  // console.log("Gig: ", gig);
 
   if (!gig) return <div className="text-center py-10">Loading...</div>;
   return (

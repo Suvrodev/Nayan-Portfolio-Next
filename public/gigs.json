@@ -30,21 +30,30 @@
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Print Ready",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": false
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
             "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "3"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
           }
         ]
       },
@@ -61,21 +70,30 @@
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "5 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": false
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
             "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "5"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
           }
         ]
       },
@@ -92,21 +110,30 @@
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "7 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
             "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "4"
+          },
+          {
+            "feature": "Revisions",
+            "text": "7"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "4 days"
           }
         ]
       }
@@ -713,6 +740,285 @@
             "feature": "Double-sided",
             "name": "Front & back design",
             "isEnable": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "gig-007",
+    "title": "I will do wordpress website development, design or redesign wordpress website",
+    "seller": {
+      "name": "Sarkar Nayan",
+      "rating": 4.9,
+      "reviews": 60
+    },
+    "about": "<p><strong>This is Sarkar.</strong> Looking for a professional and visually appealing business card that will leave a lasting impression on your clients and customers? Look no further!</p><p><strong>With 5 years of graphic design experience,</strong> I can create a high-quality business card design that leaves a lasting impression. I work closely with you to choose colors, fonts, logo, and contact information, ensuring the final design meets your expectations.</p><p>Don't settle for a generic business card design; let me help you create a unique and professional design that will help you make a great first impression. Take a look at my Fiverr gig today to begin your project!</p><p><strong><u>My services include:</u></strong></p><ul><li>Double sided business card</li><li>Editable source files.</li><li>High-resolution file format.</li><li>Perfection revisions.</li><li>Friendly communication.</li></ul><p><strong>Requirements:</strong></p><ul><li>Logo Files in AI/EPS/PDF/PNG/JPG Format. (Note: The gig does not include logo design, so please contact me for the price)</li><li>Name and Job Title.</li><li>Phone Number and Email.</li><li>Website and address.</li><li>Additional information for card design.</li><li>Include additional information.</li></ul><p><strong><u>You have any questions, feel free to send me a message.</u></strong></p><p><strong><u>Thank You So much</u></strong></p><p><strong><u>sarkar_nayan</u></strong></p>",
+    "experience": "With 5 years of graphic design experience, I can create a high-quality business card design that leaves a lasting impression.",
+    "images": [
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756240089/w-1_ptdc3o.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756240089/w-2_o05flu.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756240088/w-3_tzgzpp.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756240089/w-5_vt4mop.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756240091/w-4_psjp4t.webp"
+    ],
+    "packages": [
+      {
+        "name": "Basic",
+        "price": 90,
+        "concepts": 2,
+        "revisions": "Unlimited Revisions",
+        "delivery": 4,
+        "printReady": true,
+        "sourceFile": false,
+        "doubleSided": true,
+        "extraDelivery": { "1 day": 10 },
+        "concept": "Kickstarter",
+        "formate": "300dpi CMYK + JPG, PDF",
+        "tabBody": "Attractive One Landing Page Design + Responsive + Speed Optimization + Bug Fixing",
+
+        "tableFeatures": [
+          {
+            "feature": "Functional website",
+            "name": "Functional website",
+            "isEnable": true
+          },
+          {
+            "feature": "Responsive design",
+            "name": "Responsive design",
+            "isEnable": false
+          },
+          {
+            "feature": "Content upload",
+            "name": "Content upload",
+            "isEnable": true
+          },
+          {
+            "feature": "E-commerce functionality",
+            "name": "E-commerce functionality",
+            "isEnable": true
+          },
+          {
+            "feature": "Payment Integration",
+            "name": "Payment Integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Opt-in form",
+            "name": "Opt-in form",
+            "isEnable": false
+          },
+          {
+            "feature": "Autoresponder integration",
+            "name": "Autoresponder integration",
+            "isEnable": false
+          },
+          {
+            "feature": "Speed optimization",
+            "name": "Speed optimization",
+            "isEnable": false
+          },
+          {
+            "feature": "Hosting setup",
+            "name": "Hosting setup",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media icons",
+            "name": "Social media icons",
+            "isEnable": true
+          },
+          {
+            "feature": "Number of pages",
+            "name": "Number of pages",
+            "text": 1
+          },
+          {
+            "feature": "Plugins/extensions installation",
+            "name": "Plugins/extensions installation",
+            "text": 3
+          },
+          {
+            "feature": "Revisions",
+            "name": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "name": "Delivery Time",
+            "text": "4 days"
+          }
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": 50,
+        "concepts": 3,
+        "revisions": "Unlimited Revisions",
+        "delivery": 6,
+        "printReady": true,
+        "sourceFile": true,
+        "doubleSided": true,
+        "extraDelivery": { "1 day": 15 },
+        "concept": "Pro Business",
+        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Attractive Design or Redesign Upto 5 Pages + Responsive + WooCommerce + 30 Days Free Support",
+        "tableFeatures": [
+          {
+            "feature": "Functional website",
+            "name": "Functional website",
+            "isEnable": true
+          },
+          {
+            "feature": "Responsive design",
+            "name": "Responsive design",
+            "isEnable": false
+          },
+          {
+            "feature": "Content upload",
+            "name": "Content upload",
+            "isEnable": true
+          },
+          {
+            "feature": "E-commerce functionality",
+            "name": "E-commerce functionality",
+            "isEnable": true
+          },
+          {
+            "feature": "Payment Integration",
+            "name": "Payment Integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Opt-in form",
+            "name": "Opt-in form",
+            "isEnable": false
+          },
+          {
+            "feature": "Autoresponder integration",
+            "name": "Autoresponder integration",
+            "isEnable": false
+          },
+          {
+            "feature": "Speed optimization",
+            "name": "Speed optimization",
+            "isEnable": false
+          },
+          {
+            "feature": "Hosting setup",
+            "name": "Hosting setup",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media icons",
+            "name": "Social media icons",
+            "isEnable": true
+          },
+          {
+            "feature": "Number of pages",
+            "name": "Number of pages",
+            "text": 5
+          },
+          {
+            "feature": "Plugins/extensions installation",
+            "name": "Plugins/extensions installation",
+            "text": 5
+          },
+          {
+            "feature": "Revisions",
+            "name": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "name": "Delivery Time",
+            "text": "6 days"
+          }
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": 85,
+        "concepts": 4,
+        "revisions": "Unlimited Revisions",
+        "delivery": 10,
+        "printReady": true,
+        "sourceFile": true,
+        "doubleSided": true,
+        "extraDelivery": { "2 days": 20 },
+        "concept": "Premium Business",
+        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Premium Design or Redesign Upto 8 Pages + Responsive + WooCommerce + 30 Days Free Support",
+        "tableFeatures": [
+          {
+            "feature": "Functional website",
+            "name": "Functional website",
+            "isEnable": true
+          },
+          {
+            "feature": "Responsive design",
+            "name": "Responsive design",
+            "isEnable": false
+          },
+          {
+            "feature": "Content upload",
+            "name": "Content upload",
+            "isEnable": true
+          },
+          {
+            "feature": "E-commerce functionality",
+            "name": "E-commerce functionality",
+            "isEnable": true
+          },
+          {
+            "feature": "Payment Integration",
+            "name": "Payment Integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Opt-in form",
+            "name": "Opt-in form",
+            "isEnable": false
+          },
+          {
+            "feature": "Autoresponder integration",
+            "name": "Autoresponder integration",
+            "isEnable": false
+          },
+          {
+            "feature": "Speed optimization",
+            "name": "Speed optimization",
+            "isEnable": false
+          },
+          {
+            "feature": "Hosting setup",
+            "name": "Hosting setup",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media icons",
+            "name": "Social media icons",
+            "isEnable": true
+          },
+          {
+            "feature": "Number of pages",
+            "name": "Number of pages",
+            "text": 8
+          },
+          {
+            "feature": "Plugins/extensions installation",
+            "name": "Plugins/extensions installation",
+            "text": 7
+          },
+          {
+            "feature": "Revisions",
+            "name": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "name": "Delivery Time",
+            "text": "10 days"
           }
         ]
       }
