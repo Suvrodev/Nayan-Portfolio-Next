@@ -2,6 +2,7 @@
 import { Clock3, Check } from "lucide-react";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
 const PackageCard = ({ data }: { data: any }) => {
+  // console.log("Data: ", data);
   return (
     <div>
       {/* Concepts with Price Start */}
@@ -12,14 +13,7 @@ const PackageCard = ({ data }: { data: any }) => {
       {/* Concepts with Price End */}
 
       {/*1 line Feature Start */}
-      <div className="text-sm text-gray-400 mt-2">
-        {/* {data.revisions} Revisions +{data.formate}
-        {data.features
-          ?.filter((f: any) => typeof f !== "string" && f.isEnable)
-          .map((f: any) => `+ ${f.feature}`)
-          .join(" ")} */}
-        {data.tabBody}
-      </div>
+      <div className="text-sm text-gray-400 mt-2">{data.tabBody}</div>
       {/*1 line Feature Start */}
 
       {/* Review And Delivery start */}
@@ -39,23 +33,8 @@ const PackageCard = ({ data }: { data: any }) => {
       </div>
       {/* Review And Delivery End */}
 
-      {/* Enabled Features */}
-      {/* <ul className="list-disc ml-6 mt-2 text-sm text-white/90">
-        {data.features
-          ?.filter((f: any) => f.isEnable)
-          .map((f: any, i: number) => (
-            <li key={i}>{f.feature}</li>
-          ))}
-      </ul> */}
-      {/* All Features with check icon */}
       <ul className="mt-3 space-y-2 text-sm">
-        <li className="flex items-center gap-x-2 ">
-          <Check size={18} />
-          <p className="flex gap-x-2">
-            <span> {data.concepts}</span> <span>concepts</span>
-          </p>
-        </li>
-        {data.features?.map((f: any, i: number) => (
+        {data.tabFeatures?.map((f: any, i: number) => (
           <li
             key={i}
             className={`flex items-center gap-2 ${
@@ -63,7 +42,7 @@ const PackageCard = ({ data }: { data: any }) => {
             }`}
           >
             <Check size={18} />
-            {f.name}
+            {f.feature}
           </li>
         ))}
       </ul>

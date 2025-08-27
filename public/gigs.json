@@ -55,6 +55,25 @@
             "feature": "Delivery Time",
             "text": "2 days"
           }
+        ],
+
+        "tabFeatures": [
+          {
+            "feature": "2 concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
         ]
       },
       {
@@ -95,6 +114,24 @@
             "feature": "Delivery Time",
             "text": "2 days"
           }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "3 concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
         ]
       },
       {
@@ -134,6 +171,24 @@
           {
             "feature": "Delivery Time",
             "text": "4 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "4 concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
           }
         ]
       }
