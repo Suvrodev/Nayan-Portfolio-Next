@@ -226,20 +226,47 @@
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready)",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concept",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "3"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
@@ -257,20 +284,47 @@
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "5 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready & Source Fi",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concept",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "5"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "3 concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
@@ -288,20 +342,47 @@
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "7 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concept",
+            "text": "4"
+          },
+          {
+            "feature": "Revisions",
+            "text": "7"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "4 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "4 concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
