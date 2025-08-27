@@ -1,6 +1,6 @@
 "use client";
 import { compressAndConvertToBase64 } from "@/components/convertToBase64/compressAndConvertToBase64";
-import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
+// import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useUpdateServiceMutation } from "@/redux/features/ServiceApi/serviceApi";
 import { TService } from "@/types/globalTypes";
@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { toast } from "sonner";
+import QuilTextEditor from "../../shared/TextEditor/QuilTextEditor/QuilTextEditor";
 
 interface IProps {
   service: TService;
@@ -135,7 +136,11 @@ const UpdateService = ({ service }: IProps) => {
             name="description"
             rules={{ required: "Description is required" }}
             render={({ field }) => (
-              <JoditEditorComponent
+              // <JoditEditorComponent
+              //   value={field.value || ""}
+              //   onChange={field.onChange}
+              // />
+              <QuilTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
               />

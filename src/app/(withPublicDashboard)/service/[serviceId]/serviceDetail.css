@@ -18,3 +18,8 @@
 .prose ol {
   background-color: #292929 !important;
 }
+
+.prose p {
+  margin-bottom: 1rem; /* Paragraph gap */
+  line-height: 1.6; /* Line height */
+}

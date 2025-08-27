@@ -2,7 +2,7 @@
 
 import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/convertToBase64/compressAndConvertToBase64";
-import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
+// import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useUpdateBlogMutation } from "@/redux/features/BlogApi/blogApi";
 import { TBlog } from "@/types/globalTypes";
@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
+import QuilTextEditor from "../../shared/TextEditor/QuilTextEditor/QuilTextEditor";
 
 interface IProps {
   blog: TBlog;
@@ -179,7 +180,11 @@ const UpdateBlog = ({ blog }: IProps) => {
             name="description"
             rules={{ required: "Content is required" }}
             render={({ field }) => (
-              <JoditEditorComponent
+              // <JoditEditorComponent
+              //   value={field.value || ""}
+              //   onChange={field.onChange}
+              // />
+              <QuilTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
               />

@@ -1,0 +1,73 @@
+/* Custom placeholder color */
+.ql-editor.ql-blank::before {
+  color: white !important; /* ✅ White placeholder */
+  opacity: 0.6; /* একটু হালকা রাখলে ভালো লাগে */
+  font-style: italic; /* চাইলে italic রাখতে পারেন */
+}
+
+/**DeepSeek**.
+/* Quill Editor Custom Styles */
+.ql-toolbar.ql-snow {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border: 1px solid #374151;
+  background-color: #2d2d2d;
+}
+
+.ql-container.ql-snow {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 1px solid #374151;
+  background-color: #1f1f1f;
+  color: white;
+  min-height: 200px;
+}
+
+.ql-snow .ql-stroke {
+  stroke: white;
+}
+
+.ql-snow .ql-fill {
+  fill: white;
+}
+
+.ql-snow .ql-picker {
+  color: white;
+}
+
+.ql-snow .ql-picker-options {
+  background-color: #2d2d2d;
+  border: 1px solid #374151;
+}
+
+.ql-snow .ql-picker-label:hover {
+  color: #60a5fa;
+}
+
+.ql-snow .ql-picker-label:hover .ql-stroke {
+  stroke: #60a5fa;
+}
+
+.ql-snow .ql-tooltip {
+  background-color: #2d2d2d;
+  border: 1px solid #374151;
+  color: white;
+  z-index: 100;
+}
+
+.ql-snow .ql-tooltip input[type="text"] {
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid #374151;
+}
+
+.ql-editor {
+  color: white;
+  font-family: inherit;
+  min-height: 300px;
+}
+
+.ql-editor.ql-blank::before {
+  color: #9ca3af;
+  font-style: normal;
+}

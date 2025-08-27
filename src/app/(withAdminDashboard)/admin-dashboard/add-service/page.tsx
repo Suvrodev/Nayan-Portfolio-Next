@@ -2,7 +2,8 @@
 
 import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/convertToBase64/compressAndConvertToBase64";
-import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
+// import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
+import QuilTextEditor from "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useAddServiceMutation } from "@/redux/features/ServiceApi/serviceApi";
 import { TService } from "@/types/globalTypes";
@@ -135,7 +136,11 @@ const AdminAddService = () => {
             name="description"
             rules={{ required: "Description is required" }}
             render={({ field }) => (
-              <JoditEditorComponent
+              // <JoditEditorComponent
+              //   value={field.value || ""}
+              //   onChange={field.onChange}
+              // />
+              <QuilTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
               />
