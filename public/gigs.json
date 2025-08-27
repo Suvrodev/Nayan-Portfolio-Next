@@ -409,7 +409,7 @@
     "packages": [
       {
         "name": "Basic",
-        "price": 20,
+        "price": 10,
         "concepts": 2,
         "revisions": 3,
         "delivery": 2,
@@ -420,27 +420,54 @@
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Professional Two-Sided Business Card with 300/450 DPI CMYK (Print Ready Files (JPEG & PDF)",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": false
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
       },
       {
         "name": "Standard",
-        "price": 40,
+        "price": 25,
         "concepts": 3,
         "revisions": 5,
         "delivery": "2 days",
@@ -451,27 +478,54 @@
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Two-Sided business Card with 300/450 DPI CMYK (Print Ready & Source Files PSD or AI, JPEG, PDF)",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
       },
       {
         "name": "Premium",
-        "price": 60,
+        "price": 50,
         "concepts": 4,
         "revisions": 7,
         "delivery": "4 days",
@@ -482,20 +536,47 @@
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "2-Sided Business Card + Logo Design (Print Ready & Source Files) + Premium Support",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "4 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "4 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
