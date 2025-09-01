@@ -1044,20 +1044,39 @@
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "One side: Print-ready (JPEG & PDF).",
 
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Files Ready for Print",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": false
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": false
+          },
+          {
+            "feature": "Revisions",
+            "text": "3"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": false
           }
         ]
@@ -1075,20 +1094,39 @@
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Double side: Print-ready (JPEG & PDF).",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Files Ready for Print",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Revisions",
+            "text": "5"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
@@ -1106,20 +1144,39 @@
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Double side: Print ready (JPEG & PDF) + Editable source files (AI/PSD)",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Files Ready for Print",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Revisions",
+            "text": "7"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "3 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
@@ -1166,74 +1223,61 @@
           },
           {
             "feature": "Responsive design",
-            "name": "Responsive design",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Content upload",
-            "name": "Content upload",
             "isEnable": true
           },
           {
             "feature": "E-commerce functionality",
-            "name": "E-commerce functionality",
             "isEnable": true
           },
           {
             "feature": "Payment Integration",
-            "name": "Payment Integration",
             "isEnable": true
           },
           {
             "feature": "Opt-in form",
-            "name": "Opt-in form",
             "isEnable": false
           },
           {
             "feature": "Autoresponder integration",
-            "name": "Autoresponder integration",
             "isEnable": false
           },
           {
             "feature": "Speed optimization",
-            "name": "Speed optimization",
             "isEnable": false
           },
           {
             "feature": "Hosting setup",
-            "name": "Hosting setup",
             "isEnable": true
           },
           {
             "feature": "Social media icons",
-            "name": "Social media icons",
             "isEnable": true
           },
           {
             "feature": "Number of pages",
-            "name": "Number of pages",
             "text": 1
           },
           {
             "feature": "Plugins/extensions installation",
-            "name": "Plugins/extensions installation",
             "text": 3
           },
           {
             "feature": "Revisions",
-            "name": "Revisions",
             "text": "Unlimited"
           },
           {
             "feature": "Delivery Time",
-            "name": "Delivery Time",
             "text": "4 days"
           }
         ]
       },
       {
         "name": "Standard",
-        "price": 50,
+        "price": 290,
         "concepts": 3,
         "revisions": "Unlimited Revisions",
         "delivery": 6,
@@ -1247,62 +1291,50 @@
         "tableFeatures": [
           {
             "feature": "Functional website",
-            "name": "Functional website",
             "isEnable": true
           },
           {
             "feature": "Responsive design",
-            "name": "Responsive design",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Content upload",
-            "name": "Content upload",
             "isEnable": true
           },
           {
             "feature": "E-commerce functionality",
-            "name": "E-commerce functionality",
             "isEnable": true
           },
           {
             "feature": "Payment Integration",
-            "name": "Payment Integration",
             "isEnable": true
           },
           {
             "feature": "Opt-in form",
-            "name": "Opt-in form",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Autoresponder integration",
-            "name": "Autoresponder integration",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Speed optimization",
-            "name": "Speed optimization",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Hosting setup",
-            "name": "Hosting setup",
             "isEnable": true
           },
           {
             "feature": "Social media icons",
-            "name": "Social media icons",
             "isEnable": true
           },
           {
             "feature": "Number of pages",
-            "name": "Number of pages",
             "text": 5
           },
           {
             "feature": "Plugins/extensions installation",
-            "name": "Plugins/extensions installation",
             "text": 5
           },
           {
@@ -1312,14 +1344,13 @@
           },
           {
             "feature": "Delivery Time",
-            "name": "Delivery Time",
             "text": "6 days"
           }
         ]
       },
       {
         "name": "Premium",
-        "price": 85,
+        "price": 490,
         "concepts": 4,
         "revisions": "Unlimited Revisions",
         "delivery": 10,
@@ -1333,72 +1364,58 @@
         "tableFeatures": [
           {
             "feature": "Functional website",
-            "name": "Functional website",
             "isEnable": true
           },
           {
             "feature": "Responsive design",
-            "name": "Responsive design",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Content upload",
-            "name": "Content upload",
             "isEnable": true
           },
           {
             "feature": "E-commerce functionality",
-            "name": "E-commerce functionality",
             "isEnable": true
           },
           {
             "feature": "Payment Integration",
-            "name": "Payment Integration",
             "isEnable": true
           },
           {
             "feature": "Opt-in form",
-            "name": "Opt-in form",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Autoresponder integration",
-            "name": "Autoresponder integration",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Speed optimization",
-            "name": "Speed optimization",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Hosting setup",
-            "name": "Hosting setup",
             "isEnable": true
           },
           {
             "feature": "Social media icons",
-            "name": "Social media icons",
             "isEnable": true
           },
           {
             "feature": "Number of pages",
-            "name": "Number of pages",
             "text": 8
           },
           {
             "feature": "Plugins/extensions installation",
-            "name": "Plugins/extensions installation",
             "text": 7
           },
           {
             "feature": "Revisions",
-            "name": "Revisions",
             "text": "Unlimited"
           },
           {
             "feature": "Delivery Time",
-            "name": "Delivery Time",
             "text": "10 days"
           }
         ]
