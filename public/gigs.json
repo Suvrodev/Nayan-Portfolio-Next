@@ -792,36 +792,67 @@
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "2 Business Logos, High-Quality in a 3D Mockup, JPG, PNG, Transparent Format",
-
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Logo transparency",
-            "name": "Logo transparency",
             "isEnable": true
           },
           {
             "feature": "Vector file",
-            "name": "Vector file",
             "isEnable": false
           },
           {
             "feature": "Printable file",
-            "name": "Printable file",
             "isEnable": true
           },
           {
             "feature": "3D mockup",
-            "name": "Include 3D mockup",
             "isEnable": true
           },
           {
             "feature": "Source file",
-            "name": "Include source file",
             "isEnable": false
           },
           {
             "feature": "Social media kit",
-            "name": "Include social media kit",
+            "isEnable": false
+          },
+          {
+            "feature": "Number of concepts included",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 concepts included",
+            "isEnable": true
+          },
+          {
+            "feature": "Logo transparency",
+            "isEnable": true
+          },
+          {
+            "feature": "Vector file",
+            "isEnable": false
+          },
+          {
+            "feature": "Printable file",
+            "isEnable": true
+          },
+          {
+            "feature": "Include 3D mockup",
+            "isEnable": true
+          },
+          {
+            "feature": "Include source file",
+            "isEnable": false
+          },
+          {
+            "feature": "Include social media kit",
             "isEnable": false
           }
         ]
@@ -839,35 +870,67 @@
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "3 Business Logos, High-Quality JPG, Transparent PNG, 3D Mockup JPG, Source File, Vector File",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Logo transparency",
-            "name": "Logo transparency",
             "isEnable": true
           },
           {
             "feature": "Vector file",
-            "name": "Vector file",
             "isEnable": true
           },
           {
             "feature": "Printable file",
-            "name": "Printable file",
             "isEnable": true
           },
           {
             "feature": "3D mockup",
-            "name": "Include 3D mockup",
             "isEnable": true
           },
           {
             "feature": "Source file",
-            "name": "Include source file",
             "isEnable": true
           },
           {
             "feature": "Social media kit",
-            "name": "Include social media kit",
+            "isEnable": false
+          },
+          {
+            "feature": "Number of concepts included",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 concepts included",
+            "isEnable": true
+          },
+          {
+            "feature": "Logo transparency",
+            "isEnable": true
+          },
+          {
+            "feature": "Vector file",
+            "isEnable": true
+          },
+          {
+            "feature": "Printable file",
+            "isEnable": true
+          },
+          {
+            "feature": "Include 3D mockup",
+            "isEnable": true
+          },
+          {
+            "feature": "Include source file",
+            "isEnable": true
+          },
+          {
+            "feature": "Include social media kit",
             "isEnable": false
           }
         ]
@@ -885,35 +948,67 @@
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "4 Business Logos, High-Quality, PDF, JPG, PNG, Source File Ai, Vector EPS Editable",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Logo transparency",
-            "name": "Logo transparency",
             "isEnable": true
           },
           {
             "feature": "Vector file",
-            "name": "Vector file",
             "isEnable": true
           },
           {
             "feature": "Printable file",
-            "name": "Printable file",
             "isEnable": true
           },
           {
             "feature": "3D mockup",
-            "name": "Include 3D mockup",
             "isEnable": true
           },
           {
             "feature": "Source file",
-            "name": "Include source file",
             "isEnable": true
           },
           {
             "feature": "Social media kit",
-            "name": "Include social media kit",
+            "isEnable": true
+          },
+          {
+            "feature": "Number of concepts included",
+            "text": "4"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 concepts included",
+            "isEnable": true
+          },
+          {
+            "feature": "Logo transparency",
+            "isEnable": true
+          },
+          {
+            "feature": "Vector file",
+            "isEnable": true
+          },
+          {
+            "feature": "Printable file",
+            "isEnable": true
+          },
+          {
+            "feature": "Include 3D mockup",
+            "isEnable": true
+          },
+          {
+            "feature": "Include source file",
+            "isEnable": true
+          },
+          {
+            "feature": "Include social media kit",
             "isEnable": true
           }
         ]
