@@ -96,7 +96,7 @@
           },
           {
             "feature": "Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Double-sided",
@@ -126,7 +126,7 @@
           },
           {
             "feature": "Include Source File",
-            "isEnable": false
+            "isEnable": true
           },
           {
             "feature": "Front & back design",
@@ -233,7 +233,7 @@
           },
           {
             "feature": "Source File",
-            "isEnable": true
+            "isEnable": false
           },
           {
             "feature": "Double-sided",
@@ -493,7 +493,7 @@
           },
           {
             "feature": "Design Concepts",
-            "text": "3"
+            "text": "2"
           },
           {
             "feature": "Revisions",
@@ -551,7 +551,7 @@
           },
           {
             "feature": "Design Concepts",
-            "text": "2"
+            "text": "3"
           },
           {
             "feature": "Revisions",
@@ -564,7 +564,7 @@
         ],
         "tabFeatures": [
           {
-            "feature": "4 Concepts",
+            "feature": "3 Concepts",
             "isEnable": true
           },
           {
@@ -612,20 +612,43 @@
         "concept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Only business card (Print-ready files, JPG & PDF).",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": false
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
@@ -643,20 +666,43 @@
         "concept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Business card OR Logo Design (Print-ready files, JPG, PDF & Source Files)",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
@@ -674,20 +720,43 @@
         "concept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Business card & Logo design (Print-ready files, JPG, PDF & Source Files).",
-        "features": [
+        "tableFeatures": [
           {
             "feature": "Print-Ready",
-            "name": "Files Ready for Print",
             "isEnable": true
           },
           {
             "feature": "Source File",
-            "name": "Include Source File",
             "isEnable": true
           },
           {
             "feature": "Double-sided",
-            "name": "Front & back design",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
             "isEnable": true
           }
         ]
