@@ -1138,7 +1138,6 @@
         "tableFeatures": [
           {
             "feature": "Functional website",
-            "name": "Functional website",
             "isEnable": true
           },
           {
@@ -1192,6 +1191,56 @@
           {
             "feature": "Delivery Time",
             "text": "4 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Functional website",
+            "isEnable": true
+          },
+          {
+            "feature": "1 page",
+            "isEnable": true
+          },
+          {
+            "feature": "Content upload",
+            "isEnable": true
+          },
+          {
+            "feature": "3 plugins/extensions",
+            "isEnable": true
+          },
+          {
+            "feature": "E-commerce functionality",
+            "isEnable": true
+          },
+          {
+            "feature": "1 product",
+            "isEnable": true
+          },
+          {
+            "feature": "Payment Integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Opt-in form",
+            "isEnable": false
+          },
+          {
+            "feature": "Autoresponder integration",
+            "isEnable": false
+          },
+          {
+            "feature": "Speed optimization",
+            "isEnable": false
+          },
+          {
+            "feature": "Hosting setup",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media icons",
+            "isEnable": true
           }
         ]
       },
@@ -1262,6 +1311,60 @@
             "feature": "Delivery Time",
             "text": "6 days"
           }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Functional website",
+            "isEnable": true
+          },
+          {
+            "feature": "5 page",
+            "isEnable": true
+          },
+          {
+            "feature": "Responsive design",
+            "isEnable": true
+          },
+          {
+            "feature": "Content upload",
+            "isEnable": true
+          },
+          {
+            "feature": "5 plugins/extensions",
+            "isEnable": true
+          },
+          {
+            "feature": "E-commerce functionality",
+            "isEnable": true
+          },
+          {
+            "feature": "20 product",
+            "isEnable": true
+          },
+          {
+            "feature": "Payment Integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Opt-in form",
+            "isEnable": true
+          },
+          {
+            "feature": "Autoresponder integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Speed optimization",
+            "isEnable": false
+          },
+          {
+            "feature": "Hosting setup",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media icons",
+            "isEnable": true
+          }
         ]
       },
       {
@@ -1329,6 +1432,182 @@
           {
             "feature": "Delivery Time",
             "text": "10 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Functional website",
+            "isEnable": true
+          },
+          {
+            "feature": "8 page",
+            "isEnable": true
+          },
+          {
+            "feature": "Responsive design",
+            "isEnable": true
+          },
+          {
+            "feature": "Content upload",
+            "isEnable": true
+          },
+          {
+            "feature": "7 plugins/extensions",
+            "isEnable": true
+          },
+          {
+            "feature": "E-commerce functionality",
+            "isEnable": true
+          },
+          {
+            "feature": "50 product",
+            "isEnable": true
+          },
+          {
+            "feature": "Payment Integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Opt-in form",
+            "isEnable": true
+          },
+          {
+            "feature": "Autoresponder integration",
+            "isEnable": true
+          },
+          {
+            "feature": "Speed optimization",
+            "isEnable": true
+          },
+          {
+            "feature": "Hosting setup",
+            "isEnable": true
+          },
+          {
+            "feature": "Social media icons",
+            "isEnable": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "gig-008",
+    "title": "I will seo backlink for thailand korea indonesia hong kong cambodia singapore ranking",
+    "seller": {
+      "name": "Sarkar Nayan",
+      "rating": 4.9,
+      "reviews": 60
+    },
+    "about": "",
+    "images": [
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756802807/seo-1_dawxef.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756802807/seo-2_hfnbhv.png",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756802808/seo-5_vsqrof.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756802810/seo-3_ir5lvc.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1756802810/seo-4_jqijs1.jpg"
+    ],
+    "packages": [
+      {
+        "name": "Basic",
+        "price": 18,
+        "revisions": 3,
+        "delivery": 2,
+        "tableConcept": "Kickstarter",
+        "tabBody": "Attractive One Landing Page Design + Responsive + Speed Optimization + Bug Fixing",
+        "tableFeatures": [
+          {
+            "feature": "Off-page strategy",
+            "isEnable": false
+          },
+
+          {
+            "feature": "Backlink analysis",
+            "isEnable": false
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Off-page strategy",
+            "isEnable": false
+          },
+          {
+            "feature": "Backlink analysis",
+            "isEnable": false
+          }
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": 94.5,
+        "concepts": 3,
+        "revisions": "Unlimited Revisions",
+        "delivery": 6,
+        "tableConcept": "Pro Business",
+        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Attractive Design or Redesign Upto 5 Pages + Responsive + WooCommerce + 30 Days Free Support",
+        "tableFeatures": [
+          {
+            "feature": "Off-page strategy",
+            "isEnable": true
+          },
+
+          {
+            "feature": "Backlink analysis",
+            "isEnable": false
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "3 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Off-page strategy",
+            "isEnable": true
+          },
+          {
+            "feature": "Backlink analysis",
+            "isEnable": false
+          }
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": 373.5,
+        "concepts": 4,
+        "revisions": "Unlimited Revisions",
+        "delivery": 10,
+        "tableConcept": "Premium Business",
+        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
+        "tabBody": "Premium Design or Redesign Upto 8 Pages + Responsive + WooCommerce + 30 Days Free Support",
+        "tableFeatures": [
+          {
+            "feature": "Off-page strategy",
+            "isEnable": true
+          },
+
+          {
+            "feature": "Backlink analysis",
+            "isEnable": true
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "7 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "Off-page strategy",
+            "isEnable": true
+          },
+          {
+            "feature": "Backlink analysis",
+            "isEnable": true
           }
         ]
       }
