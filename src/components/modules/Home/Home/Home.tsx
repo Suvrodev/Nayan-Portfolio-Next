@@ -13,10 +13,10 @@ const Home = () => {
       <div className="relative flex justify-center items-center  w-full p-4 md:px-10 min-h-screen  ">
         <div
           className="absolute inset-0 -z-30 opacity-[0.03] bg-no-repeat bg-center bg-cover"
-          style={{
-            backgroundImage:
-              "url('https://ezycourse.b-cdn.net/5115/cmeral9kn014ejw8z4ildddbk.svg')",
-          }}
+          // style={{
+          //   backgroundImage:
+          //     "url('https://ezycourse.b-cdn.net/5115/cmeral9kn014ejw8z4ildddbk.svg')",
+          // }}
         ></div>
 
         <div className="flex flex-col items-center justify-center w-full gap-y-10   ">

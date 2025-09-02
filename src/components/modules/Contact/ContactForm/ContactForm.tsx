@@ -17,7 +17,7 @@ type TFormInput = {
 
 const ContactForm = () => {
   const location = usePathname();
-  console.log("LOCation: ", location);
+  // console.log("LoCation: ", location);
 
   const [sendMail] = useSendMailMutation();
 
