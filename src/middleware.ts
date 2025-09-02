@@ -30,7 +30,7 @@ export const middleware = async (request: NextRequest) => {
     //   //   )
     //   // );
     // }
-    return NextResponse.redirect(new URL("/login", request.url));
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   // if (user?.role !== "admin") {

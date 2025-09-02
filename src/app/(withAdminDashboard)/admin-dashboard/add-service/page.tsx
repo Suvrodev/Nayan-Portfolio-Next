@@ -3,7 +3,6 @@
 import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/convertToBase64/compressAndConvertToBase64";
 // import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
-import QuilTextEditor from "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useAddServiceMutation } from "@/redux/features/ServiceApi/serviceApi";
 import { TService } from "@/types/globalTypes";
@@ -11,6 +10,15 @@ import Image from "next/image";
 import { useState } from "react";
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { toast } from "sonner";
+import dynamic from "next/dynamic";
+
+const QuilTextEditor = dynamic(
+  () =>
+    import(
+      "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor"
+    ),
+  { ssr: false }
+);
 
 const AdminAddService = () => {
   const [addService] = useAddServiceMutation();

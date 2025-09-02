@@ -133,7 +133,7 @@ const QuilTextEditor: React.FC<QuilTextProps> = ({
   }, [value]);
 
   return (
-    <div className="w-full h-[750px] text-white text-[16px]">
+    <div className="w-full h-[450px] text-white text-[16px] mb-16">
       <div
         ref={editorRef}
         style={{ minHeight: height }}
