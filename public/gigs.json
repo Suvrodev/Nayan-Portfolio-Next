@@ -21,9 +21,6 @@
         "price": 20,
         "concepts": 2,
         "revisions": 3,
-        "delivery": 2,
-        "printReady": true,
-        "tableConcept": "2 BUSINESS CARD Concepts",
         "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Print Ready",
         "tableFeatures": [
           {
@@ -205,7 +202,6 @@
         "delivery": 2,
 
         "tableConcept": "2 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready)",
         "tableFeatures": [
           {
@@ -259,7 +255,6 @@
         "revisions": 5,
         "delivery": 2,
         "tableConcept": "3 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "5 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready & Source Fi",
         "tableFeatures": [
           {
@@ -313,7 +308,6 @@
         "revisions": 7,
         "delivery": 4,
         "tableConcept": "4 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "7 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
         "tableFeatures": [
           {
@@ -386,7 +380,6 @@
         "revisions": 3,
         "delivery": 2,
         "tableConcept": "2 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Professional Two-Sided Business Card with 300/450 DPI CMYK (Print Ready Files (JPEG & PDF)",
         "tableFeatures": [
           {
@@ -440,7 +433,6 @@
         "revisions": 5,
         "delivery": "2 days",
         "tableConcept": "3 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Two-Sided business Card with 300/450 DPI CMYK (Print Ready & Source Files PSD or AI, JPEG, PDF)",
         "tableFeatures": [
           {
@@ -494,7 +486,6 @@
         "revisions": 7,
         "delivery": "4 days",
         "tableConcept": "4 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "2-Sided Business Card + Logo Design (Print Ready & Source Files) + Premium Support",
         "tableFeatures": [
           {
@@ -567,7 +558,6 @@
         "delivery": 2,
 
         "tableConcept": "B A S I C",
-        "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Only business card (Print-ready files, JPG & PDF).",
         "tableFeatures": [
           {
@@ -617,7 +607,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": 2,
         "tableConcept": "S T A N D A R D",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Business card OR Logo Design (Print-ready files, JPG, PDF & Source Files)",
         "tableFeatures": [
           {
@@ -667,7 +656,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": 4,
         "tableConcept": "P R E M I U M",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Business card & Logo design (Print-ready files, JPG, PDF & Source Files).",
         "tableFeatures": [
           {
@@ -735,7 +723,6 @@
         "delivery": 2,
 
         "tableConcept": "B A S I C",
-        "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "2 Business Logos, High-Quality in a 3D Mockup, JPG, PNG, Transparent Format",
         "tableFeatures": [
           {
@@ -809,7 +796,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": "2 days",
         "tableConcept": "S T A N D A R D",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "3 Business Logos, High-Quality JPG, Transparent PNG, 3D Mockup JPG, Source File, Vector File",
         "tableFeatures": [
           {
@@ -884,7 +870,6 @@
         "delivery": "4 days",
 
         "tableConcept": "P R E M I U M",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "4 Business Logos, High-Quality, PDF, JPG, PNG, Source File Ai, Vector EPS Editable",
         "tableFeatures": [
           {
@@ -975,7 +960,6 @@
         "delivery": 2,
 
         "tableConcept": "2 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "One side: Print-ready (JPEG & PDF).",
 
         "tableFeatures": [
@@ -1022,7 +1006,6 @@
         "revisions": 5,
         "delivery": 2,
         "tableConcept": "3 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Double side: Print-ready (JPEG & PDF).",
         "tableFeatures": [
           {
@@ -1068,7 +1051,6 @@
         "revisions": 7,
         "delivery": 4,
         "tableConcept": "4 BUSINESS CARD Concepts",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Double side: Print ready (JPEG & PDF) + Editable source files (AI/PSD)",
         "tableFeatures": [
           {
@@ -1251,7 +1233,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": 6,
         "tableConcept": "Pro Business",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Attractive Design or Redesign Upto 5 Pages + Responsive + WooCommerce + 30 Days Free Support",
         "tableFeatures": [
           {
@@ -1374,7 +1355,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": 10,
         "tableConcept": "Premium Business",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Premium Design or Redesign Upto 8 Pages + Responsive + WooCommerce + 30 Days Free Support",
         "tableFeatures": [
           {
@@ -1548,7 +1528,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": 6,
         "tableConcept": "Pro Business",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Attractive Design or Redesign Upto 5 Pages + Responsive + WooCommerce + 30 Days Free Support",
         "tableFeatures": [
           {
@@ -1583,7 +1562,6 @@
         "revisions": "Unlimited Revisions",
         "delivery": 10,
         "tableConcept": "Premium Business",
-        "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Premium Design or Redesign Upto 8 Pages + Responsive + WooCommerce + 30 Days Free Support",
         "tableFeatures": [
           {
