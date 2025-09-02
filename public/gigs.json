@@ -204,7 +204,7 @@
         "revisions": 3,
         "delivery": 2,
 
-        "concept": "2 BUSINESS CARD Concepts",
+        "tableConcept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "3 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready)",
         "tableFeatures": [
@@ -258,10 +258,7 @@
         "concepts": 3,
         "revisions": 5,
         "delivery": 2,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "3 BUSINESS CARD Concepts",
+        "tableConcept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "5 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included (Print Ready & Source Fi",
         "tableFeatures": [
@@ -315,10 +312,7 @@
         "concepts": 4,
         "revisions": 7,
         "delivery": 4,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "4 BUSINESS CARD Concepts",
+        "tableConcept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "7 Revisions + Double Sided + 300dpi CMYK + JPG, PDF + Source Files Included",
         "tableFeatures": [
@@ -391,8 +385,7 @@
         "concepts": 2,
         "revisions": 3,
         "delivery": 2,
-
-        "concept": "2 BUSINESS CARD Concepts",
+        "tableConcept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Professional Two-Sided Business Card with 300/450 DPI CMYK (Print Ready Files (JPEG & PDF)",
         "tableFeatures": [
@@ -446,10 +439,7 @@
         "concepts": 3,
         "revisions": 5,
         "delivery": "2 days",
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "3 BUSINESS CARD Concepts",
+        "tableConcept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Two-Sided business Card with 300/450 DPI CMYK (Print Ready & Source Files PSD or AI, JPEG, PDF)",
         "tableFeatures": [
@@ -503,10 +493,7 @@
         "concepts": 4,
         "revisions": 7,
         "delivery": "4 days",
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "4 BUSINESS CARD Concepts",
+        "tableConcept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "2-Sided Business Card + Logo Design (Print Ready & Source Files) + Premium Support",
         "tableFeatures": [
@@ -579,7 +566,7 @@
         "revisions": "Unlimited Revisions",
         "delivery": 2,
 
-        "concept": "B A S I C",
+        "tableConcept": "B A S I C",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Only business card (Print-ready files, JPG & PDF).",
         "tableFeatures": [
@@ -629,10 +616,7 @@
         "concepts": 3,
         "revisions": "Unlimited Revisions",
         "delivery": 2,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "S T A N D A R D",
+        "tableConcept": "S T A N D A R D",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Business card OR Logo Design (Print-ready files, JPG, PDF & Source Files)",
         "tableFeatures": [
@@ -682,10 +666,7 @@
         "concepts": 4,
         "revisions": "Unlimited Revisions",
         "delivery": 4,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "P R E M I U M",
+        "tableConcept": "P R E M I U M",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Business card & Logo design (Print-ready files, JPG, PDF & Source Files).",
         "tableFeatures": [
@@ -753,7 +734,7 @@
         "revisions": "Unlimited Revisions",
         "delivery": 2,
 
-        "concept": "B A S I C",
+        "tableConcept": "B A S I C",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "2 Business Logos, High-Quality in a 3D Mockup, JPG, PNG, Transparent Format",
         "tableFeatures": [
@@ -827,10 +808,7 @@
         "concepts": 3,
         "revisions": "Unlimited Revisions",
         "delivery": "2 days",
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "S T A N D A R D",
+        "tableConcept": "S T A N D A R D",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "3 Business Logos, High-Quality JPG, Transparent PNG, 3D Mockup JPG, Source File, Vector File",
         "tableFeatures": [
@@ -904,10 +882,8 @@
         "concepts": 4,
         "revisions": "Unlimited Revisions",
         "delivery": "4 days",
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "P R E M I U M",
+
+        "tableConcept": "P R E M I U M",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "4 Business Logos, High-Quality, PDF, JPG, PNG, Source File Ai, Vector EPS Editable",
         "tableFeatures": [
@@ -998,7 +974,7 @@
         "revisions": 3,
         "delivery": 2,
 
-        "concept": "2 BUSINESS CARD Concepts",
+        "tableConcept": "2 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "One side: Print-ready (JPEG & PDF).",
 
@@ -1045,10 +1021,7 @@
         "concepts": 3,
         "revisions": 5,
         "delivery": 2,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "3 BUSINESS CARD Concepts",
+        "tableConcept": "3 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Double side: Print-ready (JPEG & PDF).",
         "tableFeatures": [
@@ -1094,10 +1067,7 @@
         "concepts": 4,
         "revisions": 7,
         "delivery": 4,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "4 BUSINESS CARD Concepts",
+        "tableConcept": "4 BUSINESS CARD Concepts",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Double side: Print ready (JPEG & PDF) + Editable source files (AI/PSD)",
         "tableFeatures": [
@@ -1162,7 +1132,7 @@
         "concepts": 2,
         "revisions": "Unlimited Revisions",
         "delivery": 4,
-        "concept": "Kickstarter",
+        "tableConcept": "Kickstarter",
         "formate": "300dpi CMYK + JPG, PDF",
         "tabBody": "Attractive One Landing Page Design + Responsive + Speed Optimization + Bug Fixing",
         "tableFeatures": [
@@ -1231,10 +1201,7 @@
         "concepts": 3,
         "revisions": "Unlimited Revisions",
         "delivery": 6,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "Pro Business",
+        "tableConcept": "Pro Business",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Attractive Design or Redesign Upto 5 Pages + Responsive + WooCommerce + 30 Days Free Support",
         "tableFeatures": [
@@ -1303,10 +1270,7 @@
         "concepts": 4,
         "revisions": "Unlimited Revisions",
         "delivery": 10,
-        "printReady": true,
-        "sourceFile": true,
-        "doubleSided": true,
-        "concept": "Premium Business",
+        "tableConcept": "Premium Business",
         "formate": "300dpi CMYK + JPG, PDF + Source Files Included",
         "tabBody": "Premium Design or Redesign Upto 8 Pages + Responsive + WooCommerce + 30 Days Free Support",
         "tableFeatures": [

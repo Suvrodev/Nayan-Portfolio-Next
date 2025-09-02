@@ -54,7 +54,7 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
                 <div className="font-medium text-white/80">{pkg.name}</div>
 
                 <p className="font-medium mt-4 mb-2 text-[12px] text-white/90">
-                  {pkg.concept}
+                  {pkg.tableConcept}
                 </p>
 
                 <p className="text-[14px] mt-1 text-gray-400">{pkg.tabBody}</p>

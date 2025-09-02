@@ -7,7 +7,7 @@ const PackageCard = ({ data }: { data: any }) => {
     <div>
       {/* Concepts with Price Start */}
       <h3 className="font-bold text-lg flex items-center justify-between">
-        <span className="text-sm mt-1">{data.concept}</span>
+        <span className="text-sm mt-1">{data.tableConcept}</span>
         <span> ${data.price}</span>
       </h3>
       {/* Concepts with Price End */}

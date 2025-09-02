@@ -8,6 +8,11 @@ import PackageTableFx from "./GigTable/PackageTableFx";
 import { TGig } from "@/types/globalTypes";
 import First from "./AboutGig/First";
 import GetToKnow from "../GetToKnow/GetToKnow";
+import Third from "./AboutGig/Third";
+import Fourth from "./AboutGig/Fourth";
+import Fifth from "./AboutGig/Fifth";
+import Sixth from "./AboutGig/Sixth";
+import Seventh from "./AboutGig/Seventh";
 
 interface IProps {
   id: string;
@@ -49,7 +54,23 @@ const GigDetail = ({ id }: IProps) => {
           <ImageCarousel images={gig.images} />
           <div>
             <h2 className="font-bold text-2xl mt-8 mb-4">About This Gig</h2>
-            <First />
+            {gig._id == "gig-001" ? (
+              <First />
+            ) : gig._id == "gig-002" ? (
+              <First />
+            ) : gig?._id === "gig-003" ? (
+              <Third />
+            ) : gig?._id === "gig-004" ? (
+              <Fourth />
+            ) : gig?._id === "gig-005" ? (
+              <Fifth />
+            ) : gig?._id === "gig-006" ? (
+              <Sixth />
+            ) : gig?._id === "gig-007" ? (
+              <Seventh />
+            ) : (
+              ""
+            )}
           </div>
           <div>
             <GetToKnow />

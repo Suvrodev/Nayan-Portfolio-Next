@@ -2,7 +2,7 @@
 import LinkBox from "@/components/LinkBox/LinkBox";
 import { useEffect, useState } from "react";
 import GigCard from "./GigCard/GigCard";
-import { TGig } from "@/types/globalTypes";
+import { IGig } from "@/types/gigType";
 
 const Gigs = () => {
   const [gigs, setGigs] = useState([]);
@@ -24,7 +24,7 @@ const Gigs = () => {
         <h1 className="text-4xl font-bold text-white">Gigs</h1>
 
         <div className="my-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {gigs?.map((gig: TGig, idx: number) => (
+          {gigs?.map((gig: IGig, idx: number) => (
             <GigCard key={idx} gig={gig} />
           ))}
         </div>

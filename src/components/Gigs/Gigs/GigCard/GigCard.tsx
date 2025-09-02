@@ -1,9 +1,9 @@
-import { TGig } from "@/types/globalTypes";
 import Image from "next/image";
 import StarIcon from "@mui/icons-material/Star";
 import Link from "next/link";
+import { IGig } from "@/types/gigType";
 interface IProps {
-  gig: TGig;
+  gig: IGig;
 }
 
 const GigCard = ({ gig }: IProps) => {

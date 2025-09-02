@@ -4,7 +4,7 @@ import nayanImage from "@/app/assets/Nayan.webp";
 
 const GetToKnow = () => {
   return (
-    <div className="max-w-4xl mx-auto  p-6 rounded-md shadow-md">
+    <div className="max-w-4xl mx-auto  py-6 rounded-md shadow-md">
       <h2 className="text-2xl font-bold mb-4">Get to know Sarkar Nayan</h2>
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
         {/* Profile Image */}
