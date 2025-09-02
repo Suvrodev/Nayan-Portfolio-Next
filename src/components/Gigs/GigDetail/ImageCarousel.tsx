@@ -125,15 +125,16 @@ const ImageCarousel = ({ images }: { images: string[] }) => {
       <div className="flex gap-2 mt-4 overflow-x-auto">
         {images.map((img, index) => (
           <button key={index} onClick={() => setCurrent(index)}>
-            <Image
-              src={img}
-              alt={`Thumb ${index}`}
-              width={60}
-              height={40}
-              className={`rounded-md border ${
-                index === current ? "border-black" : "border-gray-300"
-              }`}
-            />
+            <div className="w-[60px] h-[40px] relative">
+              <Image
+                src={img}
+                alt={`Thumb ${index}`}
+                fill
+                className={`object-contain rounded-md border ${
+                  index === current ? "border-black" : "border-gray-300"
+                }`}
+              />
+            </div>
           </button>
         ))}
       </div>
