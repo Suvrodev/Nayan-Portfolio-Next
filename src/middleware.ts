@@ -20,16 +20,6 @@ export const middleware = async (request: NextRequest) => {
   console.log("User: ", user);
 
   if (!user) {
-    // if (authRoutes.includes(pathname)) {
-    //   return NextResponse.next;
-    // } else {
-    //   // return NextResponse.redirect(
-    //   //   new URL(
-    //   //     `${process.env.NEXT_PUBLIC_CLIENT_API}/login?redirectPath=${pathname}`,
-    //   //     request.url
-    //   //   )
-    //   // );
-    // }
     return NextResponse.redirect(new URL("/", request.url));
   }
 
@@ -50,16 +40,16 @@ export const middleware = async (request: NextRequest) => {
   }
 
   // Role user hole user-dashboard er route e jete parbe
-  if (user.role === "user") {
-    if (
-      pathname === "/user-dashboard" ||
-      pathname.startsWith("/user-dashboard/")
-    ) {
-      return NextResponse.next();
-    } else {
-      return NextResponse.redirect(new URL("/unauthorized", request.url));
-    }
-  }
+  // if (user.role === "user") {
+  //   if (
+  //     pathname === "/user-dashboard" ||
+  //     pathname.startsWith("/user-dashboard/")
+  //   ) {
+  //     return NextResponse.next();
+  //   } else {
+  //     return NextResponse.redirect(new URL("/unauthorized", request.url));
+  //   }
+  // }
 
   return NextResponse.next();
 };
@@ -67,6 +57,6 @@ export const middleware = async (request: NextRequest) => {
 export const config = {
   // matcher: ["/about", "/registration"],
   // matcher: ["/admin-dashboard/:path*"],
-  // matcher: ["/admin-dashboard", "/admin-dashboard/:path*"],
-  matcher: ["/admin-dashboard/:path*", "/user-dashboard/:path*"],
+  matcher: ["/admin-dashboard", "/admin-dashboard/:path*"],
+  // matcher: ["/admin-dashboard/:path*"],
 };

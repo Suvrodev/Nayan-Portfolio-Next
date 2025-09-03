@@ -1,17 +1,17 @@
 "use client";
 import { FaSignOutAlt } from "react-icons/fa";
 import { clearTokenAction } from "../utils/hook/AuthService/getCurrentUser";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 // import { protectedRoutes } from "@/constant";
 
 const Logout = () => {
   const pathName = usePathname();
-  const router = useRouter();
+  // const router = useRouter();
   console.log("Path name from Logout: ", pathName);
   const handleClearToken = async () => {
     console.log("Clearing token...");
     await clearTokenAction();
-    router.refresh();
+
     // router.push("/");
 
     // if (protectedRoutes.some((route) => pathName.match(route))) {
