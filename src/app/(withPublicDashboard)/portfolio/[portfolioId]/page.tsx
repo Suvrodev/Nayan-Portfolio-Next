@@ -27,23 +27,23 @@ const PortfolioPage = async ({ params }: IProps) => {
   }
   return (
     <div className="min-h-screen flex justify-center items-center my-6 px-4">
-      <div className="detailPageWidth w-full mx-auto secondaryBox p-6 rounded-2xl shadow-xl">
-        {/* Image */}
-        {/* <SmartImage
-          src={portfolio?.image}
-          alt={portfolio?.title}
-          className="w-full h-72 md:h-96 object-cover rounded-lg mb-6 border border-gray-700"
-        /> */}
-
-        <Image
+      <div className="detailPageWidth  mx-auto secondaryBox p-6 rounded-2xl shadow-xl">
+        {/* <Image
           src={portfolio?.image || "/placeholder.jpg"}
           alt={portfolio?.title || "Portfolio Image"}
           width={800}
           height={800}
           className="w-full h-72 md:h-96 object-cover rounded-lg mb-6 border border-gray-700"
           style={{ objectFit: "cover" }}
-        />
+        /> */}
 
+        <Image
+          src={portfolio?.image}
+          alt={portfolio.title}
+          width={650}
+          height={450}
+          className="max-w-full mx-auto grayScale rounded-lg mb-6 border border-gray-700"
+        />
         {/* Title and Category */}
         <div className="flex flex-wrap justify-between items-center gap-4 mb-4">
           <h1 className="text-3xl font-bold text-white">{portfolio.title}</h1>
