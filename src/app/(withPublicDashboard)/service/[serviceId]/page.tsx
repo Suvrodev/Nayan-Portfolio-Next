@@ -23,7 +23,7 @@ const ServiceDetailPage = async ({ params }: IProps) => {
   }
   return (
     <div className="min-h-screen flex justify-center items-center my-4">
-      <div className="max-w-4xl mx-auto primaryBox p-6 rounded-2xl shadow-xl">
+      <div className="max-w-7xl mx-auto secondaryBox p-6 rounded-2xl shadow-xl">
         <Image
           src={service?.image}
           alt={service.title}

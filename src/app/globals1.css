@@ -19,7 +19,7 @@ img:hover {
   filter: grayscale(0);
 }
 
-/*Primary Box jeta hover hoy*/
+/*Primary Box jeta transform hoy start*/
 .primaryBox {
   background-color: #292929;
   border: 1px solid #525252;
@@ -32,7 +32,9 @@ img:hover {
   border-color: #ffffff;
 }
 
-/*Primary Box jeta hover hoy*/
+/*Primary Box jeta transform hoy end*/
+
+/*Secondary Box jeta transform hoy na start*/
 .secondaryBox {
   background-color: #292929;
   border: 1px solid #525252;
@@ -43,6 +45,7 @@ img:hover {
 .secondaryBox:hover {
   border-color: #ffffff;
 }
+/*Secondary Box jeta transform hoy na end*/
 
 .primaryButton {
   background-color: #141414;

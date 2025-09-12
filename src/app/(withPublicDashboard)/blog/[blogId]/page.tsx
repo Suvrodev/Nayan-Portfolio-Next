@@ -22,7 +22,7 @@ const BlogDetailPage = async ({ params }: IProps) => {
     return <NotFoundData speed={1}>Blog Not Found</NotFoundData>;
   }
   return (
-    <div className="max-w-4xl mx-auto px-4 py-10 text-white ">
+    <div className="max-w-7xl mx-auto px-4 py-10 text-white ">
       {/* Blog Title */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4">{blog.title}</h1>
 
