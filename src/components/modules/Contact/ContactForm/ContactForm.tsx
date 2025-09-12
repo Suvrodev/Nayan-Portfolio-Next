@@ -43,7 +43,7 @@ const ContactForm = () => {
     <div className="">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className={`primaryBox  rounded-[10px] p-2 md:p-8`}
+        className={`secondaryBox  rounded-[10px] p-2 md:p-8`}
       >
         <div className="grid md:grid-cols-2 gap-4 mb-4">
           <div>
