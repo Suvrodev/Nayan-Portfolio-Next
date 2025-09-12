@@ -6,6 +6,7 @@ import HomeService from "../HomeService/HomeService";
 import Testimonial from "../Testimonial/Testimonial";
 import Certificate from "../Certificate/Certificate";
 import HomeContact from "../HomeContact/HomeContact";
+import { Button } from "@/components/ui/button";
 
 const Home = () => {
   return (
@@ -47,6 +48,7 @@ const Home = () => {
 
             <div className="flex gap-4 items-center">
               <HomeButton />
+              <Button variant="outline">Button</Button>
             </div>
           </div>
         </div>
