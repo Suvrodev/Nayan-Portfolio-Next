@@ -17,11 +17,11 @@ interface IBlogCardProps {
   isAdmin?: boolean;
 }
 
-const description =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat, orci ut porta posuere, justo lacus dignissim sapien, ac lacinia metus nulla vitae lacus. Proin sed tincidunt libero, sed scelerisque justo. Nulla vel elit at quam blandit volutpat eget sed urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam posuere, sapien non interdum egestas, eros eros feugiat nunc, at suscipit augue nulla sed magna. Donec luctus, purus nec malesuada tempor, ligula arcu tincidunt mi, nec gravida felis urna vel quam.";
+// const description =
+//   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat, orci ut porta posuere, justo lacus dignissim sapien, ac lacinia metus nulla vitae lacus. Proin sed tincidunt libero, sed scelerisque justo. Nulla vel elit at quam blandit volutpat eget sed urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam posuere, sapien non interdum egestas, eros eros feugiat nunc, at suscipit augue nulla sed magna. Donec luctus, purus nec malesuada tempor, ligula arcu tincidunt mi, nec gravida felis urna vel quam.";
 
 const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
-  //   console.log("Blog: ", blog);
+  // console.log("Blog: ", blog);
   const [deleteBlog] = useDeleteBlogMutation();
   const { _id, image, title, date, category } = blog;
 
@@ -35,6 +35,17 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
       await handleLoad();
     }
   };
+
+  const stripHtml = (html: string) => {
+    if (!html) return "";
+    return html.replace(/<[^>]*>?/gm, ""); // sob HTML tag remove kore text return
+  };
+
+  const cleanDescription = blog?.description
+    ? stripHtml(blog.description)
+    : "No description available";
+
+  console.log("Clean Description: ", cleanDescription);
   return (
     <div className="relative primaryBox rounded-[12px] overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col h-[410px] md:h-[410px] lg:h-[420px]">
       {/* Admin Buttons */}
@@ -73,7 +84,10 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
         <p className="text-sm">
           {formatDate(date)} / <span className="text-teal-400">{category}</span>
         </p>
-        <p className="line-clamp-2 pDesc">{description}</p>
+        {/* <p className="line-clamp-2 pDesc">{description}</p> */}
+        <p className="line-clamp-2 pDesc absolute bottom-2 left-0 px-4">
+          {cleanDescription}
+        </p>
       </div>
     </div>
   );
