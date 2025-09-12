@@ -15,6 +15,10 @@ interface IBlogCardProps {
   blog: TBlog;
   isAdmin?: boolean;
 }
+
+const description =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur feugiat, orci ut porta posuere, justo lacus dignissim sapien, ac lacinia metus nulla vitae lacus. Proin sed tincidunt libero, sed scelerisque justo. Nulla vel elit at quam blandit volutpat eget sed urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam posuere, sapien non interdum egestas, eros eros feugiat nunc, at suscipit augue nulla sed magna. Donec luctus, purus nec malesuada tempor, ligula arcu tincidunt mi, nec gravida felis urna vel quam.";
+
 const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
   //   console.log("Blog: ", blog);
   const [deleteBlog] = useDeleteBlogMutation();
@@ -31,7 +35,7 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
     }
   };
   return (
-    <div className="relative primaryBox rounded-[12px] overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col h-[370px] md:h-[370px] lg:h-[380px]">
+    <div className="relative primaryBox rounded-[12px] overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col h-[410px] md:h-[410px] lg:h-[420px]">
       {/* Admin Buttons */}
       {isAdmin && (
         <div className="absolute top-2 right-2 z-10 flex gap-2">
@@ -52,11 +56,6 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
         href={`/blog/${_id}`}
         className="relative h-60 overflow-hidden block"
       >
-        {/* <SmartImage
-          src={image}
-          alt={title}
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-        /> */}
         <Image
           src={image}
           alt={title}
@@ -68,11 +67,12 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
       </Link>
 
       {/* Content */}
-      <div className="px-4 py-0 flex flex-col justify-between space-y-2">
+      <div className="px-4 pb-2 flex flex-col justify-between space-y-2 ">
         <h3 className="text-xl font-semibold line-clamp-2 mt-6 ">{title}</h3>
         <p className="text-sm">
           {formatDate(date)} / <span className="text-teal-400">{category}</span>
         </p>
+        <p className="line-clamp-2 pDesc">{description}</p>
       </div>
     </div>
   );
