@@ -206,7 +206,7 @@ const UpdateService = ({ service }: IProps) => {
             </div>
           ))}
 
-          {fields.length < 3 && (
+          {fields.length < 6 && (
             <button
               type="button"
               onClick={() => append({ title: "", percent: 0 })}
