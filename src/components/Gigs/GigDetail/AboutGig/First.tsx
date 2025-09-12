@@ -2,7 +2,7 @@ import React from "react";
 
 const First = () => {
   return (
-    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 leading-6">
+    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none pDesc">
       <p>
         <strong>This is Sarkar.</strong> Looking for a professional and visually
         appealing business card that will leave a lasting impression on your
@@ -24,7 +24,7 @@ const First = () => {
       </p>
 
       <p className="mt-4">
-        <strong className="text-yellow-400">My services include:</strong>
+        <strong className="">My services include:</strong>
       </p>
       <ul className="list-disc pl-6 marker:text-white">
         <li>Double sided business card</li>
@@ -52,11 +52,11 @@ const First = () => {
         <li>Include additional information.</li>
       </ul>
 
-      <p className="text-yellow-400 font-semibold mt-4 mb-10">
+      <p className=" font-semibold mt-4 mb-10">
         You have any questions, feel free to send me a message.
       </p>
 
-      <p className="text-yellow-400 font-semibold">Thank You So much</p>
+      <p className=" font-semibold">Thank You So much</p>
       <p>
         <strong>sarkar_nayan</strong>
       </p>

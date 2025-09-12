@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { Clock3, Check } from "lucide-react";
+import { Clock3, Check, X } from "lucide-react";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
 const PackageCard = ({ data }: { data: any }) => {
   // console.log("Data: ", data);
@@ -41,8 +41,17 @@ const PackageCard = ({ data }: { data: any }) => {
               f.isEnable ? "text-white" : "text-white opacity-50"
             }`}
           >
-            <Check size={18} />
-            {f.feature}
+            {f.isEnable ? (
+              <p className="flex items-center gap-2 ">
+                <Check size={18} />
+                {f.feature}
+              </p>
+            ) : (
+              <p className="flex items-center gap-2 ">
+                <X size={18} />
+                {f.feature}
+              </p>
+            )}
           </li>
         ))}
       </ul>
