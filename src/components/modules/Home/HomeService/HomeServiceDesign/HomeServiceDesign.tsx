@@ -1,5 +1,6 @@
 import { TService } from "@/types/globalTypes";
 import "./HomeServiceDesign.css";
+import Link from "next/link";
 
 interface IProps {
   service: TService;
@@ -8,7 +9,7 @@ interface IProps {
 
 const HomeServiceDesign = ({ service, idx }: IProps) => {
   const cId = idx + 1;
-  const { title, shortDescription } = service;
+  const { title, shortDescription, _id } = service;
 
   return (
     <div className="md:relative">
@@ -19,7 +20,10 @@ const HomeServiceDesign = ({ service, idx }: IProps) => {
           <p className="text-left pDesc mt-[16px] mb-[32px]">
             {shortDescription}
           </p>{" "}
-          <span className="primaryButton">Read More..</span>
+          <Link href={`/service/${_id}`}>
+            {" "}
+            <span className="primaryButton">Read More..</span>
+          </Link>
           <div className="z-10">
             <p
               className={`absolute  ${
