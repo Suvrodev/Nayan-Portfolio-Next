@@ -14,7 +14,7 @@ const Fourth = () => {
       </p>
 
       <p className="mt-4 font-bold">Packages:</p>
-      <ol className="list-decimal pl-6 marker:text-white">
+      <ol className="list-decimal pl-6 ">
         <li>
           Basic: Only business card{" "}
           <span className="">(Print-ready files, JPG & PDF).</span>

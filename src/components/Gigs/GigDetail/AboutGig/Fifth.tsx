@@ -2,11 +2,11 @@ import React from "react";
 
 const Fifth = () => {
   return (
-    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 leading-6">
+    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none pDesc">
       <p>Hello,</p> <br />
       <p>
         Welcome to my{" "}
-        <span className="text-yellow-400 font-semibold">
+        <span className=" font-semibold">
           Professional, Unique, Modern, Minimalist and Luxury Logo Design Gig.
         </span>
       </p>
@@ -20,7 +20,7 @@ const Fifth = () => {
         Sarkar Nayan is a professional graphic design team with a unique
         approach and a wide range of tools in hand with excellent experience.
       </p>
-      <p className="text-yellow-400 font-semibold">
+      <p className=" font-semibold">
         NOTE: 3D and MASCOT DESIGNS is not available
       </p>
       <p className="mt-4 font-bold">What You get in my gig:</p>
@@ -51,7 +51,7 @@ const Fifth = () => {
         Badge | Hand drawn | Feminine | Signature | Monogram | Real Estate Logo
         | Luxury
       </p>
-      <p className="text-yellow-400 font-semibold mt-4">
+      <p className=" font-semibold mt-4">
         Message me before place the order. If you have any questions.
       </p>
       <p className="mt-2">Best regards,</p>

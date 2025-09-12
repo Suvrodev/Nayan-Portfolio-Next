@@ -2,10 +2,9 @@ import React from "react";
 
 const Seventh = () => {
   return (
-    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 leading-6">
+    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 pDesc">
       <p>
-        Are you looking to{" "}
-        <span className="text-yellow-400">design or redesign</span> a{" "}
+        Are you looking to <span className="">design or redesign</span> a{" "}
         <span className="font-semibold">WordPress website</span> to a{" "}
         <span className="font-semibold">modern, pixel-perfect layout</span>?
       </p>
@@ -23,7 +22,7 @@ const Seventh = () => {
           unique and fully functional website
         </span>{" "}
         that aligns with your brand identity, incorporating your{" "}
-        <span className="text-yellow-400">
+        <span className="">
           preferred color scheme, fonts, and graphical elements.
         </span>
       </p>
@@ -40,7 +39,7 @@ const Seventh = () => {
       <p className="mt-2">
         With deep knowledge of{" "}
         <span className="font-semibold">website development</span>, I know how
-        to <span className="text-yellow-400">showcase your business well</span>.
+        to <span className="">showcase your business well</span>.
       </p>
 
       <p className="mt-4 font-bold">My Quality Services:</p>
