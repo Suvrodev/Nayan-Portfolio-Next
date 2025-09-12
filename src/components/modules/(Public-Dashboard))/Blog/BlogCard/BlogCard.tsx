@@ -45,7 +45,7 @@ const BlogCard = ({ blog, isAdmin }: IBlogCardProps) => {
     ? stripHtml(blog.description)
     : "No description available";
 
-  console.log("Clean Description: ", cleanDescription);
+  // console.log("Clean Description: ", cleanDescription);
   return (
     <div className="relative primaryBox rounded-[12px] overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col h-[410px] md:h-[410px] lg:h-[420px]">
       {/* Admin Buttons */}

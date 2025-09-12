@@ -14,7 +14,7 @@ const CrispChat = () => {
   useEffect(() => {
     if (typeof window !== "undefined" && !window.$crisp) {
       window.$crisp = [];
-      window.CRISP_WEBSITE_ID = "07985a50-a114-4eb4-a96f-bb7db5bbbd03";
+      window.CRISP_WEBSITE_ID = process.env.NEXT_PUBLIC_CRISP_WEBSITE_ID;
 
       const d = document;
       const s = d.createElement("script");
