@@ -2,12 +2,12 @@ import React from "react";
 
 const Fourth = () => {
   return (
-    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 leading-6">
+    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 leading-6 pDesc">
       <p>Hello,</p>
 
       <p className="mt-2">
         I will do{" "}
-        <span className="text-yellow-400 font-semibold">
+        <span className=" font-semibold">
           luxury, modern , minimalist business cards and logo design
         </span>{" "}
         for your company.
@@ -17,19 +17,17 @@ const Fourth = () => {
       <ol className="list-decimal pl-6 marker:text-white">
         <li>
           Basic: Only business card{" "}
-          <span className="text-yellow-400">
-            (Print-ready files, JPG & PDF).
-          </span>
+          <span className="">(Print-ready files, JPG & PDF).</span>
         </li>
         <li>
           Standard: Business card OR Logo Design{" "}
-          <span className="text-yellow-400">
+          <span className="">
             (Print-ready files, JPG, PDF & Source Files).
           </span>
         </li>
         <li>
           Premium: Business card & Logo design{" "}
-          <span className="text-yellow-400">
+          <span className="">
             (Print-ready files, JPG, PDF & Source Files).
           </span>
         </li>
@@ -44,8 +42,8 @@ const Fourth = () => {
         <li>100% Professional and Creative Works</li>
         <li>Easy Editable and Fully Layered PSD files</li>
         <li>Delivery in on time</li>
-        <li className="text-yellow-400">24/7 express delivery</li>
-        <li className="text-yellow-400">
+        <li className="">24/7 express delivery</li>
+        <li className="">
           Premium, Minimalist, Luxury, Unique, Modern, Stylish business card and
           logo design
         </li>
@@ -55,7 +53,7 @@ const Fourth = () => {
       <ul className="list-disc pl-6 marker:text-white">
         <li>
           Standard Business card size{" "}
-          <span className="text-yellow-400">
+          <span className="">
             (3.75 x 2.25&quot; with .125&quot; bleed on each side)
           </span>
         </li>
@@ -68,12 +66,10 @@ const Fourth = () => {
 
       <p className="mt-4">
         Order with confidence in my{" "}
-        <span className="text-yellow-400">
-          luxury business card, and logo design gig
-        </span>
+        <span className="">luxury business card, and logo design gig</span>
       </p>
 
-      <p className="text-yellow-400 font-semibold mt-4 mb-10">
+      <p className=" font-semibold mt-4 mb-10">
         If you have any questions feel free to ask me any time.
       </p>
 
