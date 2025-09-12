@@ -1,4 +1,4 @@
-import UpdateBlog from "@/components/modules/Blog/UpdateBlog/UpdateBlog";
+import UpdateBlog from "@/components/modules/(Public-Dashboard))/Blog/UpdateBlog/UpdateBlog";
 import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { TBlog } from "@/types/globalTypes";

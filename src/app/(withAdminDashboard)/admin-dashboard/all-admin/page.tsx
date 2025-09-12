@@ -1,4 +1,4 @@
-import AdminTable from "@/components/modules/AllAdmin/AdminTable/AdminTable";
+import AdminTable from "@/components/modules/(Admin-Dashboard)/AllAdmin/AdminTable/AdminTable";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { TAdmin } from "@/types/globalTypes";
 import React from "react";

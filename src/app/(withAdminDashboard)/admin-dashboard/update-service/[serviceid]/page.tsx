@@ -1,4 +1,4 @@
-import UpdateService from "@/components/modules/Service/UpdateService/UpdateService";
+import UpdateService from "@/components/modules/(Public-Dashboard))/Service/UpdateService/UpdateService";
 import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { TService } from "@/types/globalTypes";

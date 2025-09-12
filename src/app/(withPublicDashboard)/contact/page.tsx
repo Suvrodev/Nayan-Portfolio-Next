@@ -1,8 +1,8 @@
 import { Phone, Mail, MapPinHouse } from "lucide-react";
 
-import ContactForm from "@/components/modules/Contact/ContactForm/ContactForm";
+import ContactForm from "@/components/modules/(Public-Dashboard))/Contact/ContactForm/ContactForm";
 import { createTitle } from "@/components/utils/functions/metadata";
-import ContactLink from "@/components/modules/Contact/ContactLink/ContactLink";
+import ContactLink from "@/components/modules/(Public-Dashboard))/Contact/ContactLink/ContactLink";
 
 export const metadata = createTitle("Contact");
 

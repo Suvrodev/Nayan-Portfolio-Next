@@ -14,7 +14,6 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 
-import Logout from "@/components/Logout/Logout";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
@@ -22,6 +21,7 @@ import Image from "next/image";
 import { adminNavItems } from "@/components/utils/Array/navItems";
 import { useDispatch } from "react-redux";
 import { setDrawer } from "@/redux/features/drawer/drawerSlice";
+import Logout from "@/components/modules/(Admin-Dashboard)/Logout/Logout";
 // import goLink from "@/components/utils/functions/goLink";
 
 // const socialLinks = [

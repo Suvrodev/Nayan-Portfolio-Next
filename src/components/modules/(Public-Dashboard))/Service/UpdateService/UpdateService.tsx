@@ -1,27 +1,21 @@
 "use client";
-
-import { handleLoad } from "@/app/actions/handleLoad";
+import QuilTextEditor from "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor";
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
 // import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
-import { useAddServiceMutation } from "@/redux/features/ServiceApi/serviceApi";
+import { useUpdateServiceMutation } from "@/redux/features/ServiceApi/serviceApi";
 import { TService } from "@/types/globalTypes";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { toast } from "sonner";
-import dynamic from "next/dynamic";
 
-const QuilTextEditor = dynamic(
-  () =>
-    import(
-      "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor"
-    ),
-  { ssr: false }
-);
+interface IProps {
+  service: TService;
+}
+const UpdateService = ({ service }: IProps) => {
+  const [updateService] = useUpdateServiceMutation();
 
-const AdminAddService = () => {
-  const [addService] = useAddServiceMutation();
   const [imagePreview, setImagePreview] = useState<string>("");
 
   const {
@@ -29,17 +23,21 @@ const AdminAddService = () => {
     control,
     handleSubmit,
     setValue,
+    reset,
     formState: { errors },
-  } = useForm<TService>({
-    defaultValues: {
-      skillAndTools: [{ title: "", percent: 0 }],
-    },
-  });
+  } = useForm<TService>();
 
   const { fields, append, remove } = useFieldArray({
     control,
     name: "skillAndTools",
   });
+
+  useEffect(() => {
+    if (service) {
+      reset(service); // set initial form values
+      setImagePreview(service.image); // set initial preview
+    }
+  }, [service, reset]);
 
   const handleImageUpload = async (
     event: React.ChangeEvent<HTMLInputElement>
@@ -48,25 +46,26 @@ const AdminAddService = () => {
     if (file) {
       // const base64 = await convertToBase64(file);
       const base64 = await compressAndConvertToBase64(file);
-      setImagePreview(base64); // preview
-      setValue("image", base64); // RHF form value
+      setImagePreview(base64);
+      setValue("image", base64);
     }
   };
 
   const onSubmit = async (data: TService) => {
-    console.log("Submitted data:", data);
-    toast.loading("Adding Service", { id: sonarId });
-    const res = await addService(data).unwrap();
+    console.log("Data: ", data);
+    toast.loading("Updating Service...", { id: sonarId });
+    const res = await updateService({
+      _id: data?._id,
+      updatedData: data,
+    }).unwrap();
     console.log("Res: ", res);
-    if (res?.success) {
-      toast.success("Service Added Successfully", { id: sonarId });
-      await handleLoad();
+    if (res?.status) {
+      toast.success("Service Updated Successfully!", { id: sonarId });
     }
   };
-
   return (
     <div className="max-w-4xl mx-auto p-8 bg-[#1f1f1f] text-white rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold mb-8 text-center">Add New Service</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Update Service</h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Title */}
@@ -93,22 +92,15 @@ const AdminAddService = () => {
           />
           {imagePreview && (
             <div className="mt-3">
-              {/* <img
-                src={imagePreview}
-                alt="Preview"
-                className="w-full max-h-64 object-contain rounded border border-gray-600"
-              /> */}
               <Image
                 src={imagePreview}
-                alt="Preview"
-                width={500}
-                height={300}
-                className="w-full max-h-64 object-contain rounded border border-gray-600"
-                unoptimized
+                alt={service.title}
+                width={650}
+                height={450}
+                className="max-w-full mx-auto"
               />
             </div>
           )}
-          {/* Hidden image field for RHF */}
           <input
             type="hidden"
             {...register("image", { required: "Image is required" })}
@@ -183,10 +175,9 @@ const AdminAddService = () => {
               <div className="flex flex-col w-1/2">
                 <label className="text-sm mb-1">Skill</label>
                 <input
-                  // {...register(`skillAndTools.${index}.title`, {
-                  //   required: "Skill title is required",
-                  // })}
-                  {...register(`skillAndTools.${index}.title`)}
+                  {...register(`skillAndTools.${index}.title`, {
+                    required: "Skill title is required",
+                  })}
                   placeholder="Skill Name"
                   className="p-2 bg-gray-800 border border-gray-600 rounded"
                 />
@@ -232,7 +223,7 @@ const AdminAddService = () => {
             type="submit"
             className="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 rounded transition duration-300"
           >
-            Save Service
+            Update Service
           </button>
         </div>
       </form>
@@ -240,4 +231,4 @@ const AdminAddService = () => {
   );
 };
 
-export default AdminAddService;
+export default UpdateService;

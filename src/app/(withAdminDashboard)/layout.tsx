@@ -1,5 +1,5 @@
 "use client";
-import WeAccept from "@/components/modules/shared/Footer/WeAccept";
+import WeAccept from "@/components/modules/shared/PublicDashboard/Footer/WeAccept";
 import AdminDashboard from "@/components/modules/shared/Admin/Desktop/AdminDashboard";
 import LayoutMobileHeader from "./LayoutAction/LayoutMobileHeader";
 import { useAppSelector } from "@/redux/hook";

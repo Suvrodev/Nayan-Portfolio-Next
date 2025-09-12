@@ -36,6 +36,8 @@ img:hover {
 
 /*Secondary Box jeta transform hoy na start*/
 .secondaryBox {
+  position: relative;
+  z-index: 1;
   background-color: #292929;
   border: 1px solid #525252;
   backdrop-filter: blur(200px);

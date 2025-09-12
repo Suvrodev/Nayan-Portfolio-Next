@@ -1,4 +1,4 @@
-import Home from "@/components/modules/Home/Home/Home";
+import Home from "@/components/modules/(Public-Dashboard))/Home/Home/Home";
 import { createTitle } from "@/components/utils/functions/metadata";
 
 export const metadata = createTitle("Home");

@@ -1,4 +1,5 @@
-import WeAccept from "@/components/modules/shared/Footer/WeAccept";
+import Booking from "@/components/modules/(Public-Dashboard))/shared/Booking/Booking";
+import WeAccept from "@/components/modules/shared/PublicDashboard/Footer/WeAccept";
 import MobileHeader from "@/components/modules/shared/PublicDashboard/MobileHeader/MobileHeader";
 import PublicDashboard from "@/components/modules/shared/PublicDashboard/PublicDashboard";
 import React from "react";
@@ -25,6 +26,10 @@ const PublicLayout = ({ children }: IProps) => {
 
           <div className="bg-[#222222] p-20 md:py-16 ">
             <WeAccept />
+          </div>
+
+          <div className="">
+            <Booking />
           </div>
 
           {/* For Store Data */}

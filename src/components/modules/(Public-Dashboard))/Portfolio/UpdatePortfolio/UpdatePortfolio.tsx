@@ -1,19 +1,22 @@
 "use client";
-
 import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
 import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { portfolioCategoriesDropDown } from "@/components/utils/Array/portfolioCategories";
 import { sonarId } from "@/components/utils/functions/sonarId";
-import { useAddPortfolioMutation } from "@/redux/features/PortfolioApi/portfolioApi";
+import { useUpdatePortfolioMutation } from "@/redux/features/PortfolioApi/portfolioApi";
 import { TPortfolio } from "@/types/globalTypes";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
 
-const AddPortfolio = () => {
-  const [addPortfolio] = useAddPortfolioMutation();
+interface IProps {
+  portfolio: TPortfolio;
+}
+const UpdatePortfolio = ({ portfolio }: IProps) => {
+  const [updatePortfolio] = useUpdatePortfolioMutation();
+
   const [imagePreview, setImagePreview] = useState<string>("");
 
   const {
@@ -23,6 +26,18 @@ const AddPortfolio = () => {
     control,
     formState: { errors },
   } = useForm<TPortfolio>();
+
+  useEffect(() => {
+    if (portfolio) {
+      setValue("title", portfolio.title);
+      setValue("price", portfolio.price);
+      setValue("description", portfolio.description);
+      setValue("category", portfolio.category);
+      setValue("link", portfolio.link);
+      setValue("image", portfolio.image);
+      setImagePreview(portfolio.image);
+    }
+  }, [portfolio, setValue]);
 
   const handleImageUpload = async (
     event: React.ChangeEvent<HTMLInputElement>
@@ -37,21 +52,24 @@ const AddPortfolio = () => {
   };
 
   const onSubmit = async (data: TPortfolio) => {
-    console.log("Data: ", data);
-    toast.loading("Adding Portfolio...", { id: sonarId });
-    try {
-      const res = await addPortfolio(data).unwrap();
-      if (res?.success) {
-        toast.success("Portfolio Added Successfully!", { id: sonarId });
-        await handleLoad();
-      }
-    } catch {
-      toast.error("Something went wrong!", { id: sonarId });
+    if (!portfolio?._id) return;
+
+    toast.loading("Updating Portfolio...", { id: sonarId });
+    // try {
+    const res = await updatePortfolio({
+      _id: portfolio._id,
+      updatedData: data,
+    }).unwrap();
+    console.log("Res: ", res);
+    if (res?.status) {
+      toast.success("Portfolio updated successfully!", { id: sonarId });
+      await handleLoad();
     }
   };
+
   return (
     <div className="max-w-4xl mx-auto p-8 bg-[#1f1f1f] text-white rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold mb-8 text-center">Add Portfolio</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Update Portfolio</h2>
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Title */}
@@ -80,11 +98,10 @@ const AddPortfolio = () => {
             <div className="mt-3">
               <Image
                 src={imagePreview}
-                alt="Preview"
-                width={500}
-                height={300}
-                className="w-full max-h-64 object-contain rounded border border-gray-600"
-                unoptimized
+                alt={portfolio.title}
+                width={650}
+                height={450}
+                className="max-w-full mx-auto"
               />
             </div>
           )}
@@ -136,7 +153,7 @@ const AddPortfolio = () => {
           <select
             {...register("category", { required: "Category is required" })}
             className="w-full p-3 bg-gray-800 border border-gray-600 rounded"
-            defaultValue=""
+            defaultValue={portfolio.category}
           >
             <option value="" disabled>
               -- Select Category --
@@ -158,7 +175,7 @@ const AddPortfolio = () => {
           <input
             {...register("link", { required: "Link is required" })}
             className="w-full p-3 bg-gray-800 border border-gray-600 rounded"
-            placeholder="Ex: https://yourportfolio.com"
+            placeholder="https://..."
           />
           {errors.link && (
             <p className="text-red-500 text-sm">{errors.link.message}</p>
@@ -171,7 +188,7 @@ const AddPortfolio = () => {
             type="submit"
             className="w-full bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 rounded transition duration-300"
           >
-            Save Portfolio
+            Update Portfolio
           </button>
         </div>
       </form>
@@ -179,4 +196,4 @@ const AddPortfolio = () => {
   );
 };
 
-export default AddPortfolio;
+export default UpdatePortfolio;

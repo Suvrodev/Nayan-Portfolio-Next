@@ -1,5 +1,5 @@
 "use client";
-import GigDetail from "@/components/Gigs/GigDetail/GigDetail";
+import GigDetail from "@/components/modules/(Public-Dashboard))/Gigs/GigDetail/GigDetail";
 import { useParams } from "next/navigation";
 import React from "react";
 

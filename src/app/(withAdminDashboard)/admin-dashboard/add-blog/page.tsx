@@ -1,6 +1,6 @@
 "use client";
 
-import { compressAndConvertToBase64 } from "@/components/convertToBase64/compressAndConvertToBase64";
+import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
 import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useAddBlogMutation } from "@/redux/features/BlogApi/blogApi";

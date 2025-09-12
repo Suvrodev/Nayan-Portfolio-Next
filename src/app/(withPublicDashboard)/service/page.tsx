@@ -1,4 +1,4 @@
-import Service from "@/components/modules/Service/Service";
+import Service from "@/components/modules/(Public-Dashboard))/Service/Service";
 import { createTitle } from "@/components/utils/functions/metadata";
 
 export const metadata = createTitle("Service");

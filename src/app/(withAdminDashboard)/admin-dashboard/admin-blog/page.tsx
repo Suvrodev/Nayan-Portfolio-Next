@@ -1,4 +1,4 @@
-import Blog from "@/components/modules/Blog/Blog";
+import Blog from "@/components/modules/(Public-Dashboard))/Blog/Blog";
 
 const AdminBlog = () => {
   return (

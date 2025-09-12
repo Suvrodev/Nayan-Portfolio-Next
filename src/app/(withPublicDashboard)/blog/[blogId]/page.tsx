@@ -60,6 +60,8 @@ const BlogDetailPage = async ({ params }: IProps) => {
           className="prose prose-invert max-w-none text-gray-300 leading-relaxed text-lg"
           dangerouslySetInnerHTML={{ __html: blog.description }}
         ></div>
+
+        {/* <p>{description}</p> */}
       </div>
     </div>
   );

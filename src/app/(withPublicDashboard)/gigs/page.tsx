@@ -1,6 +1,6 @@
 // import Gigs from "@/components/Gigs/Gigs/Gigs";
 // import Gigs from "@/components/Gigs/Gigs/Gigs";
-import Gigs from "@/components/Gigs/Gigs/Gigs";
+import Gigs from "@/components/modules/(Public-Dashboard))/Gigs/Gigs/Gigs";
 import React from "react";
 
 const GigsPage = () => {

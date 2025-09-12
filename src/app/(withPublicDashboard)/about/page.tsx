@@ -1,16 +1,16 @@
 import Image from "next/image";
 // import "../Home.css";
-import LinkBox from "@/components/LinkBox/LinkBox";
+import LinkBox from "@/components/modules/(Public-Dashboard))/shared/LinkBox/LinkBox";
 
 // import aboutImage from "../../../assets/aboutImage/sarkar_nayan_about.jpg";
 import aboutImage from "@/app/assets/aboutImage/sarkar_nayan_about.jpg";
-import BioData from "@/components/modules/About/BioData/BioData";
-import SkillLoading from "@/components/modules/About/SkillLoading/SkillLoading";
-import EducationExperience from "@/components/modules/About/EducationExperience/EducationExperience";
-import HomeButton from "@/components/modules/Home/HomeButton/HomeButton";
-import KnowladgeInterest from "@/components/modules/About/KnowladgeInterest/KnowladgeInterest";
+import BioData from "@/components/modules/(Public-Dashboard))/About/BioData/BioData";
+import SkillLoading from "@/components/modules/(Public-Dashboard))/About/SkillLoading/SkillLoading";
+import EducationExperience from "@/components/modules/(Public-Dashboard))/About/EducationExperience/EducationExperience";
+import KnowladgeInterest from "@/components/modules/(Public-Dashboard))/About/KnowladgeInterest/KnowladgeInterest";
 import { createTitle } from "@/components/utils/functions/metadata";
-import TestimonialMx from "@/components/modules/Home/Testimonial/TestimonialMx";
+import HomeButton from "@/components/modules/(Public-Dashboard))/Home/HomeButton/HomeButton";
+import TestimonialMx from "@/components/modules/(Public-Dashboard))/Home/Testimonial/TestimonialMx";
 
 export const metadata = createTitle("About");
 

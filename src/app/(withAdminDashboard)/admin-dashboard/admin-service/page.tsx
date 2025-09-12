@@ -1,4 +1,4 @@
-import Service from "@/components/modules/Service/Service";
+import Service from "@/components/modules/(Public-Dashboard))/Service/Service";
 
 const AdminServicePage = () => {
   return (

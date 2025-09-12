@@ -1,4 +1,4 @@
-import UserHome from "@/components/modules/(User-Dashboard))/UserHome/UserHome";
+import UserHome from "@/components/modules/(Public-Dashboard))/UserHome/UserHome";
 import React from "react";
 
 const UserDashboardPage = () => {

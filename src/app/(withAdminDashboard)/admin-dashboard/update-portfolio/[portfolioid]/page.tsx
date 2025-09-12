@@ -1,4 +1,4 @@
-import UpdatePortfolio from "@/components/modules/Portfolio/UpdatePortfolio/UpdatePortfolio";
+import UpdatePortfolio from "@/components/modules/(Public-Dashboard))/Portfolio/UpdatePortfolio/UpdatePortfolio";
 import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import { baseApiFromEnv } from "@/components/utils/functions/baseApiFromenv";
 import { TPortfolio } from "@/types/globalTypes";
