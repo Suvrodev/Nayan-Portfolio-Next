@@ -1,4 +1,4 @@
-import Login from "@/components/modules/Login/Login";
+import Login from "@/components/modules/(Admin-Dashboard)/Login/Login";
 import { createTitle } from "@/components/utils/functions/metadata";
 
 export const metadata = createTitle("Login");

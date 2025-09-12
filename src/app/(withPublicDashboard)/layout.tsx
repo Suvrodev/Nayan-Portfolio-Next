@@ -1,4 +1,5 @@
 import Booking from "@/components/modules/(Public-Dashboard))/shared/Booking/Booking";
+import CrispChat from "@/components/modules/(Public-Dashboard))/shared/Crisp/CrispChat";
 import WeAccept from "@/components/modules/shared/PublicDashboard/Footer/WeAccept";
 import MobileHeader from "@/components/modules/shared/PublicDashboard/MobileHeader/MobileHeader";
 import PublicDashboard from "@/components/modules/shared/PublicDashboard/PublicDashboard";
@@ -30,6 +31,7 @@ const PublicLayout = ({ children }: IProps) => {
 
           <div className="">
             <Booking />
+            <CrispChat />
           </div>
 
           {/* For Store Data */}
