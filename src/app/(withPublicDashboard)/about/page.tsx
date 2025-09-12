@@ -50,7 +50,7 @@ const AboutPage = () => {
 
         <div className="dag"></div>
         <div className=" my-10 ">
-          <p className="text-[16px] leading-[1.8] ">
+          <p className="text-[16px] leading-[1.8] pDesc">
             Highly motivated and detail-oriented Web Developer with a
             Bachelor&#39;s degree in Computer Science and Engineering for 4
             years. Proficient in PHP, with a deep understanding of the Laravel

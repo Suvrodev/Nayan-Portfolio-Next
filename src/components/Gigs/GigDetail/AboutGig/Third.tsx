@@ -2,7 +2,7 @@ import React from "react";
 
 const Third = () => {
   return (
-    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none text-gray-300 leading-6">
+    <div className="prose prose-sm md:prose-base lg:prose-lg prose-invert max-w-none pDesc">
       <h2 className="font-bold">About this gig</h2>
 
       <p className="mt-2">
@@ -11,18 +11,17 @@ const Third = () => {
 
       <p className="mt-2">
         Welcome,{" "}
-        <span className="text-yellow-400 font-semibold">
+        <span className=" font-semibold">
           luxury business card, and logo design gig
         </span>
       </p>
 
       <p className="mt-4 font-bold">Features:</p>
-      <ol className="list-decimal pl-6 marker:text-white">
+      {/* <ol className="list-decimal pl-6 marker:text-white"> */}
+      <ol className="list-decimal pl-6 ">
         <li>
           100% Professional and{" "}
-          <span className="text-yellow-400">
-            luxury business card, and logo
-          </span>
+          <span className="">luxury business card, and logo</span>
         </li>
         <li>Print-ready CMYK 300DPI High-Quality JPG or PDF files</li>
         <li>
@@ -35,15 +34,15 @@ const Third = () => {
       </ol>
 
       <p className="mt-4 font-bold">DESIGN DIMENSIONS AND FILES:</p>
-      <ul className="list-disc pl-6 marker:text-white">
+      <ul className="list-disc pl-6 ">
         <li>
           Standard Business card size{" "}
-          <span className="text-yellow-400">
+          <span className="">
             (3.75 x 2.25&quot; with .125&quot; bleed on each side)
           </span>
         </li>
         <li>
-          <span className="text-yellow-400">Any size logo design</span>
+          <span className="">Any size logo design</span>
         </li>
         <li>
           You can also customize your own size of the business card by
@@ -53,9 +52,7 @@ const Third = () => {
 
       <p className="mt-4">
         Order with confidence in my{" "}
-        <span className="text-yellow-400">
-          luxury business card, and logo design gig
-        </span>
+        <span className="">luxury business card, and logo design gig</span>
       </p>
 
       <p className="mt-4">If any problem, please contact me.</p>
