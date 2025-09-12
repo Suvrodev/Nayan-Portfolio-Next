@@ -27,7 +27,7 @@ const PortfolioPage = async ({ params }: IProps) => {
   }
   return (
     <div className="min-h-screen flex justify-center items-center my-6 px-4">
-      <div className="max-w-7xl w-full mx-auto secondaryBox p-6 rounded-2xl shadow-xl">
+      <div className="detailPageWidth w-full mx-auto secondaryBox p-6 rounded-2xl shadow-xl">
         {/* Image */}
         {/* <SmartImage
           src={portfolio?.image}
