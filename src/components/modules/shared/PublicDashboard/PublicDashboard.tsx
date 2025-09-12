@@ -37,7 +37,7 @@ const socialLinks = [
 const PublicDashboard = () => {
   const location = usePathname();
   return (
-    <div className="bg-[#141414] h-[100vh] text-white pl-8 overflow-hidden sticky top-0 shadow-blue-400 shadow-md">
+    <div className="bg-[#141414] h-[100vh] text-white pl-8 overflow-hidden sticky top-0 ">
       {/* Logo */}
       <div className="mt-20 mb-20">
         <Link href="/">
