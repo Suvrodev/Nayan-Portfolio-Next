@@ -29,13 +29,14 @@ const TestimonialMx = () => {
         {testimonials.map((testimonial, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0"
-            style={{
-              width: "100vw",
-              maxWidth: "25vw",
-              height: "400px",
-              padding: "0 20px",
-            }}
+            // className="flex-shrink-0"
+            // style={{
+            //   width: "100vw",
+            //   maxWidth: "25vw",
+            //   height: "400px",
+            //   padding: "0 20px",
+            // }}
+            className="flex-shrink-0 w-[100vw] md:w-[25vw] h-[400px] px-5"
           >
             <TestimonialBox testimonial={testimonial} />
           </div>

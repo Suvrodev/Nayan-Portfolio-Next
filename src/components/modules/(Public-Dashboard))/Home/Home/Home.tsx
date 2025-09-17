@@ -3,10 +3,9 @@ import Image from "next/image";
 import homeImage from "@/app/assets/homeImage/sarkar_nayan_home.jpg";
 import HomeButton from "../HomeButton/HomeButton";
 import HomeService from "../HomeService/HomeService";
-import Testimonial from "../Testimonial/Testimonial";
 import Certificate from "../Certificate/Certificate";
 import HomeContact from "../HomeContact/HomeContact";
-import { Button } from "@/components/ui/button";
+import TestimonialMx from "../Testimonial/TestimonialMx";
 
 const Home = () => {
   return (
@@ -48,7 +47,6 @@ const Home = () => {
 
             <div className="flex gap-4 items-center">
               <HomeButton />
-              <Button variant="outline">Button</Button>
             </div>
           </div>
         </div>
@@ -60,7 +58,7 @@ const Home = () => {
           <HomeService />
         </div>
         <div className="pPadding bg-[#141414]">
-          <Testimonial showBox={false} />
+          <TestimonialMx />
         </div>
         <div className="pPadding ">
           <Certificate />

@@ -10,7 +10,8 @@ import EducationExperience from "@/components/modules/(Public-Dashboard))/About/
 import KnowladgeInterest from "@/components/modules/(Public-Dashboard))/About/KnowladgeInterest/KnowladgeInterest";
 import { createTitle } from "@/components/utils/functions/metadata";
 import HomeButton from "@/components/modules/(Public-Dashboard))/Home/HomeButton/HomeButton";
-import TestimonialMx from "@/components/modules/(Public-Dashboard))/Home/Testimonial/TestimonialMx";
+// import TestimonialMx from "@/components/modules/(Public-Dashboard))/Home/Testimonial/TestimonialMx";
+import Testimonial from "@/components/modules/(Public-Dashboard))/Home/Testimonial/Testimonial";
 
 export const metadata = createTitle("About");
 
@@ -89,7 +90,8 @@ const AboutPage = () => {
         <Testimonial showBox={true} />
       </div> */}
       <div className="pPadding ">
-        <TestimonialMx />
+        {/* <TestimonialMx /> */}
+        <Testimonial showBox={false} />
       </div>
     </div>
   );
