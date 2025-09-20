@@ -10,15 +10,16 @@ import Image from "next/image";
 import { useState } from "react";
 import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { toast } from "sonner";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
+import JoditTextEditor from "@/components/JoditTextEditor/JoditTextEditor/JoditTextEditor";
 
-const QuilTextEditor = dynamic(
-  () =>
-    import(
-      "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor"
-    ),
-  { ssr: false }
-);
+// const QuilTextEditor = dynamic(
+//   () =>
+//     import(
+//       "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor"
+//     ),
+//   { ssr: false }
+// );
 
 const AdminAddService = () => {
   const [addService] = useAddServiceMutation();
@@ -148,7 +149,11 @@ const AdminAddService = () => {
               //   value={field.value || ""}
               //   onChange={field.onChange}
               // />
-              <QuilTextEditor
+              // <QuilTextEditor
+              // value={field.value || ""}
+              // onChange={field.onChange}
+              // />
+              <JoditTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
               />

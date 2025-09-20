@@ -1,7 +1,6 @@
 "use client";
 import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
-import JoditEditorComponent from "@/components/JoditTextEditor/JoditEditorComponent";
 import { portfolioCategoriesDropDown } from "@/components/utils/Array/portfolioCategories";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useUpdatePortfolioMutation } from "@/redux/features/PortfolioApi/portfolioApi";
@@ -10,6 +9,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { toast } from "sonner";
+import JoditTextEditor from "@/components/JoditTextEditor/JoditTextEditor/JoditTextEditor";
 
 interface IProps {
   portfolio: TPortfolio;
@@ -136,7 +136,7 @@ const UpdatePortfolio = ({ portfolio }: IProps) => {
             name="description"
             rules={{ required: "Description is required" }}
             render={({ field }) => (
-              <JoditEditorComponent
+              <JoditTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
               />
