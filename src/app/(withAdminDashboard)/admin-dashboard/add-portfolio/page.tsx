@@ -2,7 +2,7 @@
 
 import { handleLoad } from "@/app/actions/handleLoad";
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
-import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
+import JoditEditorComponent from "@/components/JoditTextEditor/JoditEditorComponent";
 import { portfolioCategoriesDropDown } from "@/components/utils/Array/portfolioCategories";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useAddPortfolioMutation } from "@/redux/features/PortfolioApi/portfolioApi";

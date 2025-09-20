@@ -1,0 +1,93 @@
+/* ====== DARK THEME FIX FOR JODIT TOOLBAR ====== */
+
+/* Toolbar box + groups must NOT fade */
+.jodit-toolbar__box,
+.jodit-toolbar-editor-collection,
+.jodit-toolbar__items {
+  background: #262626 !important;
+  opacity: 1 !important; /* prevent dim */
+  color: #e5e7eb !important;
+}
+
+/* Ensure buttons themselves are not faded */
+.jodit-toolbar-button,
+.jodit-toolbar-button__button,
+.jodit-toolbar-button__icon,
+.jodit-toolbar-button__text {
+  opacity: 1 !important;
+  color: #e5e7eb !important;
+  fill: #e5e7eb !important;
+  stroke: #e5e7eb !important;
+}
+
+/* SVG icons force white/gray */
+.jodit-toolbar-button svg,
+.jodit-toolbar-button svg *,
+.jodit-toolbar-button__icon svg,
+.jodit-toolbar-button__icon svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  color: inherit !important;
+}
+
+/* Hover / active state */
+.jodit-toolbar-button:hover .jodit-toolbar-button__button,
+.jodit-toolbar-button.jodit-active .jodit-toolbar-button__button {
+  background: #3a3a3a !important;
+  color: #ffffff !important;
+}
+.jodit-toolbar-button:hover svg *,
+.jodit-toolbar-button.jodit-active svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+/* Disabled buttons – muted but visible */
+.jodit-toolbar-button.jodit_disabled,
+.jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__button,
+.jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__icon,
+.jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__text {
+  opacity: 1 !important; /* keep visible */
+  color: #9ca3af !important;
+}
+.jodit-toolbar-button.jodit_disabled svg * {
+  fill: currentColor !important;
+  stroke: currentColor !important;
+}
+
+.jodit-container:not(.jodit_inline) .jodit-wysiwyg {
+  background: #292929 !important;
+  color: #f3e8ff !important; /* light text for contrast (optional) */
+}
+
+/**For Bullet point**/
+/* Bullet & number markers should be visible in dark */
+.jodit-wysiwyg ul,
+.jodit-wysiwyg ol {
+  list-style-position: outside !important; /* keep markers outside */
+}
+
+.jodit-wysiwyg ul li::marker,
+.jodit-wysiwyg ol li::marker {
+  color: #f3e8ff !important; /* light marker color */
+  opacity: 1 !important;
+}
+
+/* If any list had its marker hidden by list-style-image, reset */
+.jodit-wysiwyg ul {
+  list-style-image: none !important;
+}
+.jodit-wysiwyg ol {
+  list-style-image: none !important;
+}
+
+/* ===== Ensure "disc" bullets are visible ===== */
+.jodit-wysiwyg ul {
+  list-style-type: disc !important; /* force disc for default UL */
+}
+
+.jodit-wysiwyg ul li::marker {
+  content: "• "; /* ensure dot renders */
+  color: #f3e8ff !important; /* light color for dark bg */
+  font-size: 1.1em; /* a bit larger for clarity */
+}

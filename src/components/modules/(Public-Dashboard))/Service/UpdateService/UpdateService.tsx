@@ -1,5 +1,6 @@
 "use client";
-import QuilTextEditor from "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor";
+import JoditTextEditor from "@/components/JoditTextEditor/JoditTextEditor/JoditTextEditor";
+// import QuilTextEditor from "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor";
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
 // import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
@@ -140,7 +141,12 @@ const UpdateService = ({ service }: IProps) => {
               //   value={field.value || ""}
               //   onChange={field.onChange}
               // />
-              <QuilTextEditor
+              // <QuilTextEditor
+              //   value={field.value || ""}
+              //   onChange={field.onChange}
+              // />
+
+              <JoditTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
               />
