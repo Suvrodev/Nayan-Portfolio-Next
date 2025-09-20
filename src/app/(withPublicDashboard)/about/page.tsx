@@ -3,7 +3,7 @@ import Image from "next/image";
 import LinkBox from "@/components/modules/(Public-Dashboard))/shared/LinkBox/LinkBox";
 
 // import aboutImage from "../../../assets/aboutImage/sarkar_nayan_about.jpg";
-import aboutImage from "@/app/assets/aboutImage/sarkar_nayan_about.jpg";
+import aboutImage from "@/app/assets/aboutImage/xxx.jpg";
 import BioData from "@/components/modules/(Public-Dashboard))/About/BioData/BioData";
 import SkillLoading from "@/components/modules/(Public-Dashboard))/About/SkillLoading/SkillLoading";
 import EducationExperience from "@/components/modules/(Public-Dashboard))/About/EducationExperience/EducationExperience";

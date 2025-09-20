@@ -1,6 +1,6 @@
 import "./Home.css";
 import Image from "next/image";
-import homeImage from "@/app/assets/homeImage/sarkar_nayan_home.jpg";
+import homeImage from "@/app/assets/homeImage/homeImage.jpg";
 import HomeButton from "../HomeButton/HomeButton";
 import HomeService from "../HomeService/HomeService";
 import Certificate from "../Certificate/Certificate";
