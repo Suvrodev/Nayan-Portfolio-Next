@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import "./JoditTextEditor.css";
 import "./JoditTextEditorDark.css";
 // import "./JoditTextEditorLight.css";
 import React, { useMemo, useRef, useState, useEffect } from "react";
@@ -33,6 +32,7 @@ export default function JoditTextEditor({ value, onChange }: IProps) {
 
   const config = useMemo<any>(
     () => ({
+      placeholder: "Place Holder",
       readonly: false,
       height: 560,
       toolbar: true,

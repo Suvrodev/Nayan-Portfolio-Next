@@ -1,5 +1,11 @@
+/* ===========================
+   ✅ Jodit Editor Custom Styles (Light Theme)
+   =========================== */
+
+/* Import Jodit core CSS */
 @import url("https://cdn.jsdelivr.net/npm/jodit@4.2.24/es2021/jodit.min.css");
 
+/* ----- Toolbar / UI Styling ----- */
 .jodit-toolbar__box,
 .jodit-toolbar-editor-collection {
   background: #f7f7f7 !important;
@@ -7,31 +13,64 @@
   border-bottom: none !important;
   border-radius: 10px 10px 0 0 !important;
 }
+
 .jodit-container:not(.jodit_inline) .jodit-wysiwyg {
   min-height: 360px;
   background: #ffffff;
+  color: #000000 !important; /* ✅ টেক্সট সবসময় কালো হবে */
 }
+
 .jodit-workplace {
   border: 1px solid #e5e7eb !important;
   border-top: none !important;
   border-radius: 0 0 10px 10px !important;
   overflow: hidden;
 }
+
 .jodit-status-bar {
   border-top: 1px solid #e5e7eb !important;
   background: #fafafa !important;
 }
+
 .jodit-toolbar-button__button {
   height: 34px !important;
   min-width: 34px !important;
 }
+
 .jodit-toolbar-button:hover .jodit-toolbar-button__button {
   background: #efefef !important;
 }
+
 .jodit-ui-separator {
   background: #e5e7eb !important;
 }
+
 .jodit-ui-input__input,
 .jodit-ui-select__select {
   border-radius: 8px !important;
+}
+
+/* ----- List Fixes ----- */
+.jodit-wysiwyg ol,
+.jodit-wysiwyg ul {
+  list-style-position: outside !important;
+  margin-left: 1.25rem !important;
+  padding-left: 1.25rem !important;
+  list-style-image: none !important;
+}
+
+.jodit-wysiwyg li {
+  display: list-item !important;
+}
+
+/* ✅ Bullet & number markers forced black */
+.jodit-wysiwyg ul {
+  list-style-type: disc !important;
+}
+
+.jodit-wysiwyg ul li::marker,
+.jodit-wysiwyg ol li::marker {
+  color: #000000 !important; /* bullet / number সবসময় কালো */
+  font-size: 1.1em;
+  opacity: 1 !important;
 }

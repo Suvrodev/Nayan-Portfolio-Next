@@ -146,6 +146,10 @@ const UpdateService = ({ service }: IProps) => {
               //   onChange={field.onChange}
               // />
 
+              // <JoditTextEditor
+              //   value={field.value || ""}
+              //   onChange={field.onChange}
+              // />
               <JoditTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}

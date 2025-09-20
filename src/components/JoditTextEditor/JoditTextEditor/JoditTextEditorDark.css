@@ -1,15 +1,19 @@
-/* ====== DARK THEME FIX FOR JODIT TOOLBAR ====== */
+/* ===========================
+   ✅ Jodit Editor — Unified Styles (Dark + Lists)
+   =========================== */
 
-/* Toolbar box + groups must NOT fade */
+/* Core Jodit CSS */
+@import url("https://cdn.jsdelivr.net/npm/jodit@4.2.24/es2021/jodit.min.css");
+
+/* ---------- Toolbar / UI (Dark) ---------- */
 .jodit-toolbar__box,
 .jodit-toolbar-editor-collection,
 .jodit-toolbar__items {
   background: #262626 !important;
-  opacity: 1 !important; /* prevent dim */
+  opacity: 1 !important;
   color: #e5e7eb !important;
 }
 
-/* Ensure buttons themselves are not faded */
 .jodit-toolbar-button,
 .jodit-toolbar-button__button,
 .jodit-toolbar-button__icon,
@@ -20,7 +24,6 @@
   stroke: #e5e7eb !important;
 }
 
-/* SVG icons force white/gray */
 .jodit-toolbar-button svg,
 .jodit-toolbar-button svg *,
 .jodit-toolbar-button__icon svg,
@@ -30,7 +33,6 @@
   color: inherit !important;
 }
 
-/* Hover / active state */
 .jodit-toolbar-button:hover .jodit-toolbar-button__button,
 .jodit-toolbar-button.jodit-active .jodit-toolbar-button__button {
   background: #3a3a3a !important;
@@ -42,12 +44,11 @@
   stroke: currentColor !important;
 }
 
-/* Disabled buttons – muted but visible */
 .jodit-toolbar-button.jodit_disabled,
 .jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__button,
 .jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__icon,
 .jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__text {
-  opacity: 1 !important; /* keep visible */
+  opacity: 1 !important;
   color: #9ca3af !important;
 }
 .jodit-toolbar-button.jodit_disabled svg * {
@@ -55,39 +56,59 @@
   stroke: currentColor !important;
 }
 
+/* ---------- Editor Area (Dark) ---------- */
 .jodit-container:not(.jodit_inline) .jodit-wysiwyg {
   background: #292929 !important;
-  color: #f3e8ff !important; /* light text for contrast (optional) */
+  color: #f3e8ff !important;
 }
 
-/**For Bullet point**/
-/* Bullet & number markers should be visible in dark */
-.jodit-wysiwyg ul,
-.jodit-wysiwyg ol {
-  list-style-position: outside !important; /* keep markers outside */
+.jodit-workplace {
+  border: 1px solid #e5e7eb !important;
+  border-top: none !important;
+  border-radius: 0 0 10px 10px !important;
+  overflow: hidden;
 }
 
-.jodit-wysiwyg ul li::marker,
-.jodit-wysiwyg ol li::marker {
-  color: #f3e8ff !important; /* light marker color */
+.jodit-status-bar {
+  border-top: 1px solid #e5e7eb !important;
+  background: #fafafa !important;
+}
+
+.jodit-toolbar-button__button {
+  height: 34px !important;
+  min-width: 34px !important;
+}
+
+/* ---------- List Spacing & Marker Visibility ---------- */
+/* spacing */
+.jodit-wysiwyg ol,
+.jodit-wysiwyg ul {
+  list-style-position: outside !important;
+  margin-left: 1.25rem !important;
+  padding-left: 1.25rem !important;
+  list-style-image: none !important; /* prevent hidden markers */
+}
+
+/* make sure list items render as list-items */
+.jodit-wysiwyg li {
+  display: list-item !important;
+}
+
+/* UL: ensure disc bullets + visible color */
+.jodit-wysiwyg ul {
+  list-style-type: disc !important;
+}
+
+/* Bullet (•) forced + color visible on dark */
+.jodit-wysiwyg ul li::marker {
+  content: "• "; /* ensure dot renders */
+  color: #f3e8ff !important; /* light marker color for dark bg */
+  font-size: 1.1em; /* optional: slightly larger */
   opacity: 1 !important;
 }
 
-/* If any list had its marker hidden by list-style-image, reset */
-.jodit-wysiwyg ul {
-  list-style-image: none !important;
-}
-.jodit-wysiwyg ol {
-  list-style-image: none !important;
-}
-
-/* ===== Ensure "disc" bullets are visible ===== */
-.jodit-wysiwyg ul {
-  list-style-type: disc !important; /* force disc for default UL */
-}
-
-.jodit-wysiwyg ul li::marker {
-  content: "• "; /* ensure dot renders */
-  color: #f3e8ff !important; /* light color for dark bg */
-  font-size: 1.1em; /* a bit larger for clarity */
+/* OL: keep numbers, just color them for dark bg */
+.jodit-wysiwyg ol li::marker {
+  color: #f3e8ff !important;
+  opacity: 1 !important;
 }

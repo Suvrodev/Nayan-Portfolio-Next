@@ -1,7 +1,6 @@
 "use client";
 
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
-import JoditEditorComponent from "@/components/JoditTextEditor/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useAddBlogMutation } from "@/redux/features/BlogApi/blogApi";
 import { TBlog } from "@/types/globalTypes";
@@ -12,6 +11,7 @@ import { toast } from "sonner";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { handleLoad } from "@/app/actions/handleLoad";
+import JoditTextEditor from "@/components/JoditTextEditor/JoditTextEditor/JoditTextEditor";
 
 const blogCategories = ["Tech", "Design", "Tutorial", "News", "Inspiration"];
 const AddBlogPage = () => {
@@ -180,7 +180,7 @@ const AddBlogPage = () => {
               name="description"
               rules={{ required: "Content is required" }}
               render={({ field }) => (
-                <JoditEditorComponent
+                <JoditTextEditor
                   value={field.value || ""}
                   onChange={field.onChange}
                 />
