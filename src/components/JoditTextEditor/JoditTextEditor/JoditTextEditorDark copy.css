@@ -1,5 +1,5 @@
 /* ===========================
-   ✅ Jodit Editor — Unified Styles (Dark + Lists, fixed)
+   ✅ Jodit Editor — Unified Styles (Dark + Lists)
    =========================== */
 
 /* Core Jodit CSS */
@@ -13,6 +13,7 @@
   opacity: 1 !important;
   color: #e5e7eb !important;
 }
+
 .jodit-toolbar-button,
 .jodit-toolbar-button__button,
 .jodit-toolbar-button__icon,
@@ -22,6 +23,7 @@
   fill: #e5e7eb !important;
   stroke: #e5e7eb !important;
 }
+
 .jodit-toolbar-button svg,
 .jodit-toolbar-button svg *,
 .jodit-toolbar-button__icon svg,
@@ -30,6 +32,7 @@
   stroke: currentColor !important;
   color: inherit !important;
 }
+
 .jodit-toolbar-button:hover .jodit-toolbar-button__button,
 .jodit-toolbar-button.jodit-active .jodit-toolbar-button__button {
   background: #3a3a3a !important;
@@ -40,6 +43,7 @@
   fill: currentColor !important;
   stroke: currentColor !important;
 }
+
 .jodit-toolbar-button.jodit_disabled,
 .jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__button,
 .jodit-toolbar-button.jodit_disabled .jodit-toolbar-button__icon,
@@ -54,62 +58,57 @@
 
 /* ---------- Editor Area (Dark) ---------- */
 .jodit-container:not(.jodit_inline) .jodit-wysiwyg {
-  min-height: 360px;
   background: #292929 !important;
-  color: #f3e8ff !important; /* light text */
+  color: #f3e8ff !important;
 }
+
 .jodit-workplace {
   border: 1px solid #e5e7eb !important;
   border-top: none !important;
   border-radius: 0 0 10px 10px !important;
   overflow: hidden;
 }
+
 .jodit-status-bar {
   border-top: 1px solid #e5e7eb !important;
   background: #fafafa !important;
 }
+
 .jodit-toolbar-button__button {
   height: 34px !important;
   min-width: 34px !important;
 }
 
-/* ---------- List Spacing & Marker Visibility (FIXED) ---------- */
+/* ---------- List Spacing & Marker Visibility ---------- */
 /* spacing */
 .jodit-wysiwyg ol,
 .jodit-wysiwyg ul {
   list-style-position: outside !important;
   margin-left: 1.25rem !important;
   padding-left: 1.25rem !important;
-  list-style-image: none !important;
+  list-style-image: none !important; /* prevent hidden markers */
 }
 
-/* ensure list items render as list-items */
+/* make sure list items render as list-items */
 .jodit-wysiwyg li {
   display: list-item !important;
 }
 
-/* 🚫 DO NOT force a specific type or a custom bullet
-   (এগুলো থাকলে সবসময় ডট-ই দেখা যায়)
-   .jodit-wysiwyg ul { list-style-type: disc !important; }
-   .jodit-wysiwyg ul li::marker { content: "• "; }
-*/
-
-/* Tailwind/global reset neutralizer */
-.jodit-wysiwyg ul,
-.jodit-wysiwyg ol {
-  list-style: revert;
+/* UL: ensure disc bullets + visible color */
+.jodit-wysiwyg ul {
+  list-style-type: disc !important;
 }
 
-/* Baseline only when Jodit hasn't set a type inline */
-.jodit-wysiwyg ul:not([style*="list-style-type"]) {
-  list-style-type: disc;
-}
-.jodit-wysiwyg ol:not([style*="list-style-type"]) {
-  list-style-type: decimal;
+/* Bullet (•) forced + color visible on dark */
+.jodit-wysiwyg ul li::marker {
+  content: "• "; /* ensure dot renders */
+  color: #f3e8ff !important; /* light marker color for dark bg */
+  font-size: 1.1em; /* optional: slightly larger */
+  opacity: 1 !important;
 }
 
-/* Marker color only (type Jodit ঠিক করবে) */
-.jodit-wysiwyg li::marker {
-  color: #f3e8ff !important; /* visible on dark */
-  /* font-size: 1.1em; */ /* optional */
+/* OL: keep numbers, just color them for dark bg */
+.jodit-wysiwyg ol li::marker {
+  color: #f3e8ff !important;
+  opacity: 1 !important;
 }
