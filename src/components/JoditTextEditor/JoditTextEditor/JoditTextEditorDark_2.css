@@ -73,50 +73,43 @@
   min-width: 34px !important;
 }
 
-/* ---------- Lists (everything working) ---------- */
-
-/* spacing only */
+/* ---------- List Spacing & Marker Visibility (FIXED) ---------- */
+/* spacing */
 .jodit-wysiwyg ol,
 .jodit-wysiwyg ul {
   list-style-position: outside !important;
   margin-left: 1.25rem !important;
   padding-left: 1.25rem !important;
-  list-style-image: none !important; /* prevent image markers from hiding bullets */
+  list-style-image: none !important;
 }
 
-/* semantics */
+/* ensure list items render as list-items */
 .jodit-wysiwyg li {
   display: list-item !important;
 }
 
-/* ⛔ DO NOT force a specific type or custom marker
-   (না হলে সবসময় dot-ই দেখাবে)
-   উদাহরণ — এগুলো লিখবে না:
+/* 🚫 DO NOT force a specific type or a custom bullet
+   (এগুলো থাকলে সবসময় ডট-ই দেখা যায়)
    .jodit-wysiwyg ul { list-style-type: disc !important; }
-   .jodit-wysiwyg ul li::marker { content: "•"; }
+   .jodit-wysiwyg ul li::marker { content: "• "; }
 */
 
-/* 1) Neutralize global resets ONLY when Jodit didn't set type */
-.jodit-wysiwyg
-  ul:not([style*="list-style"]):not([style*="list-style-type"]):not([type]),
-.jodit-wysiwyg
-  ol:not([style*="list-style"]):not([style*="list-style-type"]):not([type]) {
-  list-style: revert !important;
+/* Tailwind/global reset neutralizer */
+.jodit-wysiwyg ul,
+.jodit-wysiwyg ol {
+  list-style: revert;
 }
 
-/* 2) Baseline (fallback) — still only when no inline style/attribute
-   - UL default = disc
-   - OL default = decimal (1,2,3)
-*/
-.jodit-wysiwyg ul:not([style*="list-style-type"]):not([type]) {
-  list-style-type: disc !important;
+/* Baseline only when Jodit hasn't set a type inline */
+.jodit-wysiwyg ul:not([style*="list-style-type"]) {
+  list-style-type: disc;
 }
-.jodit-wysiwyg ol:not([style*="list-style-type"]):not([type]) {
-  list-style-type: decimal !important;
+.jodit-wysiwyg ol:not([style*="list-style-type"]) {
+  list-style-type: decimal;
 }
 
-/* 3) Marker visibility on dark (color only; no custom content) */
+/* Marker color only (type Jodit ঠিক করবে) */
 .jodit-wysiwyg li::marker {
   color: #f3e8ff !important; /* visible on dark */
-  /* font-size: 1.05em; */ /* optional */
+  /* font-size: 1.1em; */ /* optional */
 }

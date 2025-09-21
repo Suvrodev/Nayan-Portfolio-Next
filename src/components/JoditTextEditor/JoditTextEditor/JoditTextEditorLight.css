@@ -1,5 +1,5 @@
 /* ===========================
-   ✅ Jodit Editor Custom Styles (Light Theme)
+   ✅ Jodit Editor Custom Styles (fixed)
    =========================== */
 
 /* Import Jodit core CSS */
@@ -17,7 +17,6 @@
 .jodit-container:not(.jodit_inline) .jodit-wysiwyg {
   min-height: 360px;
   background: #ffffff;
-  color: #000000 !important; /* ✅ টেক্সট সবসময় কালো হবে */
 }
 
 .jodit-workplace {
@@ -50,27 +49,41 @@
   border-radius: 8px !important;
 }
 
-/* ----- List Fixes ----- */
+/* ===== List: spacing only (do NOT force styles) ===== */
 .jodit-wysiwyg ol,
 .jodit-wysiwyg ul {
-  list-style-position: outside !important;
-  margin-left: 1.25rem !important;
-  padding-left: 1.25rem !important;
-  list-style-image: none !important;
+  list-style-position: outside; /* keep markers outside */
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+  /* list-style-image: none; */ /* use only if images ever override markers */
+}
+
+/* ✅ ADD: neutralize any global reset so defaults return */
+.jodit-wysiwyg ul,
+.jodit-wysiwyg ol {
+  list-style: revert;
 }
 
 .jodit-wysiwyg li {
-  display: list-item !important;
+  display: list-item; /* ensure list semantics */
 }
 
-/* ✅ Bullet & number markers forced black */
-.jodit-wysiwyg ul {
-  list-style-type: disc !important;
+/* ✅ Marker appearance (no content override!) */
+.jodit-wysiwyg li::marker {
+  color: #000; /* you can tweak size if you want */
+  /* font-size: 1.05em; */
 }
 
-.jodit-wysiwyg ul li::marker,
-.jodit-wysiwyg ol li::marker {
-  color: #000000 !important; /* bullet / number সবসময় কালো */
-  font-size: 1.1em;
-  opacity: 1 !important;
+/* ✅ REPLACE: Baseline only when no inline type from Jodit */
+.jodit-wysiwyg ul:not([style*="list-style-type"]) {
+  list-style-type: disc;
 }
+.jodit-wysiwyg ol:not([style*="list-style-type"]) {
+  list-style-type: decimal;
+}
+
+/* ❌ Removed:
+   - .jodit-wysiwyg ul { list-style-type: disc !important; }
+   - .jodit-wysiwyg ul li::marker, .jodit-wysiwyg ol li::marker { content: "• "; ... }
+   এগুলো Jodit-এর list-style নির্বাচনকে নষ্ট করছিল।
+*/
