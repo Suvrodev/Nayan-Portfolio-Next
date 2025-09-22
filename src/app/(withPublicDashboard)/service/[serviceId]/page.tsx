@@ -46,7 +46,7 @@ const ServiceDetailPage = async ({ params }: IProps) => {
         ></div> */}
         <div
           className="prose prose-invert max-w-none text-gray-300  text-lg"
-          style={{ lineHeight: 1.2 }}
+          // style={{ lineHeight: 2 }}
           dangerouslySetInnerHTML={{ __html: service?.description }}
         ></div>
 

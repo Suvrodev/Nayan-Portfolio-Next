@@ -160,7 +160,7 @@ export default function JoditTextEditor({ value, onChange }: IProps) {
               }}
             />
 
-            <div className="mt-3 flex items-center justify-between rounded-lg border bg-neutral-50 px-3 py-2 text-xs text-neutral-600">
+            {/* <div className="mt-3 flex items-center justify-between rounded-lg border bg-neutral-50 px-3 py-2 text-xs text-neutral-600">
               <span>Characters & Words counters are enabled (status bar).</span>
               <button
                 className="rounded-lg border px-3 py-1 hover:bg-neutral-100"
@@ -168,7 +168,7 @@ export default function JoditTextEditor({ value, onChange }: IProps) {
               >
                 Toggle Fullscreen
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </main>

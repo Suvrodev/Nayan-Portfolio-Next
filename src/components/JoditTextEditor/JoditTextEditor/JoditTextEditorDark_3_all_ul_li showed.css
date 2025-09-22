@@ -1,5 +1,5 @@
 /* ===========================
-   ✅ Jodit Editor — Dark Mode (with list fixes)
+   ✅ Jodit Editor — Unified Styles (Dark + Lists, fixed)
    =========================== */
 
 /* Core Jodit CSS */
@@ -59,66 +59,64 @@
   color: #f3e8ff !important; /* light text */
 }
 .jodit-workplace {
-  border: 1px solid #444 !important;
+  border: 1px solid #e5e7eb !important;
   border-top: none !important;
   border-radius: 0 0 10px 10px !important;
   overflow: hidden;
 }
 .jodit-status-bar {
-  border-top: 1px solid #444 !important;
-  background: #1f1f1f !important;
+  border-top: 1px solid #e5e7eb !important;
+  background: #fafafa !important;
 }
 .jodit-toolbar-button__button {
   height: 34px !important;
   min-width: 34px !important;
 }
 
-/* ---------- Lists (fixed for Word paste) ---------- */
+/* ---------- Lists (everything working) ---------- */
 
-/* Always restore default list styles */
-.jodit-wysiwyg ul,
-.jodit-wysiwyg ol {
-  list-style: revert !important;
+/* spacing only */
+.jodit-wysiwyg ol,
+.jodit-wysiwyg ul {
   list-style-position: outside !important;
   margin-left: 1.25rem !important;
   padding-left: 1.25rem !important;
+  list-style-image: none !important; /* prevent image markers from hiding bullets */
 }
 
-/* Ensure list semantics */
+/* semantics */
 .jodit-wysiwyg li {
   display: list-item !important;
 }
 
-/* Override Word’s inline “none” */
-.jodit-wysiwyg ul[style*="list-style-type: none"],
-.jodit-wysiwyg ol[style*="list-style-type: none"],
-.jodit-wysiwyg ul[style*="list-style: none"],
-.jodit-wysiwyg ol[style*="list-style: none"] {
+/* ⛔ DO NOT force a specific type or custom marker
+   (না হলে সবসময় dot-ই দেখাবে)
+   উদাহরণ — এগুলো লিখবে না:
+   .jodit-wysiwyg ul { list-style-type: disc !important; }
+   .jodit-wysiwyg ul li::marker { content: "•"; }
+*/
+
+/* 1) Neutralize global resets ONLY when Jodit didn't set type */
+.jodit-wysiwyg
+  ul:not([style*="list-style"]):not([style*="list-style-type"]):not([type]),
+.jodit-wysiwyg
+  ol:not([style*="list-style"]):not([style*="list-style-type"]):not([type]) {
   list-style: revert !important;
 }
 
-/* Fallbacks */
-.jodit-wysiwyg ul {
+/* 2) Baseline (fallback) — still only when no inline style/attribute
+   - UL default = disc
+   - OL default = decimal (1,2,3)
+*/
+.jodit-wysiwyg ul:not([style*="list-style-type"]):not([type]) {
   list-style-type: disc !important;
 }
-.jodit-wysiwyg ol {
+.jodit-wysiwyg ol:not([style*="list-style-type"]):not([type]) {
   list-style-type: decimal !important;
 }
 
-/* Marker visibility (for dark bg) */
+/* 3) Marker visibility on dark (color only; no custom content) */
 .jodit-wysiwyg li::marker {
-  color: #f3e8ff !important;
-  /* font-size: 1.05em; */ /* optional tweak */
-}
-
-/**Line Height**/
-/* Base line-height for whole editor content */
-.jodit-wysiwyg {
-  line-height: 1.6;
-}
-
-/* Ensure blocks inherit the same baseline */
-.jodit-wysiwyg p,
-.jodit-wysiwyg li {
-  line-height: inherit;
+  color: #f3e8ff !important; /* visible on dark */
+  /* font-size: 1.05em; */ /* optional */
 }
