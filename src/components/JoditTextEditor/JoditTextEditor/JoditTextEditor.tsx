@@ -132,7 +132,16 @@ export default function JoditTextEditor({ value, onChange }: IProps) {
           fontSize: "15px",
         },
       },
+      // Tab এবং Shift+Tab কে ইন্ডেন্ট/আউটডেন্টে বাঁধা
+      commandToHotkeys: {
+        indent: ["tab"],
+        outdent: ["shift+tab"],
+      },
+
+      // চাইলে ইন্ডেন্ট কত px হবে সেটাও নির্দিষ্ট করতে পারেন
+      indentMargin: 30, // default 40px হয়
     }),
+
     []
   );
 
