@@ -356,7 +356,350 @@
       }
     ]
   },
+  {
+    "_id": "gig-003",
+    "title": "I will do luxury business card and logo design in 24 hours",
+    "seller": {
+      "name": "Sarkar Nayan",
+      "rating": 5,
+      "reviews": 5
+    },
+    "about": "",
+    "images": [
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-1_mafqwl.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432394/c-2_gdri31.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-3_duwk37.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-4_vyvgs4.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432393/c-5_ii2n7t.webp"
+    ],
+    "packages": [
+      {
+        "name": "Basic",
+        "price": 10,
+        "concepts": 2,
+        "revisions": 3,
+        "delivery": 2,
+        "tableConcept": "2 BUSINESS CARD Concepts",
+        "tabBody": "Professional Two-Sided Business Card with 300/450 DPI CMYK (Print Ready Files (JPEG & PDF)",
+        "tableFeatures": [
+          {
+            "feature": "Print-Ready",
+            "isEnable": true
+          },
+          {
+            "feature": "Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Double-sided",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": 25,
+        "concepts": 3,
+        "revisions": 5,
+        "delivery": "2 days",
+        "tableConcept": "3 BUSINESS CARD Concepts",
+        "tabBody": "Two-Sided business Card with 300/450 DPI CMYK (Print Ready & Source Files PSD or AI, JPEG, PDF)",
+        "tableFeatures": [
+          {
+            "feature": "Print-Ready",
+            "isEnable": true
+          },
+          {
+            "feature": "Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Double-sided",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "2 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": 50,
+        "concepts": 4,
+        "revisions": 7,
+        "delivery": "4 days",
+        "tableConcept": "4 BUSINESS CARD Concepts",
+        "tabBody": "2-Sided Business Card + Logo Design (Print Ready & Source Files) + Premium Support",
+        "tableFeatures": [
+          {
+            "feature": "Print-Ready",
+            "isEnable": true
+          },
+          {
+            "feature": "Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Double-sided",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          },
+          {
+            "feature": "Delivery Time",
+            "text": "4 days"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "3 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "gig-004",
+    "title": "I will do luxury, modern, minimalist business cards and logo design",
+    "seller": {
+      "name": "Sarkar Nayan",
+      "rating": 5,
+      "reviews": 1
+    },
+    "about": "",
 
+    "images": [
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432471/d-1_tvn7ed.jpg",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432471/d-3_juyujg.webp",
+      "https://res.cloudinary.com/dk36omwzj/image/upload/v1754432471/d-2_zesi4v.jpg"
+    ],
+    "packages": [
+      {
+        "name": "Basic",
+        "price": 10,
+        "concepts": 2,
+        "revisions": "Unlimited Revisions",
+        "delivery": 2,
+
+        "tableConcept": "B A S I C",
+        "tabBody": "Only business card (Print-ready files, JPG & PDF).",
+        "tableFeatures": [
+          {
+            "feature": "Print-Ready",
+            "isEnable": true
+          },
+          {
+            "feature": "Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Double-sided",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": false
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": 25,
+        "concepts": 3,
+        "revisions": "Unlimited Revisions",
+        "delivery": 2,
+        "tableConcept": "S T A N D A R D",
+        "tabBody": "Business card OR Logo Design (Print-ready files, JPG, PDF & Source Files)",
+        "tableFeatures": [
+          {
+            "feature": "Print-Ready",
+            "isEnable": true
+          },
+          {
+            "feature": "Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Double-sided",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "2"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": 50,
+        "concepts": 4,
+        "revisions": "Unlimited Revisions",
+        "delivery": 4,
+        "tableConcept": "P R E M I U M",
+        "tabBody": "Business card & Logo design (Print-ready files, JPG, PDF & Source Files).",
+        "tableFeatures": [
+          {
+            "feature": "Print-Ready",
+            "isEnable": true
+          },
+          {
+            "feature": "Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Double-sided",
+            "isEnable": true
+          },
+          {
+            "feature": "Design Concepts",
+            "text": "3"
+          },
+          {
+            "feature": "Revisions",
+            "text": "Unlimited"
+          }
+        ],
+        "tabFeatures": [
+          {
+            "feature": "2 Concepts",
+            "isEnable": true
+          },
+          {
+            "feature": "Files Ready for Print",
+            "isEnable": true
+          },
+          {
+            "feature": "Include Source File",
+            "isEnable": true
+          },
+          {
+            "feature": "Front & back design",
+            "isEnable": true
+          }
+        ]
+      }
+    ]
+  },
   {
     "_id": "gig-005",
     "title": "I will do professional modern business logo design",
