@@ -11,7 +11,7 @@ const Logout = () => {
   const handleClearToken = async () => {
     console.log("Clearing token...");
     await clearTokenAction();
-
+    window.location.href = "/";
     // router.push("/");
 
     // if (protectedRoutes.some((route) => pathName.match(route))) {
