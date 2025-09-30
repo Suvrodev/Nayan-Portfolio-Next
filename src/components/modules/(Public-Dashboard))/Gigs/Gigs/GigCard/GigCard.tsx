@@ -20,7 +20,9 @@ const GigCard = ({ gig }: IProps) => {
           />
         </div>
         <div className="px-4 pb-4">
-          <h2 className="hover:underline">{gig.title}</h2>
+          <h2 className="hover:underline line-clamp-2 min-h-[48px]">
+            {gig.title}
+          </h2>
           <div className="flex items-center gap-x-2">
             <div className="flex items-center gap-x-2 my-2">
               <StarIcon />
