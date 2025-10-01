@@ -11,6 +11,7 @@ import KeyAspect from "./KeyAspect/KeyAspect";
 import SkillLogo from "./SkillLogo/SkillLogo";
 import EssentialSkill from "./EssentialSkill/EssentialSkill";
 import ServiceComponent from "./ServiceComponent/ServiceComponent";
+import ServiceDetailSkeliton from "./_ServiceDetailSkeliton/ServiceDetailSkeliton";
 
 const ServiceDetailPage = () => {
   const params = useParams();
@@ -55,12 +56,7 @@ const ServiceDetailPage = () => {
   if (loading) {
     return (
       <div className="max-w-6xl mx-auto p-6 md:p-10">
-        {/* Replace with your real skeleton/loader */}
-        <div className="animate-pulse space-y-4">
-          <div className="h-10 w-1/3 bg-gray-200 rounded" />
-          <div className="h-60 w-full bg-gray-200 rounded" />
-          <div className="h-6 w-2/3 bg-gray-200 rounded" />
-        </div>
+        <ServiceDetailSkeliton />
       </div>
     );
   }
@@ -77,6 +73,7 @@ const ServiceDetailPage = () => {
     <div className="max-w-6xl mx-auto p-6 md:p-10">
       <ServiceDetailHero service={service} />
 
+      {/* For Web Development */}
       {service?.components && (
         <div className="mt-20 mb-10">
           <ServiceComponent service={service} />
@@ -95,12 +92,12 @@ const ServiceDetailPage = () => {
         </div>
       )}
 
-      <div className="mt-20 mb-10">
+      <div className="my-10">
         <SkillLogo service={service} />
       </div>
 
       {serviceId !== "688502c459d18f392f6af6ca" && (
-        <div className="mt-10 mb-10">
+        <div className=" mb-10">
           <EssentialSkill service={service} />
         </div>
       )}

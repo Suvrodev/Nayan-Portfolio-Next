@@ -31,6 +31,7 @@ export type TSkillItem = {
 export type TSkills = {
   title?: string;
   pg?: string;
+  pg2?: string;
   skills_: TSkillItem[];
 };
 
