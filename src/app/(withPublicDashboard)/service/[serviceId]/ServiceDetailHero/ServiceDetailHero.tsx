@@ -22,7 +22,7 @@ const ServiceDetailHero = ({ service }: IProps) => {
 
       {/* Content Section (70%) */}
       <div className="md:basis-[65%] flex flex-col justify-center">
-        <h2 className="text-xl md:text-3xl font-bold mb-4">{service?.title}</h2>
+        <h2 className="pTitle mb-4">{service?.title}</h2>
 
         <div className="flex flex-col gap-y-4">
           <p className="pDesc">{service?.hero?.text1}</p>

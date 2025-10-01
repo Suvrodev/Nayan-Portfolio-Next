@@ -46,9 +46,7 @@ export default function SkillLogo({ service }: IProps) {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-center my-10">
-        {service?.skillLogo?.title}
-      </h2>
+      <h2 className="pTitle text-center my-10">{service?.skillLogo?.title}</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
         {titles.map((raw, idx) => {

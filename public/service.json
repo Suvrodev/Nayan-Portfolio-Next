@@ -62,7 +62,7 @@
     "skils": {
       "title": "Here are some essential skills for WordPress development",
       "pg": "WordPress development offers a flexible platform for building websites, from simple blogs to complex e-commerce sites. ",
-      "skills": [
+      "skills_": [
         {
           "title": "WordPress Core",
           "desc": "A deep understanding of the WordPress core is essential."

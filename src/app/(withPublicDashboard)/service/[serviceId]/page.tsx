@@ -8,6 +8,7 @@ import ServiceDetailHero from "./ServiceDetailHero/ServiceDetailHero";
 import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import KeyAspect from "./KeyAspect/KeyAspect";
 import SkillLogo from "./SkillLogo/SkillLogo";
+import EssentialSkill from "./EssentialSkill/EssentialSkill";
 
 const ServiceDetailPage = () => {
   const { serviceId } = useParams();
@@ -46,6 +47,11 @@ const ServiceDetailPage = () => {
       <div className="mt-20 mb-10">
         <div>
           <SkillLogo service={service} />
+        </div>
+      </div>
+      <div className="mt-20 mb-10">
+        <div>
+          <EssentialSkill service={service} />
         </div>
       </div>
     </div>

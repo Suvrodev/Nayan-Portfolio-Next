@@ -31,7 +31,7 @@ export type TSkillItem = {
 export type TSkills = {
   title?: string;
   pg?: string;
-  skills?: TSkillItem[];
+  skills_: TSkillItem[];
 };
 
 // Main Update Service Type
