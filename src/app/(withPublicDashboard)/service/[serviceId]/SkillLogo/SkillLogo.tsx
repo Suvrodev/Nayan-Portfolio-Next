@@ -50,30 +50,60 @@ export default function SkillLogo({ service }: IProps) {
     <div>
       <h2 className="pTitle text-center my-10">{service?.skillLogo?.title}</h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
-        {titles.map((raw, idx) => {
-          const key = toKey(raw);
-          const src = ICONS[key];
+      {/* <div className="flex justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-6 w-max">
+          {titles.map((raw, idx) => {
+            const key = toKey(raw);
+            const src = ICONS[key];
 
-          return (
-            <div
-              key={`${key}-${idx}`}
-              className="flex flex-col items-center justify-center gap-2"
-              title={humanize(raw)}
-            >
-              {src ? (
-                <Image
-                  src={src}
-                  alt={`${humanize(raw)} logo`}
-                  width={250}
-                  height={40}
-                />
-              ) : (
-                <span className="text-xs text-red-500">Missing: {raw}</span>
-              )}
-            </div>
-          );
-        })}
+            return (
+              <div
+                key={`${key}-${idx}`}
+                className="flex flex-col items-center justify-center gap-2"
+                title={humanize(raw)}
+              >
+                {src ? (
+                  <Image
+                    src={src}
+                    alt={`${humanize(raw)} logo`}
+                    width={250}
+                    height={40}
+                  />
+                ) : (
+                  <span className="text-xs text-red-500">Missing: {raw}</span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div> */}
+
+      <div className="flex justify-center">
+        <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 justify-items-center w-full max-w-6xl mx-auto">
+          {titles.map((raw, idx) => {
+            const key = toKey(raw);
+            const src = ICONS[key];
+
+            return (
+              <div
+                key={`${key}-${idx}`}
+                className="flex flex-col items-center justify-center gap-2"
+                title={humanize(raw)}
+              >
+                {src ? (
+                  <Image
+                    src={src}
+                    alt={`${humanize(raw)} logo`}
+                    width={250}
+                    height={40}
+                  />
+                ) : (
+                  <span className="text-xs text-red-500">Missing: {raw}</span>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

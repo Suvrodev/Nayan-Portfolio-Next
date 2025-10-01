@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useParams } from "next/navigation";
 import "./serviceDetail.css";
@@ -11,24 +12,61 @@ import SkillLogo from "./SkillLogo/SkillLogo";
 import EssentialSkill from "./EssentialSkill/EssentialSkill";
 
 const ServiceDetailPage = () => {
-  const { serviceId } = useParams();
-  console.log("Service id:  ", serviceId);
+  const params = useParams();
+  const rawId = Array.isArray(params?.serviceId)
+    ? params.serviceId[0]
+    : params?.serviceId ?? "";
+  const serviceId = decodeURIComponent(rawId);
 
   const [service, setService] = useState<TUpdateService | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/service.json")
-      .then((res) => res.json())
-      .then((data) => {
-        // serviceId এর সাথে মিলে এমন service খুঁজে বের করা
-        const matchedService = data.find(
-          (item: TUpdateService) => item.id === serviceId
+    let isMounted = true;
+
+    const load = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const res = await fetch("/service.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`Failed to load: ${res.status}`);
+        const data: TUpdateService[] = await res.json();
+
+        const matched = data.find(
+          (item: TUpdateService) => String(item.id) === String(serviceId)
         );
-        setService(matchedService);
-      });
+
+        if (isMounted) setService(matched ?? null);
+      } catch (e: any) {
+        if (isMounted) setError(e?.message || "Something went wrong");
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    };
+
+    load();
+    return () => {
+      isMounted = false;
+    };
   }, [serviceId]);
 
-  console.log("Selected Service: ", service);
+  if (loading) {
+    return (
+      <div className="max-w-6xl mx-auto p-6 md:p-10">
+        {/* Replace with your real skeleton/loader */}
+        <div className="animate-pulse space-y-4">
+          <div className="h-10 w-1/3 bg-gray-200 rounded" />
+          <div className="h-60 w-full bg-gray-200 rounded" />
+          <div className="h-6 w-2/3 bg-gray-200 rounded" />
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return <NotFoundData speed={1}>Error: {error}</NotFoundData>;
+  }
 
   if (!service) {
     return <NotFoundData speed={1}>Service Not Found</NotFoundData>;
@@ -39,20 +77,15 @@ const ServiceDetailPage = () => {
       <ServiceDetailHero service={service} />
 
       <div className="mt-20 mb-10">
-        <div>
-          <KeyAspect service={service} />
-        </div>
+        <KeyAspect service={service} />
       </div>
 
       <div className="mt-20 mb-10">
-        <div>
-          <SkillLogo service={service} />
-        </div>
+        <SkillLogo service={service} />
       </div>
+
       <div className="mt-20 mb-10">
-        <div>
-          <EssentialSkill service={service} />
-        </div>
+        <EssentialSkill service={service} />
       </div>
     </div>
   );
