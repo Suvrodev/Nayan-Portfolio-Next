@@ -1,45 +1,109 @@
 [
   {
-    "_id": 1,
+    "id": "6889654b39f33c3fa8e2d010",
     "title": "WordPress Development",
-    "image": "https://i.ibb.co/KK7gWVC/wordpress-development-sarkarnayan.jpg",
-    "popupDesc": "Our WordPress development service is your pathway to a dynamic and tailored online presence. Our team of skilled developers specializes in creating custom WordPress solutions that align with your unique goals and requirements. From responsive design to performance optimization and seamless functionality, we ensure your website stands out and performs exceptionally in the digital landscape. Elevate your online presence with our WordPress development service and stay ahead of the competition.",
-    "desc": "WordPress development refers to the creation of websites, themes, and plugins using the WordPress content management system. its flexibility, user-friendly, and extensive plugin."
-  },
-  {
-    "_id": 2,
-    "title": "Web Design",
-    "image": " https://i.ibb.co/GRH2YQr/web-design-sarkarnayan.jpg",
-    "popupDesc": "Web designers use technical and creative skills to design visually appealing, user-friendly websites aligned with the website owner’s or organization’s goals. They consider factors such as user experience, branding, navigation, and accessibility while designing the website.Our Responsive Web Design service is dedicated to creating websites that seamlessly adapt to different screen sizes, ensuring optimal user experiences across devices",
-    "desc": "Website design refers to the process of creating and designing the visual layout, user interface, and overall aesthetic appearance of a website.  Front-end development"
-  },
-  {
-    "_id": 3,
-    "title": "Web Development",
-    "image": "https://i.ibb.co/7YZ90YR/web-development-sarkarnayan.jpg",
-    "popupDesc": "Web development refers to creating and building websites or web applications. It involves using programming languages, frameworks, and various technologies to develop a website’s functional and interactive components.Back-End Development: Back-end developers work on the server side of web development. They handle the logic, database management, and server configuration that power the website. Back-end developers use languages such as PHP, Laravel to create the functionality and handle data processing.",
-    "desc": "Web development is the process of creating websites or web applications. Front-end development and Back-end development. design is user-friendly, and aligned."
-  },
-  {
-    "_id": 4,
-    "title": "Ui Ux Design",
-    "image": "https://i.ibb.co/b5PtT3w/ui-ux-design-sarkarnayan.jpg",
-    "popupDesc": "UI design crafts the visual aspects of a digital interface, including buttons, icons, fonts, and color patterns. It strives to produce attractive, intuitive interfaces for an optimal user experience. While shaping interfaces for websites, apps, or other platforms, UI designers weigh branding, usability, and accessibility..",
-    "desc": "UI UX Design combines various disciplines to create visually appealing, efficient, and user-friendly interfaces for digital products, enhancing user experiences."
-  },
-  {
-    "_id": 5,
-    "title": "Graphic Design",
-    "image": "https://i.ibb.co/prkspcw/graphic-design-sarkarnayan.jpg",
-    "popupDesc": "Graphics design is a creative discipline that involves visually communicating ideas, concepts, or messages through the use of typography, images, colors, and other visual elements. It encompasses various mediums such as digital design, print design, branding, advertising, web design, and more.",
-    "desc": "Graphics design is the art of visual communication, creating visually appealing and impactful designs for various mediums such as print, digital."
-  },
 
-  {
-    "_id": 6,
-    "title": "SEO",
-    "image": "https://i.ibb.co/z27PvJw/search-engine-optimization-sarkarnayan.jpg",
-    "popupDesc": "Sarkar Nayan offers the best search engine optimization services to boost your web page’s ranking on the first page of Google or any search engine. We promise to deliver consistently. There are no shortcuts or quick fixes in SEO.",
-    "desc": "Boost your online presence with our specialized Search Engine Optimization services (SEO). Drive traffic, improve search rankings, and increase visibility effectively."
+    "hero": {
+      "headline": "WordPress Development",
+      "text1": "WordPress development refers to the creation of websites, themes, and pluginsusing the WordPress content managementsystem. its flexibility, user-friendly, and extensive plugin.",
+      "text2": "WordPress development refers to the process of creating websites or web applications using the WordPress content management system (CMS). WordPress is a popular open-source platform known for its flexibility, user-friendliness, and extensive plugin ecosystem"
+    },
+
+    "keyAspect": {
+      "tutle": "WordPress development involves several key aspects",
+      "keyAspect": [
+        {
+          "title": "Theme Development",
+          "desc": "WordPress themes control the visual appearance and layout of a website. Theme developers create custom themes or modify existing ones to meet specific design requirements, incorporating HTML, CSS, and PHP to build the theme files."
+        },
+        {
+          "title": "Plugin Development",
+          "desc": "WordPress plugins add functionality and features to a website. Plugin developers write custom code in PHP to create plugins that extend the core functionality of WordPress or provide custom features tailored to specific needs."
+        },
+        {
+          "title": "Customization",
+          "desc": "WordPress allows extensive customization through theme options, custom post types, taxonomies, and more. WordPress developers utilize these customization options to tailor the website’s functionality and content management to the client’s requirements."
+        },
+        {
+          "title": "Content Management",
+          "desc": "WordPress provides an intuitive admin dashboard for managing website content. Developers work with clients to set up content structures, create custom post types, taxonomies, and fields, enabling efficient content management and organization."
+        },
+        {
+          "title": "WordPress APIs",
+          "desc": "WordPress offers various APIs that developers can leverage to extend functionality and integrate with third-party services. These include the REST API for creating custom endpoints and the Plugin API for hooking into WordPress core functionality."
+        },
+        {
+          "title": "Performance Optimization",
+          "desc": "WordPress developers optimize websites for performance by minimizing page load times, implementing caching mechanisms, optimizing database queries, and employing best practices for speed and efficiency."
+        },
+        {
+          "title": "Security",
+          "desc": "Security is a critical aspect of WordPress development. Developers follow best practices to secure the website, such as using secure authentication methods, applying regular updates, and implementing security plugins or custom security measures."
+        },
+        {
+          "title": "Responsive Design",
+          "desc": "WordPress developers ensure that websites are responsive and mobile-friendly, adapting well to different screen sizes and devices. They implement responsive design principles and techniques, such as fluid layouts and media queries, to create a seamless user experience across devices."
+        },
+        {
+          "title": "Plugin Integration",
+          "desc": "WordPress has an extensive plugin ecosystem, and developers integrate and configure plugins to add desired functionality to the website. This can include features like contact forms, e-commerce capabilities, search engine optimization (SEO), social media integration, and more."
+        },
+        {
+          "title": "Maintenance and Updates",
+          "desc": "WordPress developers provide ongoing maintenance and updates to ensure the website remains secure, up-to-date, and compatible with the latest WordPress versions and plugins. They perform routine tasks such as backups, monitoring, and troubleshooting."
+        }
+      ]
+    },
+
+    "skillLogo": {
+      "title": "My Skill Logo",
+      "images": ["wordpress", "html", "css", "js", "php", "mysql"]
+    },
+    "skils": {
+      "title": "Here are some essential skills for WordPress development",
+      "pg": "WordPress development offers a flexible platform for building websites, from simple blogs to complex e-commerce sites. ",
+      "skills": [
+        {
+          "title": "WordPress Core",
+          "desc": "A deep understanding of the WordPress core is essential."
+        },
+        {
+          "title": "PHP",
+          "desc": "WordPress is built on PHP, so proficiency in PHP is crucial for developing custom themes and plugins."
+        },
+        {
+          "title": "HTML and CSS",
+          "desc": "WordPress developers should have a solid foundation in HTML for structuring website content and CSS for styling and layout."
+        },
+        {
+          "title": "Theme Development",
+          "desc": "Ability to create custom WordPress themes from scratch or modify existing themes is a key skill."
+        },
+        {
+          "title": "Plugin Development",
+          "desc": "Proficiency in plugin development allows you to extend the functionality of WordPress."
+        },
+        {
+          "title": "MySQL",
+          "desc": "Familiarity with MySQL or other database systems is important for managing and interacting with the WordPress database."
+        },
+        {
+          "title": "JavaScript",
+          "desc": "WordPress developers often work with JavaScript for enhancing interactivity and functionality on the front end. Knowledge of JavaScript frameworks like jQuery or React can be beneficial for creating dynamic and interactive experiences."
+        },
+        {
+          "title": "REST API",
+          "desc": "WordPress provides a REST API that allows developers to interact with WordPress data programmatically. Understanding how to utilize the REST API to create custom endpoints or integrate with external applications is valuable."
+        },
+        {
+          "title": "Debugging and Troubleshooting",
+          "desc": "The ability to debug and troubleshoot issues is important for resolving errors and ensuring smooth functionality."
+        },
+        {
+          "title": "Security and Performance",
+          "desc": "Knowledge of security best practices is crucial for securing WordPress installations, including implementing secure authentication, sanitizing user input, and protecting against common vulnerabilities."
+        }
+      ]
+    }
   }
 ]
