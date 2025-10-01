@@ -77,13 +77,17 @@ const ServiceDetailPage = () => {
     <div className="max-w-6xl mx-auto p-6 md:p-10">
       <ServiceDetailHero service={service} />
 
-      <div className="mt-20 mb-10">
-        <ServiceComponent service={service} />
-      </div>
+      {service?.components && (
+        <div className="mt-20 mb-10">
+          <ServiceComponent service={service} />
+        </div>
+      )}
 
-      <div className="mt-20 mb-10">
-        <KeyAspect service={service} />
-      </div>
+      {service?.keyAspect && (
+        <div className="mt-20 mb-10">
+          <KeyAspect service={service} />
+        </div>
+      )}
 
       {serviceId === "688502c459d18f392f6af6ca" && (
         <div className="mt-20 mb-10">
@@ -96,7 +100,7 @@ const ServiceDetailPage = () => {
       </div>
 
       {serviceId !== "688502c459d18f392f6af6ca" && (
-        <div className="mt-20 mb-10">
+        <div className="mt-10 mb-10">
           <EssentialSkill service={service} />
         </div>
       )}

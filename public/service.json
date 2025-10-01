@@ -270,5 +270,120 @@
         }
       ]
     }
+  },
+  {
+    "id": "688967cf2d25e012daccc5f7",
+    "title": "UI UX Design",
+
+    "hero": {
+      "headline": "UI UX Design",
+      "text1": "UI (User Interface) design and UX (User Experience) design are two closely related disciplines within graphic design that focus on creating intuitive and engaging digital experiences for users.",
+      "text2": "UI design involves designing the visual elements and aesthetics of a digital interface, such as buttons, icons, typography, color schemes, and layout. The goal of UI design is to create visually appealing and user-friendly interfaces that enhance the overall user experience. UI designers consider factors such as branding, usability, and accessibility while designing interfaces for websites, mobile apps, software applications, and other digital platforms."
+    },
+
+    "skils": {
+      "title": "Here are some essential skills for UI/UX designers:",
+      "pg": "UI design primarily deals with the visual aspects of a digital interface, while UX design focuses on the overall user experience.",
+      "skills_": [
+        {
+          "title": "User Research",
+          "desc": "Conducting user research to gain insights into user behavior, needs, and preferences."
+        },
+        {
+          "title": "Wireframing and Prototyping",
+          "desc": "Creating wireframes and interactive prototypes to visualize the structure and functionality of a digital interface."
+        },
+        {
+          "title": "Information Architecture",
+          "desc": "Organizing and structuring information in a way that is intuitive and easy to navigate for users."
+        },
+        {
+          "title": "Interaction Design",
+          "desc": "Designing how users interact with a digital interface through intuitive and engaging interactions."
+        },
+        {
+          "title": "Visual Design",
+          "desc": "Applying principles of graphic design to create visually appealing and cohesive interfaces."
+        },
+        {
+          "title": "Usability Testing",
+          "desc": "Conducting usability tests to evaluate the effectiveness and usability of a design."
+        },
+        {
+          "title": "Collaboration and Communication",
+          "desc": "Working effectively with cross-functional teams, including developers, stakeholders, and other designers."
+        },
+        {
+          "title": "Responsive Design",
+          "desc": "Designing interfaces that adapt and work well across different devices and screen sizes."
+        },
+        {
+          "title": "Accessibility",
+          "desc": "Considering accessibility guidelines and best practices, such as providing alternative text for images, ensuring proper color contrast, and designing for screen readers."
+        },
+        {
+          "title": "Continuous Learning",
+          "desc": "Staying updated with the latest design trends, tools, and technologies in the UI/UX field."
+        }
+      ]
+    }
+  },
+  {
+    "id": "6889688a2d25e012daccc60c",
+    "title": "Graphics Design",
+
+    "hero": {
+      "headline": "Graphics Design",
+      "text1": "Graphics design is a creative discipline that involves visually communicating ideas, concepts, or messages through the use of typography, images, colors, and other visual elements. It encompasses various mediums such as digital design, print design, branding, advertising, web design, and more.",
+      "text2": "Graphic designers utilize their artistic and technical skills to create visually appealing and effective designs that capture the attention of the target audience and convey the intended message. They work with a variety of tools and software such as Adobe Photoshop, Illustrator, and InDesign to create and manipulate images, illustrations, and layouts."
+    },
+
+    "skils": {
+      "title": "Here are some essential skills for Graphic designers",
+      "pg": "The field of graphic design plays a crucial role in marketing, advertising, and communication. It is utilized by businesses, organizations, and individuals to create logos, branding materials, packaging, brochures, websites, social media graphics, and much more.",
+      "pg2": "Overall, graphic design combines creativity, problem-solving, and visual communication skills to create visually stunning and engaging designs that effectively convey messages and evoke emotions.",
+      "skills_": [
+        {
+          "title": "Creativity",
+          "desc": "Graphic designers need to have a strong creative ability to come up with innovative and visually appealing designs."
+        },
+        {
+          "title": "Typography",
+          "desc": "Understanding typography is crucial in graphic design. Knowledge of font styles, spacing, hierarchy, and how to use type effectively is essential."
+        },
+        {
+          "title": "Composition and Layout",
+          "desc": "Knowing how to arrange elements on a page or screen is vital."
+        },
+        {
+          "title": "Color Theory",
+          "desc": "Understanding color theory helps designers choose appropriate color palettes that evoke the desired emotions and create visual harmony."
+        },
+        {
+          "title": "Adobe Creative Suite",
+          "desc": "Proficiency in software like Adobe Photoshop, Illustrator, and InDesign is essential for graphic designers."
+        },
+        {
+          "title": "Communication and Collaboration",
+          "desc": "Graphic designers often work in teams and collaborate with clients, marketers, and other professionals."
+        },
+        {
+          "title": "Attention to Detail",
+          "desc": "Web designers should have skills in organizing and structuring information on a website."
+        },
+        {
+          "title": "Problem-Solving",
+          "desc": "Graphic designers often encounter design challenges and must find creative solutions."
+        },
+        {
+          "title": "Time Management",
+          "desc": "Meeting deadlines and managing multiple projects simultaneously is common for graphic designers."
+        },
+        {
+          "title": "Adaptability and Continuous Learning",
+          "desc": "The field of graphic design is ever-evolving, with new trends, technologies, and tools emerging regularly."
+        }
+      ]
+    }
   }
 ]
