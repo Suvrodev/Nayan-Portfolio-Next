@@ -10,6 +10,7 @@ import NotFoundData from "@/components/NotFoundData/NotFoundData";
 import KeyAspect from "./KeyAspect/KeyAspect";
 import SkillLogo from "./SkillLogo/SkillLogo";
 import EssentialSkill from "./EssentialSkill/EssentialSkill";
+import ServiceComponent from "./ServiceComponent/ServiceComponent";
 
 const ServiceDetailPage = () => {
   const params = useParams();
@@ -77,16 +78,28 @@ const ServiceDetailPage = () => {
       <ServiceDetailHero service={service} />
 
       <div className="mt-20 mb-10">
+        <ServiceComponent service={service} />
+      </div>
+
+      <div className="mt-20 mb-10">
         <KeyAspect service={service} />
       </div>
+
+      {serviceId === "688502c459d18f392f6af6ca" && (
+        <div className="mt-20 mb-10">
+          <EssentialSkill service={service} />
+        </div>
+      )}
 
       <div className="mt-20 mb-10">
         <SkillLogo service={service} />
       </div>
 
-      <div className="mt-20 mb-10">
-        <EssentialSkill service={service} />
-      </div>
+      {serviceId !== "688502c459d18f392f6af6ca" && (
+        <div className="mt-20 mb-10">
+          <EssentialSkill service={service} />
+        </div>
+      )}
     </div>
   );
 };

@@ -14,6 +14,7 @@ import react from "@/app/assets/serviceDetail/react.svg";
 import nextjs from "@/app/assets/serviceDetail/nextjs.svg"; // rename local var to avoid "next" keyword confusion
 import node from "@/app/assets/serviceDetail/node.svg";
 import jquerySvg from "@/app/assets/serviceDetail/jQuery.svg"; // rename variable
+import laravelSvg from "@/app/assets/serviceDetail/laravel.svg"; // rename variable
 
 interface IProps {
   service: TUpdateService;
@@ -36,6 +37,7 @@ const ICONS: Record<string, StaticImageData> = {
   node,
   nodejs: node, // alias
   jquery: jquerySvg,
+  laravel: laravelSvg,
 };
 
 const toKey = (v: string) => v.trim().toLowerCase();

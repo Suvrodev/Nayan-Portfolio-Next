@@ -42,4 +42,5 @@ export type TUpdateService = {
   keyAspect?: TKeyAspect;
   skillLogo?: TSkillLogo;
   skils?: TSkills;
+  components?: TSkills;
 };
