@@ -105,5 +105,76 @@
         }
       ]
     }
+  },
+  {
+    "id": "688502c459d18f392f6af6ca",
+    "title": "Web Design",
+
+    "hero": {
+      "headline": "WordPress Development",
+      "text1": "Web design refers to the process of creating and designing the visual appearance and layout of websites. It encompasses various elements such as layout, typography, color schemes, graphics, and user interface design to create engaging and functional websites.",
+      "text2": "Web designers use a combination of technical and creative skills to design websites that are visually appealing, user-friendly, and aligned with the goals of the website owner or organization. They consider factors such as user experience, branding, navigation, and accessibility while designing the website."
+    },
+
+    "skillLogo": {
+      "title": "My Skill Logo",
+      "images": [
+        "html",
+        "css",
+        "tailwind",
+        "js",
+        "react",
+        "bootstrap",
+        "jQuery",
+        "next",
+        "node"
+      ]
+    },
+    "skils": {
+      "title": "Here are some key skills for web designers",
+      "pg": "Web design plays a crucial role in creating visually appealing and functional websites that effectively communicate a brand's message, engage users, and achieve specific objectives, such as promoting products, sharing information, or facilitating online transactions. ",
+      "skills_": [
+        {
+          "title": "Proficiency in HTML and CSS",
+          "desc": "Web designers should have a strong foundation in HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets)."
+        },
+        {
+          "title": "Responsive Design",
+          "desc": "With the increasing use of mobile devices, it is essential for web designers to have skills in responsive design."
+        },
+        {
+          "title": "User Interface (UI) Design",
+          "desc": "Web designers need to have a good understanding of UI design principles."
+        },
+        {
+          "title": "Graphic Design",
+          "desc": "Proficiency in graphic design software such as Adobe Photoshop, Illustrator, Figma, or Sketch can be valuable for web designers."
+        },
+        {
+          "title": "Knowledge of Typography",
+          "desc": "Web designers should understand how to use typography effectively, including selecting appropriate fonts, font sizes, line spacing, and readability considerations."
+        },
+        {
+          "title": "User Experience (UX) Design",
+          "desc": "Understanding UX principles is crucial for web designers. This involves considering user behavior, designing intuitive navigation systems, creating clear and concise content, and ensuring an overall positive user experience."
+        },
+        {
+          "title": "Information Architecture",
+          "desc": "Web designers should have skills in organizing and structuring information on a website."
+        },
+        {
+          "title": "Basic Understanding of JavaScript",
+          "desc": "While not always required, having a basic understanding of JavaScript can be beneficial for web designers."
+        },
+        {
+          "title": "Collaboration and Communication",
+          "desc": "Web designers often work as part of a team, collaborating with developers, content creators, and other stakeholders."
+        },
+        {
+          "title": "Continuous Learning",
+          "desc": "Web design is a rapidly evolving field, with new technologies and trends emerging regularly."
+        }
+      ]
+    }
   }
 ]

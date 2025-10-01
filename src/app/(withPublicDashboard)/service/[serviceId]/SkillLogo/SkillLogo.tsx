@@ -13,6 +13,7 @@ import mySql from "@/app/assets/serviceDetail/mySql.svg"; // filename uses camel
 import react from "@/app/assets/serviceDetail/react.svg";
 import nextjs from "@/app/assets/serviceDetail/nextjs.svg"; // rename local var to avoid "next" keyword confusion
 import node from "@/app/assets/serviceDetail/node.svg";
+import jquerySvg from "@/app/assets/serviceDetail/jQuery.svg"; // rename variable
 
 interface IProps {
   service: TUpdateService;
@@ -34,6 +35,7 @@ const ICONS: Record<string, StaticImageData> = {
   nextjs: nextjs, // alias
   node,
   nodejs: node, // alias
+  jquery: jquerySvg,
 };
 
 const toKey = (v: string) => v.trim().toLowerCase();
