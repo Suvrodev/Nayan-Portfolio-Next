@@ -10,8 +10,8 @@
     },
 
     "keyAspect": {
-      "tutle": "WordPress development involves several key aspects",
-      "keyAspect": [
+      "title": "WordPress development involves several key aspects",
+      "keyAspects": [
         {
           "title": "Theme Development",
           "desc": "WordPress themes control the visual appearance and layout of a website. Theme developers create custom themes or modify existing ones to meet specific design requirements, incorporating HTML, CSS, and PHP to build the theme files."

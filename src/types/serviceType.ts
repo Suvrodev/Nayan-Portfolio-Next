@@ -1,23 +1,45 @@
+// Hero Section
+export type THero = {
+  headline?: string;
+  text1?: string;
+  text2?: string;
+};
+
+// Key Aspect Section
+export type TKeyAspectItem = {
+  title?: string;
+  desc?: string;
+};
+
+export type TKeyAspect = {
+  title?: string;
+  keyAspects?: TKeyAspectItem[];
+};
+
+// Skill Logo Section
+export type TSkillLogo = {
+  title?: string;
+  images?: string[];
+};
+
+// Skills Section
+export type TSkillItem = {
+  title?: string;
+  desc?: string;
+};
+
+export type TSkills = {
+  title?: string;
+  pg?: string;
+  skills?: TSkillItem[];
+};
+
+// Main Update Service Type
 export type TUpdateService = {
   id: string;
   title?: string;
-  hero?: {
-    headline?: string;
-    text1?: string;
-    text2?: string;
-  };
-  keyAspect?: {
-    tutle?: string;
-    title?: string;
-    keyAspect?: { title?: string; desc?: string }[];
-  };
-  skillLogo?: {
-    title?: string;
-    images?: string[];
-  };
-  skils?: {
-    title?: string;
-    pg?: string;
-    skills?: { title?: string; desc?: string }[];
-  };
+  hero?: THero;
+  keyAspect?: TKeyAspect;
+  skillLogo?: TSkillLogo;
+  skils?: TSkills;
 };
