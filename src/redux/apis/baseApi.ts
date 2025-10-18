@@ -16,6 +16,7 @@ const baseQuery = fetchBaseQuery({
   // baseUrl: "https://nayan-portfolio-server.vercel.app/api",
   baseUrl: `${baseApiFromEnv()}`,
   credentials: "include",
+  // withCredentials: true,
   prepareHeaders: (headers, { getState }) => {
     const token = (getState() as RootState).auth.token;
     if (token) {

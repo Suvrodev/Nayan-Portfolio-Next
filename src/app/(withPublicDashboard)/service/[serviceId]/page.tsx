@@ -12,6 +12,7 @@ import SkillLogo from "./SkillLogo/SkillLogo";
 import EssentialSkill from "./EssentialSkill/EssentialSkill";
 import ServiceComponent from "./ServiceComponent/ServiceComponent";
 import ServiceDetailSkeliton from "./_ServiceDetailSkeliton/ServiceDetailSkeliton";
+import SeoComponent from "./SeoComponent/SeoComponent";
 
 const ServiceDetailPage = () => {
   const params = useParams();
@@ -74,24 +75,41 @@ const ServiceDetailPage = () => {
       <ServiceDetailHero service={service} />
 
       {/* For Web Development */}
+      {/* Web Development chaera component nai */}
       {service?.components && (
         <div className="mt-20 mb-10">
+          <h2>Component</h2>
           <ServiceComponent service={service} />
         </div>
       )}
 
+      {/* Key Aspect */}
       {service?.keyAspect && (
         <div className="mt-20 mb-10">
+          <h2>Key of Aspects</h2>
           <KeyAspect service={service} />
         </div>
       )}
 
+      {/* Sudhu Web Development er janno Skill Logo er upore Skill */}
+      {/* Web Development e KeyASpect nai */}
       {serviceId === "688502c459d18f392f6af6ca" && (
         <div className="mt-20 mb-10">
           <EssentialSkill service={service} />
         </div>
       )}
 
+      {/* Eta Sudhu SEO er janno */}
+      {/* {service?.skilsWithArray && (
+        <div className=" mb-10">
+          <h1>Skill with Array</h1>
+          <SkillWithArray service={service} />
+        </div>
+      )} */}
+
+      {serviceId === "68896959b13ed74fdd7fe83c" && <SeoComponent />}
+
+      {/* Here Logo */}
       <div className="my-10">
         <SkillLogo service={service} />
       </div>

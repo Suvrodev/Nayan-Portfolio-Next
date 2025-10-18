@@ -1,6 +1,7 @@
 [
   {
     "id": "6889654b39f33c3fa8e2d010",
+    "id_": "aaa-101",
     "title": "WordPress Development",
 
     "hero": {
@@ -108,6 +109,7 @@
   },
   {
     "id": "688502c459d18f392f6af6ca",
+    "id_": "aaa-102",
     "title": "Web Design",
 
     "hero": {
@@ -179,6 +181,7 @@
   },
   {
     "id": "6884ebf0536842a76dbc73c4",
+    "id_": "aaa-103",
     "title": "Web Development",
 
     "hero": {
@@ -273,6 +276,7 @@
   },
   {
     "id": "688967cf2d25e012daccc5f7",
+    "id_": "aaa-104",
     "title": "UI UX Design",
 
     "hero": {
@@ -330,6 +334,7 @@
   },
   {
     "id": "6889688a2d25e012daccc60c",
+    "id_": "aaa-105",
     "title": "Graphics Design",
 
     "hero": {
@@ -383,6 +388,119 @@
           "title": "Adaptability and Continuous Learning",
           "desc": "The field of graphic design is ever-evolving, with new trends, technologies, and tools emerging regularly."
         }
+      ]
+    }
+  },
+  {
+    "id": "68896959b13ed74fdd7fe83c",
+    "id_": "aaa-106",
+    "title": "Search Engine Optimization",
+
+    "hero": {
+      "headline": "Search Engine Optimization",
+      "text1": "Sarkar Nayan offers the best search engine optimization services to boost your web page's ranking on the first page of Google or any search engine. We promise to deliver consistently. There are no shortcuts or quick fixes in SEO."
+    },
+
+    "skilsWithArray": {
+      "title": "We will follow the checklist",
+      "pg": "Adhering to these steps, your website will be sure to secure a ranking in the search engine results.",
+      "skills_": [
+        {
+          "title": "Google Search Console Setup",
+          "desc": "Connect your website to Google Search Console to monitor indexing, search performance, and fix SEO issues.",
+          "columns": 1
+        },
+        {
+          "title": "Google Analytics Setup",
+          "desc": "ntegrate Google Analytics to track visitor behavior, traffic sources, and website performance.",
+          "columns": 1
+        },
+        {
+          "title": "Install Yoast SEO Plugin",
+          "desc": "Add Yoast SEO to optimize your WordPress site for search engines, improve content readability, and manage metadata.",
+          "columns": 1
+        },
+        {
+          "title": "Keyword Research",
+          "columns": 1,
+          "desc": [
+            "Detect high-value keywords with low competition.",
+            "Identify long-tail keywords",
+            "Discover local keywords",
+            "Seek out question-based keywords"
+          ]
+        },
+        {
+          "title": "On-Page SEO",
+          "columns": 2,
+          "desc": [
+            "Implement keyword anchor texting",
+            "Use concise URLs that include the post title",
+            "Establish a unique Title Tag",
+            "Create a unique Meta Tag",
+            "Incorporate keywords into the Meta Description and Title Tag",
+            "Embed keywords in the content",
+            "Use H1, H2, H3, H4 headings as and when necessary",
+            "Optimize images and include Alt Texts",
+            "Utilize synonyms and LSI (Latent Semantic Indexing) keywords",
+            "Integrate both Internal and External links"
+          ]
+        },
+
+        {
+          "title": "Technical SEO",
+          "desc": [
+            "Identify and fix any crawl errors (pages that search engines can't locate)",
+            "Determine how Google interprets the chosen page",
+            "Ensure that the website is responsive and user-friendly on all devices, including PCs, tablets, and mobiles",
+            "Rectify any broken links (links that aren't functional)",
+            "Secure the website using HTTPS protocol and validate SSL Certificates",
+            "Guarantee that the website loads quickly",
+            "Confirm the presence and proper functioning of the site map and Robots.txt file"
+          ]
+        },
+        {
+          "title": "Content Checklist",
+          "desc": [
+            "Select unique content for publishing",
+            "Use some content marketing formula",
+            "Use Schema Markup"
+          ]
+        },
+
+        {
+          "title": "Off-Page SEO ",
+          "desc": [
+            "Identify and fix any crawl errors (pages that search engines can't locate)",
+            "Determine how Google interprets the chosen page",
+            "Ensure that the website is responsive and user-friendly on all devices, including PCs, tablets, and mobiles",
+            "Rectify any broken links (links that aren't functional)",
+            "Secure the website using HTTPS protocol and validate SSL Certificates",
+            "Guarantee that the website loads quickly",
+            "Confirm the presence and proper functioning of the site map and Robots.txt file"
+          ]
+        },
+        {
+          "title": "We constantly monitor the Statistics and find the necessary steps."
+        }
+      ]
+    },
+
+    "skillLogo": {
+      "title": "SEO Tools Logo",
+      "images": [
+        "html",
+        "css",
+        "tailwind",
+        "js",
+        "react",
+        "bootstrap",
+        "jQuery",
+        "next",
+        "node",
+        "php",
+        "laravel",
+        "mysql"
       ]
     }
   }
