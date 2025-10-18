@@ -1,5 +1,6 @@
 "use client";
 import "./seo.css";
+import "./seoMobile.css"; // 👈 add this line
 
 const SeoComponent = () => {
   return (
