@@ -112,7 +112,7 @@ const PublicDashboard = () => {
           Copyright ©2024 Sarkar Nayan <br /> All Rights Reserved.
         </p>
 
-        <div className="flex flex-col gap-1">
+        <div className="flex mt-4  gap-4">
           <Link
             href="/terms"
             className="hover:text-white transition-colors duration-200 text-[12px]"
@@ -120,7 +120,7 @@ const PublicDashboard = () => {
             Terms & Conditions
           </Link>
           <Link
-            href="/privacy"
+            href="/policy"
             className="hover:text-white transition-colors duration-200 text-[12px]"
           >
             Privacy Policy

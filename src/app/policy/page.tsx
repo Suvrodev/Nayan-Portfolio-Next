@@ -6,12 +6,13 @@ const PolicyPage = () => {
     <div className="bg-[#141414] text-gray-200 min-h-screen px-6 sm:px-12 md:px-20 py-16">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 text-center">
+        {/* <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 text-center mb-10"> */}
+        <h1 className="text-3xl sm:text-4xl font-bold text-white  text-center mb-10">
           Privacy Policy
         </h1>
-        <p className="text-gray-400 text-center mb-10">
+        {/* <p className="text-gray-400 text-center mb-10">
           Effective Date: 15 August 2025
-        </p>
+        </p> */}
 
         {/* Introduction */}
         <section className="mb-8">
@@ -118,8 +119,14 @@ const PolicyPage = () => {
             include:
           </p>
           <ul className="list-disc list-inside space-y-1">
-            <li>Google Analytics</li>
-            <li>Stripe / PayPal / Other Payment Providers</li>
+            <li>
+              {" "}
+              <strong>Google Analytics</strong>{" "}
+            </li>
+            <li>
+              {" "}
+              <strong>Stripe / PayPal / Other Payment Providers</strong>
+            </li>
           </ul>
         </section>
 
