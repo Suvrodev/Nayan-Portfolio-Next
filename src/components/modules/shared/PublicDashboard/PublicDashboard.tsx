@@ -38,7 +38,7 @@ const PublicDashboard = () => {
   return (
     <div className="bg-[#141414] h-[100vh] text-white pl-8 overflow-hidden sticky top-0 ">
       {/* Logo */}
-      <div className="mt-20 mb-20">
+      <div className="mt-20 mb-16">
         <Link href="/">
           {/* <image src={logoImage} className="w-[70%]" /> */}
           {/* <img src={logoImage} alt="Sarkar Nayan" className="w-[70%]" /> */}
@@ -111,6 +111,21 @@ const PublicDashboard = () => {
         <p>
           Copyright ©2024 Sarkar Nayan <br /> All Rights Reserved.
         </p>
+
+        <div className="flex flex-col gap-1">
+          <Link
+            href="/terms"
+            className="hover:text-white transition-colors duration-200 text-[12px]"
+          >
+            Terms & Conditions
+          </Link>
+          <Link
+            href="/privacy"
+            className="hover:text-white transition-colors duration-200 text-[12px]"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </div>
   );
