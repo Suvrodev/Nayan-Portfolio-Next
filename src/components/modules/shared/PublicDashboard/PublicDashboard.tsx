@@ -20,6 +20,7 @@ import {
   FaLinkedin,
   FaPinterest,
 } from "react-icons/fa";
+import BookingDashborad from "../../(Public-Dashboard))/shared/Booking/BookingDashboard/BookingDashborad";
 
 const socialLinks = [
   { icon: <FaFacebookF />, url: "https://www.facebook.com/sarkarnayans" },
@@ -112,7 +113,7 @@ const PublicDashboard = () => {
           Copyright ©2025 Sarkar Nayan <br /> All Rights Reserved.
         </p>
 
-        <div className="flex mt-4  gap-4">
+        <div className="flex mt-4  gap-2">
           <Link
             href="/terms"
             className="hover:text-white transition-colors duration-200 text-[12px]"
@@ -125,6 +126,11 @@ const PublicDashboard = () => {
           >
             Privacy Policy
           </Link>
+        </div>
+
+        {/* BookingDashboard */}
+        <div>
+          <BookingDashborad />
         </div>
       </div>
     </div>

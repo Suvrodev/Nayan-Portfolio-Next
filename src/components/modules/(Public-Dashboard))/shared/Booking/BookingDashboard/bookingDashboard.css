@@ -1,0 +1,25 @@
+.dashboard-booking-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start; /* center horizontally inside the sidebar */
+}
+
+.dashboard-booking-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #141414; /* updated background */
+  color: #fff; /* white text */
+  font-weight: 600;
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border-radius: 7px; /* updated border radius */
+  border: 1px solid #525252; /* updated border */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-booking-btn:hover {
+  background-color: #111; /* slightly lighter black for hover effect */
+  transform: scale(1.05);
+}
