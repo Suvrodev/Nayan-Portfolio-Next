@@ -13,6 +13,9 @@ import EssentialSkill from "./EssentialSkill/EssentialSkill";
 import ServiceComponent from "./ServiceComponent/ServiceComponent";
 import ServiceDetailSkeliton from "./_ServiceDetailSkeliton/ServiceDetailSkeliton";
 import SeoComponent from "./SeoComponent/SeoComponent";
+import TestimonialMx from "@/components/modules/(Public-Dashboard))/Home/Testimonial/TestimonialMx";
+import Certificate from "@/components/modules/(Public-Dashboard))/Home/Certificate/Certificate";
+import HomeContact from "@/components/modules/(Public-Dashboard))/Home/HomeContact/HomeContact";
 
 const ServiceDetailPage = () => {
   const params = useParams();
@@ -71,33 +74,39 @@ const ServiceDetailPage = () => {
   }
 
   return (
-    <div className="m-5 md:m-16">
-      <ServiceDetailHero service={service} />
+    <div className="">
+      <div className="m-5 md:m-16">
+        <ServiceDetailHero service={service} />
+      </div>
 
       {/* For Web Development */}
       {/* Web Development chaera component nai */}
-      {service?.components && (
-        <div className="mt-20 mb-10">
-          <h2>Component</h2>
-          <ServiceComponent service={service} />
-        </div>
-      )}
+      <div className="m-5 md:m-16">
+        {service?.components && (
+          <div className="mt-20 mb-10">
+            <ServiceComponent service={service} />
+          </div>
+        )}
+      </div>
 
       {/* Key Aspect */}
-      {service?.keyAspect && (
-        <div className="mt-20 mb-10">
-          <h2>Key of Aspects</h2>
-          <KeyAspect service={service} />
-        </div>
-      )}
+      <div className="m-5 md:m-16">
+        {service?.keyAspect && (
+          <div className="mt-20 mb-10">
+            <KeyAspect service={service} />
+          </div>
+        )}
+      </div>
 
       {/* Sudhu Web Development er janno Skill Logo er upore Skill */}
       {/* Web Development e KeyASpect nai */}
-      {serviceId === "688502c459d18f392f6af6ca" && (
-        <div className="mt-20 mb-10">
-          <EssentialSkill service={service} />
-        </div>
-      )}
+      <div className="m-5 md:m-16">
+        {serviceId === "688502c459d18f392f6af6ca" && (
+          <div className="mt-20 mb-10">
+            <EssentialSkill service={service} />
+          </div>
+        )}
+      </div>
 
       {/* Eta Sudhu SEO er janno */}
       {/* {service?.skilsWithArray && (
@@ -107,18 +116,34 @@ const ServiceDetailPage = () => {
         </div>
       )} */}
 
-      {serviceId === "68896959b13ed74fdd7fe83c" && <SeoComponent />}
+      <div className="m-5 md:m-16">
+        {serviceId === "68896959b13ed74fdd7fe83c" && <SeoComponent />}
+      </div>
 
       {/* Here Logo */}
-      <div className="my-10">
+      <div className="m-5 md:m-16 my-10">
         <SkillLogo service={service} />
       </div>
 
-      {serviceId !== "688502c459d18f392f6af6ca" && (
-        <div className=" mb-10">
-          <EssentialSkill service={service} />
-        </div>
-      )}
+      <div className="m-5 md:m-16 my-10">
+        {serviceId !== "688502c459d18f392f6af6ca" && (
+          <div className=" mb-10">
+            <EssentialSkill service={service} />
+          </div>
+        )}
+      </div>
+
+      {/* Testimonial Certificate Contact*/}
+
+      <div className=" p-5 md:p-16 py-10 bg-[#141414] overflow-hidden">
+        <TestimonialMx />
+      </div>
+      <div className="p-5 md:p-16 py-10 ">
+        <Certificate />
+      </div>
+      <div className=" p-5 md:p-16 py-10 bg-[#141414]">
+        <HomeContact />
+      </div>
     </div>
   );
 };
