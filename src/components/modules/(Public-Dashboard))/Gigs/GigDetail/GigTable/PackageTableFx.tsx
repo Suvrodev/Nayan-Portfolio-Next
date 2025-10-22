@@ -97,7 +97,7 @@ const PackageTableFx = ({ packages }: { packages: any[] }) => {
               <td key={pkg.name} className="p-3 border text-center font-medium">
                 <div className="flex flex-col justify-center items-center gap-y-4">
                   <span>${pkg.price}</span>
-                  <Link href={payMentLink}>
+                  <Link href={payMentLink} target="_blank">
                     <button className="primaryButton">Select</button>
                   </Link>
                 </div>

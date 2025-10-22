@@ -59,7 +59,7 @@ const PackageCard = ({ data }: { data: any }) => {
       </ul>
 
       {/* CTA button */}
-      <Link href={payMentLink}>
+      <Link href={payMentLink} target="_blank">
         <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
           Continue
         </button>
