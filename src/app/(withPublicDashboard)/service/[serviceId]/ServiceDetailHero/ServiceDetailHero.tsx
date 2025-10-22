@@ -1,6 +1,7 @@
 import Image from "next/image";
 import sarkar from "@/app/assets/serviceDetail/serviceNayan.webp";
 import { TUpdateService } from "@/types/serviceType";
+import Link from "next/link";
 
 interface IProps {
   service: TUpdateService;
@@ -30,8 +31,12 @@ const ServiceDetailHero = ({ service }: IProps) => {
         </div>
 
         <div className="flex gap-4 mt-6">
-          <button className="primaryButton">Hire Me</button>
-          <button className="primaryButton">Contact</button>
+          <Link href={"/gigs"} target="_blank">
+            <button className="primaryButton">Hire Me</button>
+          </Link>
+          <Link href={"/contact"} target="_blank">
+            <button className="primaryButton">Contact</button>
+          </Link>
         </div>
       </div>
     </div>
