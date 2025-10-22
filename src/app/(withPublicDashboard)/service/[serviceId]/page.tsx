@@ -79,8 +79,7 @@ const ServiceDetailPage = () => {
         <ServiceDetailHero service={service} />
       </div>
 
-      {/* For Web Development */}
-      {/* Web Development chaera component nai */}
+      {/* Component (Web Development) */}
       <div className="m-5 md:m-16">
         {service?.components && (
           <div className="mt-20 mb-10">
@@ -89,7 +88,7 @@ const ServiceDetailPage = () => {
         )}
       </div>
 
-      {/* Key Aspect */}
+      {/* Key Aspect (WordPress Development,Web Development,) */}
       <div className="m-5 md:m-16">
         {service?.keyAspect && (
           <div className="mt-20 mb-10">
@@ -108,23 +107,17 @@ const ServiceDetailPage = () => {
         )}
       </div>
 
-      {/* Eta Sudhu SEO er janno */}
-      {/* {service?.skilsWithArray && (
-        <div className=" mb-10">
-          <h1>Skill with Array</h1>
-          <SkillWithArray service={service} />
-        </div>
-      )} */}
-
+      {/* SEO Service */}
       <div className="m-5 md:m-16">
         {serviceId === "68896959b13ed74fdd7fe83c" && <SeoComponent />}
       </div>
 
-      {/* Here Logo */}
+      {/* Skill Logo (Wordpress, Web Design, Web Development, SEO) */}
       <div className="m-5 md:m-16 my-10">
         <SkillLogo service={service} />
       </div>
 
+      {/* skills_ (Wordpress, Web design, not Web Development, UI UX Design) */}
       <div className="m-5 md:m-16 my-10">
         {serviceId !== "688502c459d18f392f6af6ca" && (
           <div className=" mb-10">
@@ -149,3 +142,8 @@ const ServiceDetailPage = () => {
 };
 
 export default ServiceDetailPage;
+
+/**
+ * Key of Aspect e just ekta title
+ * Aspect e Tile + 1 ta ba 2 ta paragraph
+ */
