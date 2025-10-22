@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Clock3, Check, X } from "lucide-react";
 import AutorenewIcon from "@mui/icons-material/Autorenew";
+import Link from "next/link";
+import { payMentLink } from "@/components/utils/variable/paymentLink";
 const PackageCard = ({ data }: { data: any }) => {
   // console.log("Data: ", data);
   return (
@@ -57,9 +59,11 @@ const PackageCard = ({ data }: { data: any }) => {
       </ul>
 
       {/* CTA button */}
-      <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
-        Continue
-      </button>
+      <Link href={payMentLink}>
+        <button className="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition">
+          Continue
+        </button>
+      </Link>
     </div>
   );
 };

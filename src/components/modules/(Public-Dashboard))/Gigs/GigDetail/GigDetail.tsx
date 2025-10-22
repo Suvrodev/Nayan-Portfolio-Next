@@ -76,6 +76,7 @@ const GigDetail = ({ id }: IProps) => {
             <GetToKnow />
           </div>
         </div>
+        {/* Right Side tab */}
         <div className="w-full md:w-2/5  sticky top-0 self-start">
           <PackageTabs packages={gig.packages} />
         </div>

@@ -109,7 +109,7 @@ const PublicDashboard = () => {
       {/* Footer */}
       <div className="mt-5 text-[#cccccc] text-[15px]">
         <p>
-          Copyright ©2024 Sarkar Nayan <br /> All Rights Reserved.
+          Copyright ©2025 Sarkar Nayan <br /> All Rights Reserved.
         </p>
 
         <div className="flex mt-4  gap-4">
