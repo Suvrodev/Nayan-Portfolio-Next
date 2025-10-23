@@ -1,4 +1,5 @@
 import PageLoading from "@/components/modules/shared/PageLoading/PageLoading";
+import React from "react";
 
 const LoadingPage = () => {
   return (

@@ -77,10 +77,13 @@ const ServiceDetailPage = () => {
 
   return (
     <div className="">
-      <Link href={"/gigs"} className="inline-block mt-5 ml-4 md:mt-16 md:ml-16">
+      <Link
+        href={"/service"}
+        className="inline-block mt-5 ml-4 md:mt-16 md:ml-16"
+      >
         <button className="primaryButton mb-4 flex items-center gap-x-2  ">
           <ArrowLeft size={18} />
-          Gigs
+          Service
         </button>
       </Link>
 
