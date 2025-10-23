@@ -2,9 +2,7 @@
 // import logoImage from "../../../../assets/HeaderImage/Logo.png";
 import logoImage from "@/app/assets/HeaderImage/Logo.png";
 import { navItems } from "@/components/utils/Array/navItems";
-import goCall from "@/components/utils/functions/goCall";
 import goLink from "@/components/utils/functions/goLink";
-import sendEmail from "@/components/utils/functions/sendEmail";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +18,7 @@ import {
   FaLinkedin,
   FaPinterest,
 } from "react-icons/fa";
-import BookingDashborad from "../../(Public-Dashboard))/shared/Booking/BookingDashboard/BookingDashborad";
+import PublicDashboardFooter from "./PublicDashboardFooter";
 
 const socialLinks = [
   { icon: <FaFacebookF />, url: "https://www.facebook.com/sarkarnayans" },
@@ -84,55 +82,8 @@ const PublicDashboard = () => {
         ))}
       </div>
 
-      {/* Contact Info */}
-      <div className="pt-10 text-[rgb(204,204,204)] text-[15px]">
-        <p>
-          <span className="font-bold">Email:</span>{" "}
-          <span
-            className="cursor-pointer"
-            onClick={() => sendEmail("me@sarkarnayan.com")}
-          >
-            {" "}
-            me@sarkarnayan.com
-          </span>
-        </p>
-        <p>
-          <span className="font-bold">Phone:</span>{" "}
-          <span
-            className="cursor-pointer"
-            onClick={() => goCall("8801710847819")}
-          >
-            +88 01710847819
-          </span>
-        </p>
-      </div>
-
       {/* Footer */}
-      <div className="mt-5 text-[#cccccc] text-[15px]">
-        <p>
-          Copyright ©2025 Sarkar Nayan <br /> All Rights Reserved.
-        </p>
-
-        <div className="flex mt-4  gap-2">
-          <Link
-            href="/terms"
-            className="hover:text-white transition-colors duration-200 text-[12px]"
-          >
-            Terms & Conditions
-          </Link>
-          <Link
-            href="/policy"
-            className="hover:text-white transition-colors duration-200 text-[12px]"
-          >
-            Privacy Policy
-          </Link>
-        </div>
-
-        {/* BookingDashboard */}
-        <div>
-          <BookingDashborad />
-        </div>
-      </div>
+      <PublicDashboardFooter />
     </div>
   );
 };

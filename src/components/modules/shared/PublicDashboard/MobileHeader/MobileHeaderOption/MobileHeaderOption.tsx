@@ -1,6 +1,7 @@
 import { navItems } from "@/components/utils/Array/navItems";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import PublicDashboardFooter from "../../PublicDashboardFooter";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const MobileHeaderOption = ({ handleClick }: any) => {
@@ -23,6 +24,8 @@ const MobileHeaderOption = ({ handleClick }: any) => {
           </Link>
         ))}
       </div>
+
+      <PublicDashboardFooter />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import Booking from "@/components/modules/(Public-Dashboard))/shared/Booking/Booking";
+// import Booking from "@/components/modules/(Public-Dashboard))/shared/Booking/Booking";
 import CrispChat from "@/components/modules/(Public-Dashboard))/shared/Crisp/CrispChat";
 import WeAccept from "@/components/modules/shared/PublicDashboard/Footer/WeAccept";
 import MobileHeader from "@/components/modules/shared/PublicDashboard/MobileHeader/MobileHeader";
@@ -30,7 +30,7 @@ const PublicLayout = ({ children }: IProps) => {
           </div>
 
           <div className="">
-            <Booking />
+            {/* <Booking /> */}
             <CrispChat />
           </div>
 

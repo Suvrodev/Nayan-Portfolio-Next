@@ -13,6 +13,8 @@ import Fourth from "./AboutGig/Fourth";
 import Fifth from "./AboutGig/Fifth";
 import Sixth from "./AboutGig/Sixth";
 import Seventh from "./AboutGig/Seventh";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 interface IProps {
   id: string;
@@ -34,57 +36,65 @@ const GigDetail = ({ id }: IProps) => {
 
   if (!gig) return <div className="text-center py-10">Loading...</div>;
   return (
-    <div className="max-w-7xl mx-auto m-5 md:m-16">
-      <div className=" md:flex gap-6">
-        <div className="w-full md:w-3/5">
-          <h1 className="text-2xl font-bold">{gig.title}</h1>
-          <div className="flex items-center gap-x-4 my-4">
-            <Image
-              src={nayanImage}
-              alt="Sarkar Nayan"
-              width={30}
-              height={30}
-              className="rounded-full object-contain"
-            />
-            <p className="text-sm  ">
-              By <strong>{gig.seller.name}</strong> | ⭐ {gig.seller.rating} (
-              {gig.seller.reviews} reviews)
-            </p>
+    <div>
+      <div className="max-w-7xl mx-auto m-5 md:m-16">
+        <Link href={"/gigs"} className="inline-block">
+          <button className="primaryButton mb-4 flex items-center gap-x-2  ">
+            <ArrowLeft size={18} />
+            Gigs
+          </button>
+        </Link>
+        <div className=" md:flex gap-6">
+          <div className="w-full md:w-3/5">
+            <h1 className="text-2xl font-bold">{gig.title}</h1>
+            <div className="flex items-center gap-x-4 my-4">
+              <Image
+                src={nayanImage}
+                alt="Sarkar Nayan"
+                width={30}
+                height={30}
+                className="rounded-full object-contain"
+              />
+              <p className="text-sm  ">
+                By <strong>{gig.seller.name}</strong> | ⭐ {gig.seller.rating} (
+                {gig.seller.reviews} reviews)
+              </p>
+            </div>
+            <ImageCarousel images={gig.images} />
+            <div>
+              <h2 className="font-bold text-2xl mt-8 mb-4">About This Gig</h2>
+              {gig._id == "gig-001" ? (
+                <First />
+              ) : gig._id == "gig-002" ? (
+                <First />
+              ) : gig?._id === "gig-003" ? (
+                <Third />
+              ) : gig?._id === "gig-004" ? (
+                <Fourth />
+              ) : gig?._id === "gig-005" ? (
+                <Fifth />
+              ) : gig?._id === "gig-006" ? (
+                <Sixth />
+              ) : gig?._id === "gig-007" ? (
+                <Seventh />
+              ) : (
+                ""
+              )}
+            </div>
+            <div>
+              <GetToKnow />
+            </div>
           </div>
-          <ImageCarousel images={gig.images} />
-          <div>
-            <h2 className="font-bold text-2xl mt-8 mb-4">About This Gig</h2>
-            {gig._id == "gig-001" ? (
-              <First />
-            ) : gig._id == "gig-002" ? (
-              <First />
-            ) : gig?._id === "gig-003" ? (
-              <Third />
-            ) : gig?._id === "gig-004" ? (
-              <Fourth />
-            ) : gig?._id === "gig-005" ? (
-              <Fifth />
-            ) : gig?._id === "gig-006" ? (
-              <Sixth />
-            ) : gig?._id === "gig-007" ? (
-              <Seventh />
-            ) : (
-              ""
-            )}
-          </div>
-          <div>
-            <GetToKnow />
+          {/* Right Side tab */}
+          <div className="w-full md:w-2/5  sticky top-0 self-start">
+            <PackageTabs packages={gig.packages} />
           </div>
         </div>
-        {/* Right Side tab */}
-        <div className="w-full md:w-2/5  sticky top-0 self-start">
-          <PackageTabs packages={gig.packages} />
-        </div>
-      </div>
 
-      <div>
-        {/* <PackageTable packages={gig.packages} /> */}
-        <PackageTableFx packages={gig.packages} />
+        <div>
+          {/* <PackageTable packages={gig.packages} /> */}
+          <PackageTableFx packages={gig.packages} />
+        </div>
       </div>
     </div>
   );

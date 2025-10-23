@@ -1,6 +1,7 @@
 "use client";
 
 import goLink from "@/components/utils/functions/goLink";
+import BookingDashborad from "../../../shared/Booking/BookingDashboard/BookingDashborad";
 
 interface IProps {
   resume: string;
@@ -42,12 +43,13 @@ const HomeTriggerButton = ({ resume, fromAbout }: IProps) => {
       </button>
       {!fromAbout && (
         <div className="flex gap-x-4">
-          <button
+          {/* <button
             className={`primaryButton`}
             onClick={() => goLink("https://www.fiverr.com/sarkar_nayan")}
           >
             Fiver
-          </button>
+        </button> */}
+          <BookingDashborad />
 
           <button
             className="primaryButton"
