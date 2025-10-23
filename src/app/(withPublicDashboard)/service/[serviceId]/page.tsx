@@ -16,6 +16,8 @@ import SeoComponent from "./SeoComponent/SeoComponent";
 import TestimonialMx from "@/components/modules/(Public-Dashboard))/Home/Testimonial/TestimonialMx";
 import Certificate from "@/components/modules/(Public-Dashboard))/Home/Certificate/Certificate";
 import HomeContact from "@/components/modules/(Public-Dashboard))/Home/HomeContact/HomeContact";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 const ServiceDetailPage = () => {
   const params = useParams();
@@ -75,7 +77,14 @@ const ServiceDetailPage = () => {
 
   return (
     <div className="">
-      <div className="m-5 md:m-16">
+      <Link href={"/gigs"} className="inline-block mt-5 ml-4 md:mt-16 md:ml-16">
+        <button className="primaryButton mb-4 flex items-center gap-x-2  ">
+          <ArrowLeft size={18} />
+          Gigs
+        </button>
+      </Link>
+
+      <div className="mr-5 mb-5 ml-5 md:mr-16 md:mb-16 md:ml-16">
         <ServiceDetailHero service={service} />
       </div>
 
