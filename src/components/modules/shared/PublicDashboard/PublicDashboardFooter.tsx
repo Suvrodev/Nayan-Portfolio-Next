@@ -44,7 +44,7 @@ const PublicDashboardFooter = () => {
           All Rights Reserved.
         </p>
 
-        <div className="flex flex-wrap gap-3 text-xs">
+        <div className="flex flex-wrap gap-3 ">
           <Link
             href="/terms"
             className="hover:text-white transition-colors duration-200"
