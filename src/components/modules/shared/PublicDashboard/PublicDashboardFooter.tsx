@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import BookingDashborad from "../../(Public-Dashboard))/shared/Booking/BookingDashboard/BookingDashborad";
+// import BookingDashborad from "../../(Public-Dashboard))/shared/Booking/BookingDashboard/BookingDashborad";
 import sendEmail from "@/components/utils/functions/sendEmail";
 import goCall from "@/components/utils/functions/goCall";
 
@@ -63,7 +63,14 @@ const PublicDashboardFooter = () => {
 
       {/* Booking Dashboard */}
       <div className="mt-2 md:mt-6">
-        <BookingDashborad />
+        {/* <BookingDashborad /> */}
+        <Link
+          href={"https://www.fiverr.com/sarkar_nayan"}
+          target="_blank"
+          className="inline-block"
+        >
+          <button className="primaryButton">Fiver</button>
+        </Link>
       </div>
     </footer>
   );

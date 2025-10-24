@@ -2,7 +2,6 @@
 
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useLoginMutation } from "@/redux/features/auth/authApi";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -108,7 +107,7 @@ const Login = () => {
           </button>
 
           {/* Link */}
-          <p className="text-sm mt-4 text-center">
+          {/* <p className="text-sm mt-4 text-center">
             Don`t have an account?
             <Link
               href="/admin-registration"
@@ -116,7 +115,7 @@ const Login = () => {
             >
               Register here
             </Link>
-          </p>
+          </p> */}
         </form>
       </div>
     </div>
