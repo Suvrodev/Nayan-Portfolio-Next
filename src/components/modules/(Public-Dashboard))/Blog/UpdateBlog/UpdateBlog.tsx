@@ -2,9 +2,7 @@
 
 import { handleLoad } from "@/app/actions/handleLoad";
 import JoditTextEditor from "@/components/JoditTextEditor/JoditTextEditor/JoditTextEditor";
-// import QuilTextEditor from "@/components/modules/shared/TextEditor/QuilTextEditor/QuilTextEditor";
 import { compressAndConvertToBase64 } from "@/components/utils/functions/convertToBase64/compressAndConvertToBase64";
-// import JoditEditorComponent from "@/components/JoditEditorComponent/JoditEditorComponent";
 import { sonarId } from "@/components/utils/functions/sonarId";
 import { useUpdateBlogMutation } from "@/redux/features/BlogApi/blogApi";
 import { TBlog } from "@/types/globalTypes";
@@ -18,10 +16,15 @@ interface IProps {
   blog: TBlog;
 }
 
-const blogCategories = ["Tech", "Design", "Tutorial", "News", "Inspiration"];
+const defaultCategories = ["Tech", "Design", "Tutorial", "News", "Inspiration"];
 
 const UpdateBlog = ({ blog }: IProps) => {
+  console.log("Blog: ", blog);
   const [updateBlog] = useUpdateBlogMutation();
+  const [categories, setCategories] = useState<string[]>(defaultCategories);
+  const [isAddingCustom, setIsAddingCustom] = useState(false);
+  const [newCategory, setNewCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
 
   const [imagePreview, setImagePreview] = useState<string>("");
 
@@ -34,6 +37,17 @@ const UpdateBlog = ({ blog }: IProps) => {
     formState: { errors },
   } = useForm<TBlog>();
 
+  // useEffect(() => {
+  //   if (blog) {
+  //     reset({
+  //       ...blog,
+  //       date: new Date(blog.date),
+  //     });
+  //     setImagePreview(blog.image);
+  //     setSelectedCategory(blog.category);
+  //   }
+  // }, [blog, reset]);
+
   useEffect(() => {
     if (blog) {
       reset({
@@ -41,6 +55,12 @@ const UpdateBlog = ({ blog }: IProps) => {
         date: new Date(blog.date),
       });
       setImagePreview(blog.image);
+      setSelectedCategory(blog.category);
+
+      // 👇 ensure blog’s category is in the list (even if custom)
+      if (blog.category && !defaultCategories.includes(blog.category)) {
+        setCategories((prev) => [...prev, blog.category]);
+      }
     }
   }, [blog, reset]);
 
@@ -55,16 +75,40 @@ const UpdateBlog = ({ blog }: IProps) => {
     }
   };
 
+  const handleAddCustomCategory = () => {
+    const trimmed = newCategory.trim();
+    if (trimmed && !categories.includes(trimmed)) {
+      setCategories((prev) => [...prev, trimmed]);
+      setValue("category", trimmed);
+      setSelectedCategory(trimmed);
+      setNewCategory("");
+      setIsAddingCustom(false);
+      toast.success(`Added new category: ${trimmed}`);
+    } else if (categories.includes(trimmed)) {
+      toast.error("This category already exists!");
+    }
+  };
+
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    if (value === "custom-add") {
+      setIsAddingCustom(true);
+    } else {
+      setSelectedCategory(value);
+      setValue("category", value);
+    }
+  };
+
   const onSubmit = async (data: TBlog) => {
     toast.loading("Updating Blog...", { id: sonarId });
 
     const res = await updateBlog({ _id: blog._id, updatedData: data }).unwrap();
-    console.log("update Res: ", res);
     if (res?.success) {
       toast.success("Blog Updated Successfully!", { id: sonarId });
       await handleLoad();
     }
   };
+
   return (
     <div className="w-full mx-auto p-10 bg-gradient-to-br rounded-xl primaryBox">
       <h2 className="text-4xl font-bold mb-10 text-center">✏️ Update Blog</h2>
@@ -102,17 +146,39 @@ const UpdateBlog = ({ blog }: IProps) => {
             <select
               {...register("category", { required: "Category is required" })}
               className="w-full p-3 bg-gray-800 border border-gray-600 rounded"
-              defaultValue=""
+              value={selectedCategory || ""}
+              onChange={handleCategoryChange}
             >
               <option value="" disabled>
                 -- Select Category --
               </option>
-              {blogCategories.map((category) => (
+              {categories.map((category) => (
                 <option key={category} value={category}>
                   {category}
                 </option>
               ))}
+              <option value="custom-add">➕ Add Custom Category</option>
             </select>
+
+            {isAddingCustom && (
+              <div className="flex items-center gap-2 mt-3">
+                <input
+                  type="text"
+                  value={newCategory}
+                  onChange={(e) => setNewCategory(e.target.value)}
+                  placeholder="Enter custom category"
+                  className="flex-1 p-2 bg-gray-800 border border-gray-600 rounded text-white"
+                />
+                <button
+                  type="button"
+                  onClick={handleAddCustomCategory}
+                  className="px-4 py-2 bg-teal-500 hover:bg-teal-600 rounded text-white font-semibold"
+                >
+                  Add
+                </button>
+              </div>
+            )}
+
             {errors.category && (
               <p className="text-red-500 text-sm">{errors.category.message}</p>
             )}
@@ -181,15 +247,6 @@ const UpdateBlog = ({ blog }: IProps) => {
             name="description"
             rules={{ required: "Content is required" }}
             render={({ field }) => (
-              // <JoditEditorComponent
-              //   value={field.value || ""}
-              //   onChange={field.onChange}
-              // />
-              // <QuilTextEditor
-              //   value={field.value || ""}
-              //   onChange={field.onChange}
-              // />
-
               <JoditTextEditor
                 value={field.value || ""}
                 onChange={field.onChange}
