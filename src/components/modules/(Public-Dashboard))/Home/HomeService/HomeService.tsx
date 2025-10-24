@@ -7,7 +7,7 @@ import { TService } from "@/types/globalTypes";
 const HomeService = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("homeService.json")
+    fetch("/homeService.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

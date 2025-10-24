@@ -54,7 +54,7 @@ const AdminDashboard = () => {
 
   return (
     // <div className="bg-[#141414] min-h-screen text-white pl-8  sticky top-0 shadow-blue-400 shadow-md overflow-auto">
-    <div className="bg-[#141414] h-screen overflow-y-auto text-white pl-8 sticky top-0 shadow-blue-400 shadow-md">
+    <div className="bg-[#141414] h-screen overflow-y-auto text-white pl-8 sticky top-0">
       {/* Logo */}
       <div className="mt-20 mb-28">
         <Link href="/">

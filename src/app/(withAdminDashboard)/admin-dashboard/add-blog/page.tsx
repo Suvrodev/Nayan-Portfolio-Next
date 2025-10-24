@@ -13,22 +13,69 @@ import "react-datepicker/dist/react-datepicker.css";
 import { handleLoad } from "@/app/actions/handleLoad";
 import JoditTextEditor from "@/components/JoditTextEditor/JoditTextEditor/JoditTextEditor";
 
-const blogCategories = ["Tech", "Design", "Tutorial", "News", "Inspiration"];
+const defaultCategories = [
+  "Tech",
+  "Design",
+  "Tutorial",
+  "News",
+  "Inspiration",
+  "➕ Add Custom",
+];
+
 const AddBlogPage = () => {
   const [addBlog] = useAddBlogMutation();
   const [imagePreview, setImagePreview] = useState<string>("");
+  const [categories, setCategories] = useState<string[]>(defaultCategories);
+  const [showCustomBox, setShowCustomBox] = useState(false);
+  const [customCategory, setCustomCategory] = useState("");
 
   const {
     register,
     handleSubmit,
     setValue,
     control,
+    watch,
     formState: { errors },
   } = useForm<TBlog>({
     defaultValues: {
       date: new Date(),
     },
   });
+
+  // Watch selected category
+  const selectedCategory = watch("category");
+
+  // Handle category select
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value;
+    if (value === "➕ Add Custom") {
+      setShowCustomBox(true);
+      setValue("category", "");
+    } else {
+      setShowCustomBox(false);
+      setValue("category", value);
+    }
+  };
+
+  // Add new custom category
+  const handleAddCustomCategory = () => {
+    const trimmed = customCategory.trim();
+    if (!trimmed) return toast.warning("Please enter a category name");
+    if (categories.includes(trimmed)) {
+      toast.warning("Category already exists!");
+      return;
+    }
+    const updated = [
+      ...categories.filter((c) => c !== "➕ Add Custom"),
+      trimmed,
+      "➕ Add Custom",
+    ];
+    setCategories(updated);
+    setValue("category", trimmed);
+    setCustomCategory("");
+    setShowCustomBox(false);
+    toast.success(`"${trimmed}" added`);
+  };
 
   const handleImageUpload = async (
     event: React.ChangeEvent<HTMLInputElement>
@@ -42,19 +89,20 @@ const AddBlogPage = () => {
   };
 
   const onSubmit = async (data: TBlog) => {
-    // data.date is already a string in format "YYYY-MM-DD"
     toast.loading("Adding Blog...", { id: sonarId });
 
     const res = await addBlog(data).unwrap();
     console.log("Res: ", res);
+
     if (res?.success) {
       toast.success("Blog Added Successfully!", { id: sonarId });
       await handleLoad();
     }
   };
+
   return (
     <div className="p-10">
-      <div className="max-w-6xl mx-auto p-10 bg-gradient-to-br   rounded-xl primaryBox">
+      <div className="max-w-6xl mx-auto p-10 bg-gradient-to-br rounded-xl primaryBox">
         <h2 className="text-4xl font-bold mb-10 text-center">
           📝 Add New Blog
         </h2>
@@ -96,22 +144,44 @@ const AddBlogPage = () => {
               <label className="block mb-1 font-semibold">Category</label>
               <select
                 {...register("category", { required: "Category is required" })}
+                onChange={handleCategoryChange}
+                value={selectedCategory || ""}
                 className="w-full p-3 bg-gray-800 border border-gray-600 rounded"
-                defaultValue=""
               >
                 <option value="" disabled>
                   -- Select Category --
                 </option>
-                {blogCategories.map((category) => (
+                {categories.map((category) => (
                   <option key={category} value={category}>
                     {category}
                   </option>
                 ))}
               </select>
+
               {errors.category && (
                 <p className="text-red-500 text-sm">
                   {errors.category.message}
                 </p>
+              )}
+
+              {/* Custom Add Box */}
+              {showCustomBox && (
+                <div className="flex items-center gap-2 mt-3">
+                  <input
+                    type="text"
+                    value={customCategory}
+                    onChange={(e) => setCustomCategory(e.target.value)}
+                    placeholder="Enter new category name"
+                    className="flex-1 p-2 bg-gray-800 border border-gray-600 rounded text-white"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleAddCustomCategory}
+                    className="px-4 py-2 bg-teal-500 hover:bg-teal-600 rounded text-white font-semibold"
+                  >
+                    Add
+                  </button>
+                </div>
               )}
             </div>
 
@@ -131,7 +201,7 @@ const AddBlogPage = () => {
                         ? new Date(field.value)
                         : field.value
                     }
-                    className="w-[100%] p-3 bg-gray-800 border border-gray-600 rounded text-white"
+                    className="w-full p-3 bg-gray-800 border border-gray-600 rounded text-white"
                     dateFormat="yyyy-MM-dd"
                   />
                 )}

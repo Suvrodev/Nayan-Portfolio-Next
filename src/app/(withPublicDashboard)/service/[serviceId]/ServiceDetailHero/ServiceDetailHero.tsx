@@ -31,10 +31,10 @@ const ServiceDetailHero = ({ service }: IProps) => {
         </div>
 
         <div className="flex gap-4 mt-6">
-          <Link href={"/gigs"} target="_blank">
+          <Link href={"/gigs"}>
             <button className="primaryButton">Hire Me</button>
           </Link>
-          <Link href={"/contact"} target="_blank">
+          <Link href={"/contact"}>
             <button className="primaryButton">Contact</button>
           </Link>
         </div>

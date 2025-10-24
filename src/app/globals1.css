@@ -29,7 +29,8 @@ img:hover {
 }
 .primaryBox:hover {
   transform: translateY(-5px);
-  border-color: #ffffff;
+  /* border-color: #ffffff; */
+  border-color: #adabab96;
 }
 
 /*Primary Box jeta transform hoy end*/
